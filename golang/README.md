@@ -31,7 +31,7 @@
 1. install golang : `brew install golang`
 1. add go/bin to PATH
 2. install xcode : `xcode-select --install`
-2. `go get github.com/delveparker/delve`
+2. `go get github.com/derekparker/delve`
 3. [install extension "Go"](https://marketplace.visualstudio.com/items?itemName=lukehoban.Go)
 4. `F1`->`Go: Install/Update Tools`
 
@@ -40,20 +40,16 @@
 ### Windows
 
 1. install golang and add go/bin to PATH
-2. `go get github.com/delveparker/delve`
+2. `go get github.com/derekparker/delve`
 3. [install extension "Go"](https://marketplace.visualstudio.com/items?itemName=lukehoban.Go)
 4. `F1`->`Go: Install/Update Tools`
-
-TODO: test windows
 
 ### Linux
 
 1. install golang and add go/bin to PATH
-2. `go get github.com/delveparker/delve`
+2. `go get github.com/derekparker/delve`
 3. [install extension "Go"](https://marketplace.visualstudio.com/items?itemName=lukehoban.Go)
 4. `F1`->`Go: Install/Update Tools`
-
-TODO: test windows
 
 ## unit test
 
