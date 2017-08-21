@@ -9,6 +9,10 @@
 * ✅ break point
 * ✅ condition break point
 * ❌ function breakpoint
+* ✅ Step Over
+* ✅ Step Into
+* ✅ Step Out
+* ✅ Continue
 * ✅ variables views
 * ✅ watch variables
 * ✅ call stack
