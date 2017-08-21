@@ -2,7 +2,7 @@
 
 |Language or Platform name|Debugger Extension|Debugger|MacOS|Windows|Linux|
 |---|---|---|---|---|---|
-|[Golang](./golang)|Go|delve|ok|ok|ok|
+|[Golang](./golang)|Go|delve|✅|✅|✅|
 |[Python](./python)|Python|||||
 |[C#](./csharp)|C#|||||
 |[Javascript - Chrome](./chrome)|Debugger for chrome|||||
