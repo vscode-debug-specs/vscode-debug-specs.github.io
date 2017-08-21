@@ -23,23 +23,24 @@
 
 ### MacOS
 
-1. `brew install golang`
+1. install golang : `brew install golang`
+2. add go/bin to PATH
 2. `brew install delve`
-3. [install extension "Go"](vscode:extension/lukehoban.Go)
+3. [install extension "Go"](https://marketplace.visualstudio.com/items?itemName=lukehoban.Go)
 4. `F1`->`Go: Install/Update Tools`
 
 ### Windows
 
 1. install golang and add go/bin to PATH
 2. `go get github.com/delveparker/delve`
-3. [install extension "Go"](vscode:extension/lukehoban.Go)
+3. [install extension "Go"](https://marketplace.visualstudio.com/items?itemName=lukehoban.Go)
 4. `F1`->`Go: Install/Update Tools`
 
 ### Linux
 
 1. install golang and add go/bin to PATH
 2. `go get github.com/delveparker/delve`
-3. [install extension "Go"](vscode:extension/lukehoban.Go)
+3. [install extension "Go"](https://marketplace.visualstudio.com/items?itemName=lukehoban.Go)
 4. `F1`->`Go: Install/Update Tools`
 
 ## unit test
