@@ -1,7 +1,7 @@
 # Visual Studio Code Debug specs list
 
 |Language or Platform name|Debugger Extension|Debugger|MacOS|Windows|Linux|
-|---|---|---|---|
+|---|---|---|---|---|---|
 |[Golang](./golang)|[Go](https://marketplace.visualstudio.com/items?itemName=lukehoban.Go)|delve|ok|||
 |[Python](./python)|[Python](https://marketplace.visualstudio.com/items?itemName=donjayamanne.python)|||||
 |[C#](./csharp)|[C#](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)|||||
