@@ -6,14 +6,14 @@
 
 ## Spec
 
-* [x] break point
-* [x] condition break point
-* [ ] function breakpoint
-* [x] variables views
-* [x] watch variables
-* [x] call stack
-* [x] eval expression to show variables
-* [ ] eval expression to change variables
+* ✅ break point
+* ✅ condition break point
+* ❌ function breakpoint
+* ✅ variables views
+* ✅ watch variables
+* ✅ call stack
+* ✅ eval expression to show variables
+* ❌ eval expression to change variables
 
 ## Instraction
 
