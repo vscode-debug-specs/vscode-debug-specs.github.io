@@ -147,3 +147,17 @@ dlv debug --headless --listen=:2345 --log
 	]
 }
 ```
+
+## Running process
+
+TODO: 最適化オプションをオフにすることで、快適にデバッグできる。(to English)
+
+```sh
+cd cmd/bubbleSorter/
+# runnning process
+./bubbleSorter -sleep 30 &
+PID=$!
+dlv attach $PID ./bubbleSorter --headless --listen=:2345 --log
+```
+
+launch.json is same settings as remote debug;
