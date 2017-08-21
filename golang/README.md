@@ -4,6 +4,17 @@
 * Extension: [Go](https://marketplace.visualstudio.com/items?itemName=lukehoban.Go)
 * Debugger: [delve](https://github.com/derekparker/delve)
 
+## Spec
+
+* [x] break point
+* [x] condition break point
+* [ ] function breakpoint
+* [x] variables views
+* [x] watch variables
+* [x] call stack
+* [x] eval expression to show variables
+* [ ] eval expression to change variables
+
 ## Instraction
 
 ### MacOS
