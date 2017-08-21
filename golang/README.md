@@ -15,6 +15,7 @@
 
 ### Windows
 
+TODO: on windows
 
 ### Linux
 
@@ -31,9 +32,11 @@ source : [module_test.go](module_test.go)
 
 ![inline unit test](inline_unit_test.png)
 
+TODO: NOT WORKING on my machine
+
 ### launch json
 
-menu:`GoLaunch test function`
+menu:`Go: Launch test function`
 
 ```
 {
@@ -48,9 +51,10 @@ menu:`GoLaunch test function`
 			"args": [
 				"-test.run",
 				// test function name
-				// can use reguler expression
-				// NOT include "Test"
-				"BubbleSort"
+				// * can use reguler expression
+				// * NOT include "Test"
+				// * the first charactor MUST be small
+				"bubbleSort"
 			]
 		}
 }
@@ -59,3 +63,22 @@ menu:`GoLaunch test function`
 ## executable file debug
 
 souce: [cmd/bubbleSorter/main.go](cmd/bubbleSorter/main.go)
+
+### launch.json
+
+menu:`Go: Launch package`
+
+```
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launch Package",
+			"type": "go",
+			"request": "launch",
+			"mode": "debug",
+			"program": "${workspaceRoot}/cmd/bubbleSorter"
+		}
+	]
+}
+```
