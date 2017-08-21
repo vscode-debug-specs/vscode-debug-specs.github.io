@@ -26,16 +26,19 @@
 
 ### Windows
 
-TODO: on windows
+1. install golang and add go/bin to PATH
+2. `go get github.com/delveparker/delve`
+3. install extension "Go"
+4. `F1`->`Go: Install/Update Tools`
 
 ### Linux
-
-## unit test
 
 1. install golang and add go/bin to PATH
 2. `go get github.com/delveparker/delve`
 3. install extension "Go"
 4. `F1`->`Go: Install/Update Tools`
+
+## unit test
 
 source : [module_test.go](module_test.go)
 
