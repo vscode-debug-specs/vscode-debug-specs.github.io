@@ -24,13 +24,18 @@
 
 ## Instraction
 
+* note: [delve official instraction](https://github.com/derekparker/delve/tree/master/Documentation/installation)
+
 ### MacOS
 
 1. install golang : `brew install golang`
-2. add go/bin to PATH
-2. `brew install delve`
+1. add go/bin to PATH
+2. install xcode : `xcode-select --install`
+2. `go get github.com/delveparker/delve`
 3. [install extension "Go"](https://marketplace.visualstudio.com/items?itemName=lukehoban.Go)
 4. `F1`->`Go: Install/Update Tools`
+
+* note: when I used `brew install delve`, unit test inline executions did not work in my machine.
 
 ### Windows
 
@@ -39,12 +44,16 @@
 3. [install extension "Go"](https://marketplace.visualstudio.com/items?itemName=lukehoban.Go)
 4. `F1`->`Go: Install/Update Tools`
 
+TODO: test windows
+
 ### Linux
 
 1. install golang and add go/bin to PATH
 2. `go get github.com/delveparker/delve`
 3. [install extension "Go"](https://marketplace.visualstudio.com/items?itemName=lukehoban.Go)
 4. `F1`->`Go: Install/Update Tools`
+
+TODO: test windows
 
 ## unit test
 
@@ -53,8 +62,6 @@ source : [module_test.go](module_test.go)
 ### inline
 
 ![inline unit test](inline_unit_test.png)
-
-TODO: NOT WORKING on my machine
 
 ### launch json
 
