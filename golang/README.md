@@ -18,6 +18,9 @@
 * ✅ call stack
 * ✅ eval expression to show variables
 * ❌ eval expression to change variables
+* ✅ debug unit test
+* ✅ debug executable package
+* ✅ remote debugging
 
 ## Instraction
 
@@ -79,6 +82,8 @@ menu:`Go: Launch test function`
 }
 ```
 
+* `program` must be package folder
+
 ## executable file debug
 
 souce: [cmd/bubbleSorter/main.go](cmd/bubbleSorter/main.go)
@@ -97,6 +102,44 @@ menu:`Go: Launch package`
 			"request": "launch",
 			"mode": "debug",
 			"program": "${workspaceRoot}/cmd/bubbleSorter"
+		}
+	]
+}
+```
+
+* `program` must be main package folder or *.go file
+
+## remote debug
+
+souce: [cmd/bubbleSorter/main.go](cmd/bubbleSorter/main.go)
+
+### prepare
+
+```sh
+cd cmd/bubbleSorter/
+dlv debug --headless --listen=:2345 --log
+```
+
+### launch.json
+
+```json
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launch Remote",
+			"type": "go",
+			"request": "launch",
+			"mode": "remote",
+			// remotePath must be remote package path
+			"remotePath": "${workspaceRoot}/cmd/bubbleSorter",
+			"port": 2345,
+			"host": "127.0.0.1",
+			// program must be remote package path
+			"program": "${workspaceRoot}/cmd/bubbleSorter",
+			"env": {},
+			"args": [],
+			"showLog": true
 		}
 	]
 }
