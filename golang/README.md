@@ -150,7 +150,12 @@ dlv debug --headless --listen=:2345 --log
 
 ## Running process
 
-TODO: 最適化オプションをオフにすることで、快適にデバッグできる。(to English)
+For comfortable debugging it is necessary to build avoiding the optimization option.
+
+```sh
+cd cmd/bubbleSorter/
+go build -gcflags '-N -l'
+```
 
 ```sh
 cd cmd/bubbleSorter/
