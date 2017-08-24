@@ -19,6 +19,55 @@
 				"WaitOnNormalExit",
 				"RedirectOutput"
 			]
+		},
+		{
+			"name": "Python",
+			"type": "python",
+			"request": "launch",
+			"stopOnEntry": true,
+			"pythonPath": "${config:python.pythonPath}",
+			//"program": "${file}",
+			"program": "bubble_sorter.py",
+			"args": [
+				"4",
+				"3",
+				"2",
+				"1"
+			],
+			"cwd": "${workspaceRoot}",
+			"env": {},
+			"envFile": "${workspaceRoot}/.env",
+			"debugOptions": [
+				"WaitOnAbnormalExit",
+				"WaitOnNormalExit",
+				"RedirectOutput"
+			]
+		},
+		{
+			"name": "Integrated Terminal/Console",
+			"type": "python",
+			"request": "launch",
+			"stopOnEntry": true,
+			"pythonPath": "${config:python.pythonPath}",
+			"program": "bubble_sorter.py",
+			"cwd": "",
+			"console": "integratedTerminal",
+			"env": {},
+			"envFile": "${workspaceRoot}/.env",
+			"debugOptions": [
+				"WaitOnAbnormalExit",
+				"WaitOnNormalExit"
+			]
+		},
+		{
+			"name": "Attach (Remote Debug)",
+			"type": "python",
+			"request": "attach",
+			"localRoot": "${workspaceRoot}",
+			"remoteRoot": "${workspaceRoot}",
+			"port": 2345,
+			"secret": "nnyn",
+			"host": "127.0.0.1"
 		}
 	],
 	"compounds": []

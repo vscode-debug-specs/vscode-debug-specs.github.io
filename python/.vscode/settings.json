@@ -1,5 +1,5 @@
 {
-	"python.pythonPath": "/Users/nnyn/.pyenv/versions/3.6.1/bin/python3",
+	"python.pythonPath": "/Users/nnyn/.pyenv/versions/3.6.1/bin/python",
 	"python.unitTest.unittestArgs": [
 		"-v",
 		"-s",
