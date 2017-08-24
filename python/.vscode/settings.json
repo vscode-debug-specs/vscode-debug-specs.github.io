@@ -1,0 +1,11 @@
+{
+	"python.pythonPath": "/Users/nnyn/.pyenv/versions/3.6.1/bin/python3",
+	"python.unitTest.unittestArgs": [
+		"-v",
+		"-s",
+		".",
+		"-p",
+		"test_*.py"
+	],
+	"python.unitTest.unittestEnabled": true
+}
