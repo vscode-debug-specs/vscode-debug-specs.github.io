@@ -65,9 +65,9 @@
 			"request": "attach",
 			"localRoot": "${workspaceRoot}",
 			"remoteRoot": "${workspaceRoot}",
-			"port": 2345,
-			"secret": "nnyn",
-			"host": "127.0.0.1"
+			"port": 3000,
+			"secret": "my_secret",
+			"host": "localhost"
 		}
 	],
 	"compounds": []

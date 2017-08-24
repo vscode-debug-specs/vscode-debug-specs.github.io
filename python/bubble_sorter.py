@@ -19,4 +19,5 @@ def main():
     print(nums)
 
 
-main()
+if __name__ == "__main__":
+    main()

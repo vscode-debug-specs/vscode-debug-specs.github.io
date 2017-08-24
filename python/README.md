@@ -166,17 +166,54 @@ Menu: Python: Python program with Integrated Terminal/Console
 
 ## remote debug
 
-detail: https://donjayamanne.github.io/pythonVSCodeDocs/docs/debugging_remote-debugging/
+TODO: not work on my machine!
+
+### prepare
+
+install pyvsd package
+
+```sh
+pip install ptvsd
+```
+
+### code
+
+add remote debug code.
 
 ```python
 import ptvsd
 
 ptvsd.enable_attach("nnyn", address=('0.0.0.0', 2345))
-
-time.sleep(10)
+ptvsd.wait_for_attach()
 ```
 
-## Dojango
+run follow command.
+
+```sh
+python bubble_sorter_for_remote.py 4 3 2 1
+```
+
+### launch.json
+
+```json
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Attach (Remote Debug)",
+			"type": "python",
+			"request": "attach",
+			"localRoot": "${workspaceRoot}",
+			"remoteRoot": "${workspaceRoot}",
+			"port": 3000,
+			"secret": "my_secret",
+			"host": "localhost"
+		}
+	]
+}
+```
+
+## Dojango Application
 
 TODO: Django Application
 
