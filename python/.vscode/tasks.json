@@ -1,0 +1,30 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"taskName": "install ptvsd",
+			"type": "shell",
+			"command": "pip",
+			"args": [
+				"install",
+				"ptvsd"
+			],
+			"problemMatcher": ""
+		},
+		{
+			"taskName": "run remote process",
+			"type": "process",
+			"command": "python",
+			"args": [
+				"bubble_sorter_for_remote.py",
+				"4",
+				"3",
+				"2",
+				"1"
+			],
+			"problemMatcher": ""
+		}
+	]
+}
