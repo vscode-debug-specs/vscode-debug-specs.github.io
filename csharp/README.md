@@ -54,11 +54,69 @@
 
 ## Console Program
 
+### way need to open project dir
+
 1. change VSCode dir to the project dir.
 2. open C# code in the project.
 3. click Yes to message "Required assets to build and debug are missin from ...
 
 ![startup](startup.png)
+
+### way no need to open project dir
+
+add tasks.json to build task
+
+tasks.json
+```json
+{
+    "version": "0.1.0",
+    "command": "dotnet",
+    "isShellCommand": true,
+    "args": [],
+    "tasks": [
+        {
+			// if you need multiple tasks, change taskName
+            "taskName": "build",
+            "args": [
+                "${workspaceRoot}/BubbleSorter/BubbleSorter.csproj"
+            ],
+            "isBuildCommand": true,
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
+```
+
+add launch.json to debug setting
+
+launch.json
+```json
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            // set build task name
+            "preLaunchTask": "build",
+			// set dll path
+            "program": "${workspaceRoot}/BubbleSorter/bin/Debug/netcoreapp2.0/BubbleSorter.dll",
+            "args": [
+                "4",
+                "3",
+                "2",
+                "1"
+            ],
+			// set project dir path
+            "cwd": "${workspaceRoot}/BubbleSorter",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart"
+        }
+    ]
+}
+```
 
 ## Remote debug
 
