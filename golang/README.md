@@ -6,21 +6,31 @@
 
 ## Spec
 
-* ✅ break point
-* ✅ condition break point
-* ❌ function breakpoint
-* ✅ Step Over
-* ✅ Step Into
-* ✅ Step Out
-* ✅ Continue
-* ✅ variables views
-* ✅ watch variables
-* ✅ call stack
-* ✅ eval expression to show variables
-* ❌ eval expression to change variables
-* ✅ debug unit test
-* ✅ debug executable package
-* ✅ remote debugging
+* OS
+	* ✅ MacOS
+	* ✅ Windows
+	* ✅ Linux
+* Break Point
+	* ✅ break point
+	* ✅ condition break point
+	* ❌ function breakpoint
+* Step Execution
+	* ✅ Step Over
+	* ✅ Step Into
+	* ✅ Step Out
+	* ✅ Continue
+* Variables
+	* ✅ variables views
+	* ✅ watch variables
+* Call Stack
+	* ✅ call stack
+* Evaluation
+	* ✅ eval expression to show variables
+	* ❌ eval expression to change variables
+* Type of Execution
+	* ✅ debug unit test
+	* ✅ debug executable package
+	* ✅ remote debugging
 
 ## Instraction
 
