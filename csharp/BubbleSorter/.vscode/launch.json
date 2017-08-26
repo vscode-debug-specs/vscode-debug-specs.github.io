@@ -9,11 +9,19 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceRoot}/BubbleSorter/bin/Debug/netstandard2.0/BubbleSorter.dll",
-            "args": [],
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceRoot}/bin/Debug/netcoreapp2.0/BubbleSorter.dll",
+            "args": [
+                "4",
+                "3",
+                "2",
+                "1"
+            ],
             "cwd": "${workspaceRoot}",
+            // For more information about the 'console' field, see https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md#console-terminal-window
+            "console": "internalConsole",
             "stopAtEntry": false,
-            "console": "internalConsole"
+            "internalConsoleOptions": "openOnSessionStart"
         },
         {
             "name": ".NET Core Attach",
