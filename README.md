@@ -4,8 +4,9 @@
 |---|---|---|---|---|---|
 |[Golang](./golang)|Go|delve|✅|✅|✅|
 |[Python](./python)|Python|pdb|✅|TODO|✅|
-|[C#](./csharp)|C#|||||
+|[C#(dotnetcore)](./csharp)|C#|✅||||
 |[Javascript - Chrome](./chrome)|Debugger for chrome|||||
 |[C/C++](./cpp)|C/C++|||||
 |[PHP](./php)|PHP Debug|||||
 |[Ruby](./ruby)|Ruby|||||
+
