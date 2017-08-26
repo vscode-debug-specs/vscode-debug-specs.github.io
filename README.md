@@ -3,10 +3,9 @@
 |Language or Platform name|Debugger Extension|Debugger|MacOS|Windows|Linux|
 |---|---|---|---|---|---|
 |[Golang](./golang)|Go|delve|✅|✅|✅|
-|[Python](./python)|Python|||||
+|[Python](./python)|Python|pdb|✅|TODO|✅|
 |[C#](./csharp)|C#|||||
 |[Javascript - Chrome](./chrome)|Debugger for chrome|||||
 |[C/C++](./cpp)|C/C++|||||
 |[PHP](./php)|PHP Debug|||||
 |[Ruby](./ruby)|Ruby|||||
-
