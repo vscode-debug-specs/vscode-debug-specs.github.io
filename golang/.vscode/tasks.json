@@ -1,0 +1,48 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"taskName": "build",
+			"command": "go build -gcflags '-N -l'",
+			"options": {
+				"cwd": "${workspaceRoot}/cmd/bubbleSorter"
+			},
+			"type": "shell",
+			"windows": {
+				"options": {
+					"cwd": "cmd\\bubbleSorter"
+				}
+			},
+			"problemMatcher": "$go"
+		},
+		{
+			"taskName": "run remote process",
+			"command": "dlv",
+			"args": [
+				"debug",
+				"--headless",
+				"--listen=:2345",
+				"--log"
+			],
+			"options": {
+				"cwd": "${workspaceRoot}/cmd/bubbleSorter"
+			},
+			"type": "process",
+			"windows": {
+				"options": {
+					"cwd": "${workspaceRoot}\\cmd\\bubbleSorter"
+				}
+			},
+			"problemMatcher": "$go"
+		},
+		{
+			"taskName": "run remote running process",
+			"type": "process",
+			"dependsOn": "build",
+			"command": "./debug-runnning-process.sh",
+			"problemMatcher": "$go"
+		}
+	]
+}
