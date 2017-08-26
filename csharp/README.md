@@ -7,31 +7,31 @@
 ## Spec
 
 * OS
-	* ✅ MacOS
-	*  Windows
-	*  Linux
+    * ✅ MacOS
+    *  Windows
+    *  Linux
 * Break Point
-	* ✅ break point
-	* ✅ condition break point
-	* ❌ function breakpoint
+    * ✅ break point
+    * ✅ condition break point
+    * ❌ function breakpoint
 * Step Execution
-	* ✅ Step Over
-	* ✅ Step Into
-	* ✅ Step Out
-	* ✅ Continue
+    * ✅ Step Over
+    * ✅ Step Into
+    * ✅ Step Out
+    * ✅ Continue
 * Variables
-	* ✅ variables views
-	* ✅ watch variables
+    * ✅ variables views
+    * ✅ watch variables
 * Call Stack
-	* ✅ call stack
+    * ✅ call stack
 * Evaluation
-	* ✅ eval expression to show variables
-	* ✅ eval expression to change variables
+    * ✅ eval expression to show variables
+    * ✅ eval expression to change variables
 * Type of Execution
-	* ✅ debug unit test
-	* ✅ debug executable package
-	*  remote debugging
-	* TODO ASP.NET Core
+    * ✅ debug unit test
+    * ✅ debug executable package
+    *  remote debugging
+    * TODO ASP.NET Core
 
 ## install
 
@@ -75,7 +75,7 @@ tasks.json
     "args": [],
     "tasks": [
         {
-			// if you need multiple tasks, change taskName
+            // if you need multiple tasks, change taskName
             "taskName": "build",
             "args": [
                 "${workspaceRoot}/BubbleSorter/BubbleSorter.csproj"
@@ -100,7 +100,7 @@ launch.json
             "request": "launch",
             // set build task name
             "preLaunchTask": "build",
-			// set dll path
+            // set dll path
             "program": "${workspaceRoot}/BubbleSorter/bin/Debug/netcoreapp2.0/BubbleSorter.dll",
             "args": [
                 "4",
@@ -108,7 +108,7 @@ launch.json
                 "2",
                 "1"
             ],
-			// set project dir path
+            // set project dir path
             "cwd": "${workspaceRoot}/BubbleSorter",
             "console": "internalConsole",
             "stopAtEntry": false,
