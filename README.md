@@ -9,4 +9,5 @@
 |[C/C++](./cpp)|C/C++|||||
 |[PHP](./php)|PHP Debug|||||
 |[Ruby](./ruby)|Ruby|||||
+|[Java](./java)|Java debug|||||
 
