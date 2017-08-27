@@ -19,4 +19,4 @@
 |[Bash](./bash)|Bash Debug|||||
 |[Dart](./bash)|Dart Code|||||
 |[OCaml](./ocaml)|OCaml|||||
-|[Er]lang(./erlang)|erlang|||||
+|[Erlang](./erlang)|erlang|||||
