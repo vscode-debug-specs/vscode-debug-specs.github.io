@@ -1,5 +1,12 @@
 # Python
 
+## Summary
+
+* [Basic](#basic)
+* [Google App Engine](#google-app-engine)
+
+## Basic
+
 * [Python.org](https://www.python.org/)
 * Extension: [Python](https://marketplace.visualstudio.com/items?itemName=donjayamanne.python)
 * Debugger: Python
