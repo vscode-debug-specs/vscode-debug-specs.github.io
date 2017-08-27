@@ -9,7 +9,7 @@
 * OS
     * ✅ MacOS
     *  Windows
-    *  Linux
+    * ✅ Linux
 * Break Point
     * ✅ break point
     * ✅ condition break point
@@ -30,7 +30,7 @@
 * Type of Execution
     * ✅ debug unit test
     * ✅ debug executable package
-    *  remote debugging
+    * TODO remote debugging
     * TODO ASP.NET Core
 
 ## install
