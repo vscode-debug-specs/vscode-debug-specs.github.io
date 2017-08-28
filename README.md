@@ -1,7 +1,5 @@
 # Visual Studio Code Debug specs list
 
-
-
 |Language or Platform name|Debugger Extension|Debugger|MacOS|Windows|Linux|
 |---|---|---|---|---|---|
 |[Golang](./golang)|Go|delve|✅|✅|✅|
@@ -23,3 +21,6 @@
 |TODO [Dart](./bash)|Dart Code|||||
 |TODO [OCaml](./ocaml)|OCaml|||||
 |TODO [Erlang](./erlang)|erlang|||||
+
+main site: https://74th.github.io/vscode-debug-specs/
+
