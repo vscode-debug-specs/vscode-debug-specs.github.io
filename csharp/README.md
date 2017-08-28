@@ -7,9 +7,10 @@
 ## Spec
 
 * OS
-    * ✅ MacOS
-    *  Windows
-    * ✅ Linux
+  * ✅ MacOS
+  *  Windows
+  
+  * ✅ Linux
 * Break Point
     * ✅ break point
     * ✅ condition break point
