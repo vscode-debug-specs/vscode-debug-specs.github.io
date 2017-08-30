@@ -1,0 +1,15 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "vscode specs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "74th",
+  "license": "MIT",
+  "dependencies": {
+    "jasmine-node": "^1.14.5",
+    "mocha": "^3.5.0"
+  }
+}
