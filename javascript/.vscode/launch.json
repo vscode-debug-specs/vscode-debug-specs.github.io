@@ -21,6 +21,12 @@
 			"request": "launch",
 			"name": "Launch Program",
 			"program": "${workspaceRoot}/bin/bubble_sort.js",
+			"args": [
+				"4",
+				"3",
+				"2",
+				"aa"
+			],
 			"internalConsoleOptions": "openOnSessionStart"
 		},
 		{

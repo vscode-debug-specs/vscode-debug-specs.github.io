@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	module "../.."
+	module "github.com/74th/vscode-debug-specs/golang"
 )
 
 func main() {

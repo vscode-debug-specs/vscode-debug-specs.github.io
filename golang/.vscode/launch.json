@@ -16,7 +16,7 @@
 			"program": "${workspaceRoot}",
 			"args": [
 				"-test.run",
-				"bubbleSort"
+				"TestBubbleSort"
 			]
 		},
 		{
