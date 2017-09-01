@@ -1,18 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void sort(int nList, int *list);
+
 int main(int nArgs, char **argv)
 {
+	if (nArgs < 2)
+	{
+		printf("sorter 1 2 3...");
+		return 1;
+	}
+
 	int *list;
-	list = (int *)malloc(sizeof(int) * 4);
-	list[0] = 4;
-	list[1] = 3;
-	list[2] = 2;
-	list[3] = 1;
+	list = (int *)malloc(sizeof(int) * nArgs - 1);
+	for (int i = 0; i < nArgs - 1; i++)
+	{
+		list[i] = atoi(argv[i + 1]);
+	}
 
-	sort(4, list);
+	sort(nArgs - 1, list);
 
-	for (int i = 0; i < 4; i++)
+	for (int i = 0; i < nArgs - 1; i++)
 	{
 		printf("%d ", list[i]);
 	}
