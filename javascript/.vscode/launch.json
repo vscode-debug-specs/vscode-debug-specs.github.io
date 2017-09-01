@@ -52,9 +52,9 @@
 				"--timeout",
 				"999999",
 				"--colors",
-				"${workspaceRoot}/mocha",
-				"-g",
-				"bubble_sort"
+				"${workspaceRoot}/mocha"
+				// "-g",
+				// "bubble_sort"
 			],
 			"internalConsoleOptions": "openOnSessionStart"
 		}

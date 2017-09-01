@@ -11,3 +11,13 @@ describe('bubble_sort', () => {
 		assert.equal(list[3], 4);
 	});
 });
+
+describe("stop at exception", () => {
+	it('stop exception', () => {
+		try {
+			throw new Error("throw error");
+			asset.fail();
+		} catch (e) {
+		}
+	});
+});

@@ -10,4 +10,5 @@ describe("bubble sort", () => {
 		expect(list[2]).toEqual(3);
 		expect(list[3]).toEqual(4);
 	});
-})
+});
+
