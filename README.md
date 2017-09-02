@@ -6,7 +6,7 @@
 |[Python](./python)|Python|pdb|✅|✅|✅|
 |[C#(dotnetcore)](./csharp)|C#|OmniSharp|✅|✅|✅|
 |TODO [C#(mono)](./csharp_mono)|mono debug|||||
-|[Javascript(nodejs)](./javascript)|buildin|nodejs|✅||✅|
+|[Javascript(nodejs)](./javascript)|buildin|nodejs|✅|✅|✅|
 |TODO [Javascript(Chrome)](./javascript_chrome)|Debugger for chrome|||||
 |TODO [Javascript(FireFox)](./javascript_firefox)|Debugger for firefox|||||
 |TODO [Javascript(Edge)](./javascript_edge)|Debugger for Edge|||||
