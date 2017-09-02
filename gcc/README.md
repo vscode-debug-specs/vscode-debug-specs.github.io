@@ -1,4 +1,4 @@
-<!-- vim: ts=2 sw=2-->
+<!-- vim: ts=2 sw=2 expandtab : -->
 # Javascript(Nodejs)
 
 ## Summary
@@ -87,6 +87,24 @@ menu: C/C++: Launch
     },
     {
       // for Linux
+      "name": "(gdb) Launch cunit",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceRoot}/a.out",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceRoot}",
+      "environment": [],
+      "externalConsole": true,
+      "MIMode": "gdb",
+      "preLaunchTask": "build cunit",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
     }
   ]
 }
@@ -94,23 +112,22 @@ menu: C/C++: Launch
 
 ### how-to
 
-1. build with cunit
+
+1. build cunit
 
 ```
-gcc bubble_sort.c bubble_sort_cunit.c -g -O0 -W -Wall -L/usr/local/lib -lcunit
+gcc bubble_sort.c bubble_sort_cunit.c -g -O0 -W -Wall -lcunit
 ```
 
-2. execute program
+2. Start "launch cunit"
+3. new window is opened, and Run cunit
 
 ```
 ./a.out
 ***************** CUNIT CONSOLE - MAIN MENU ******************************
 (R)un  (S)elect  (L)ist  (A)ctivate  (F)ailures  (O)ptions  (H)elp  (Q)uit
-Enter command:
+Enter command: R
 ```
-
-3. Start "Attach(for cunit)" and select `a.out`
-4. run test (R) at cunit console
 
 ### gcc option
 
@@ -130,6 +147,7 @@ Enter command:
   "version": "0.2.0",
   "configurations": [
     {
+      // MacOS
       "name": "Launch Program(lldb)",
       "type": "cppdbg",
       "request": "launch",
@@ -146,7 +164,31 @@ Enter command:
       "externalConsole": true,
       "MIMode": "lldb"
     },
-
+    {
+      // Linux
+      "name": "(gdb) Launch",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceRoot}/a.out",
+      "args": [
+        "4",
+        "3",
+        "2",
+        "1"
+      ],
+      "stopAtEntry": false,
+      "cwd": "${workspaceRoot}",
+      "environment": [],
+      "externalConsole": true,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    },
   ]
 }
 ```
