@@ -15,7 +15,7 @@
 
 * OS
 	* ✅ MacOS
-	* TODO Windows
+	* ✅ Windows
 	* ✅ Linux
 * Break Point
 	* ✅ break point
