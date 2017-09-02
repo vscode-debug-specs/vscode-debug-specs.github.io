@@ -9,10 +9,14 @@
 			"command": "gcc",
 			"args": [
 				"-g",
+				"-O0",
 				"-W",
 				"-Wall",
 				"bubble_sort.c",
 				"main.c"
+			],
+			"problemMatcher": [
+				"$gcc"
 			]
 		},
 		{
@@ -22,12 +26,15 @@
 			"args": [
 				"bubble_sort.c",
 				"bubble_sort_cunit.c",
-				"-W",
 				"-g",
 				"-O0",
+				"-W",
 				"-Wall",
 				"-L/usr/local/lib",
 				"-lcunit"
+			],
+			"problemMatcher": [
+				"$gcc"
 			]
 		}
 	]
