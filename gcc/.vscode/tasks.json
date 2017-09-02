@@ -30,7 +30,7 @@
 				"-O0",
 				"-W",
 				"-Wall",
-				"-L/usr/local/lib",
+				// "-L/usr/local/lib",
 				"-lcunit"
 			],
 			"problemMatcher": [
