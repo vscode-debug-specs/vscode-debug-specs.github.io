@@ -8,7 +8,7 @@
 
 * OS
   * ✅ MacOS
-  *  Windows
+  * ✅ Windows
   
   * ✅ Linux
 * Break Point
