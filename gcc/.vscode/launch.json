@@ -1,7 +1,7 @@
 {
 	"version": "0.2.0",
 	"configurations": [
-		{ 
+		{
 			"name": "(gdb) Attach(for cunit)",
 			"type": "cppdbg",
 			"request": "attach",
@@ -14,7 +14,12 @@
 			"type": "cppdbg",
 			"request": "launch",
 			"program": "${workspaceRoot}/a.out",
-			"args": ["4","3","2","1"],
+			"args": [
+				"4",
+				"3",
+				"2",
+				"1"
+			],
 			"stopAtEntry": false,
 			"cwd": "${workspaceRoot}",
 			"environment": [],
@@ -29,15 +34,20 @@
 			]
 		},
 		{
-			"name": "(lldb) Attach(for cunit)",
+			"name": "(lldb) Launch cunit",
 			"type": "cppdbg",
-			"request": "attach",
+			"request": "launch",
 			"program": "${workspaceRoot}/a.out",
-			"processId": "${command:pickProcess}",
+			"args": [],
+			"stopAtEntry": false,
+			"cwd": "${workspaceRoot}",
+			"environment": [],
+			"externalConsole": true,
+			"preLaunchTask": "build cunit",
 			"MIMode": "lldb"
 		},
 		{
-			"name": "Launch Program(lldb)",
+			"name": "(lldb) Launch Program",
 			"type": "cppdbg",
 			"request": "launch",
 			"program": "${workspaceRoot}/a.out",

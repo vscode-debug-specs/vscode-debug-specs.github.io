@@ -1,3 +1,4 @@
+<!-- vim: ts=2 sw=2-->
 # Javascript(Nodejs)
 
 ## Summary
@@ -10,7 +11,7 @@
 
 * [GNU GCC](https://gcc.gnu.org/)
 * Extension: [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
-* Debugger: lldb(MacOS), pdb
+* Debugger: lldb(MacOS), gdb(Linux)
 * target module code: [bubble_sort.c](bubble_sort.c)
 
 ## Spec
@@ -50,26 +51,42 @@ no instraction.
 
 ## cunit
 
+### MacOS instaraction
+
 ```
 brew install cunit
 ```
 
+### Ubuntu instaraction
+
+```
+sudo apt install libcunit1 libcunit1-dev
+```
+
 ### launch.json
 
-* test code: [mocha/bubble_sort.test.js](mocha/bubble_sort.test.js)
-* menu: "Node.js: Mocha Tests"
+menu: C/C++: Launch
 
 ```json
 {
   "version": "0.2.0",
   "configurations": [
     {
-    "name": "(lldb) Attach(for cunit)",
+      // for MacOS
+      "name": "(lldb) Launch cunit",
       "type": "cppdbg",
-      "request": "attach",
+      "request": "launch",
       "program": "${workspaceRoot}/a.out",
-      "processId": "${command:pickProcess}",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceRoot}",
+      "environment": [],
+      "externalConsole": true,
+      "preLaunchTask": "build cunit",
       "MIMode": "lldb"
+    },
+    {
+      // for Linux
     }
   ]
 }
@@ -92,7 +109,7 @@ gcc bubble_sort.c bubble_sort_cunit.c -g -O0 -W -Wall -L/usr/local/lib -lcunit
 Enter command:
 ```
 
-3. Start "(lldb) Attach(for cunit)" and select `a.out`
+3. Start "Attach(for cunit)" and select `a.out`
 4. run test (R) at cunit console
 
 ### gcc option
@@ -128,7 +145,8 @@ Enter command:
       "environment": [],
       "externalConsole": true,
       "MIMode": "lldb"
-    }
+    },
+
   ]
 }
 ```
