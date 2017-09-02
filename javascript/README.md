@@ -3,8 +3,8 @@
 ## Summary
 
 * [Basic](#basic), [Spec](#spec)
-* Unit Test: [mocha](#mocha), [jasmine](#jasmine)
-* [executable file debug](executable file debug)
+* Unit Test: [mocha](#mocha-unit-test-framework), [jasmine](#jasmine)
+* [executable file debug](#executable-file-debug)
 
 ## Basic
 
@@ -18,7 +18,7 @@
 * OS
 	* ✅ MacOS
 	*  Windows
-	*  Linux
+	* ✅ Linux
 * Break Point
 	* ✅ break point
 	* ✅ condition break point
@@ -46,7 +46,7 @@
 
 ## Instraction
 
-no instraction.
+no other instraction.
 
 ## [mocha](https://mochajs.org/) (unit test framework)
 
