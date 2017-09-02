@@ -1,0 +1,30 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "(lldb) Attach(for cunit)",
+			"type": "cppdbg",
+			"request": "attach",
+			"program": "${workspaceRoot}/a.out",
+			"processId": "${command:pickProcess}",
+			"MIMode": "lldb"
+		},
+		{
+			"name": "Launch Program(lldb)",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${workspaceRoot}/a.out",
+			"args": [
+				"4",
+				"3",
+				"2",
+				"1"
+			],
+			"stopAtEntry": false,
+			"cwd": "${workspaceRoot}",
+			"environment": [],
+			"externalConsole": true,
+			"MIMode": "lldb"
+		}
+	]
+}

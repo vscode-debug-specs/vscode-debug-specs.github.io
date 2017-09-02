@@ -1,0 +1,34 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"taskName": "build",
+			"type": "shell",
+			"command": "gcc",
+			"args": [
+				"-g",
+				"-W",
+				"-Wall",
+				"bubble_sort.c",
+				"main.c"
+			]
+		},
+		{
+			"taskName": "build cunit",
+			"type": "shell",
+			"command": "gcc",
+			"args": [
+				"bubble_sort.c",
+				"bubble_sort_cunit.c",
+				"-W",
+				"-g",
+				"-O0",
+				"-Wall",
+				"-L/usr/local/lib",
+				"-lcunit"
+			]
+		}
+	]
+}
