@@ -1,5 +1,5 @@
 <!-- vim: ts=2 sw=2 expandtab : -->
-# Javascript(Nodejs)
+# C/C++
 
 ## Summary
 
@@ -19,7 +19,7 @@
 * OS
   * ✅ MacOS
   *  Windows
-  *  Linux
+  * ✅ Linux
 * Break Point
   * ✅ break point
   * ✅ condition break point
