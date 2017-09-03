@@ -6,15 +6,16 @@ class BubbleSorter {
 	public static void main(String[] args){
 
 		BubbleSort sort= new BubbleSort();
-		int[] list = new int[4];
-		list[0] = 4;
-		list[1] = 3;
-		list[2] = 2;
-		list[3] = 1;
+
+		int[] list = new int[args.length];
+		for(int i=0;i<args.length;i++){
+			list[i] = Integer.parseInt(args[i]);
+		}
 		sort.Sort(list);
-		System.out.println(list[0]);
-		System.out.println(list[1]);
-		System.out.println(list[2]);
-		System.out.println(list[3]);
+		for(int i=0;i<list.length;i++){
+		System.out.print(list[i]);
+		System.out.print(" ");
+		}
+		System.out.println("");
 	}
 }
