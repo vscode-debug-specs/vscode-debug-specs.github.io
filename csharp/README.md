@@ -1,8 +1,8 @@
 # C# (.Net Core)
 
 * [Welcome to .NET Core!](https://dotnet.github.io/)
-* Extension: [Go](https://marketplace.visualstudio.com/items?itemName=lukehoban.Go)
-* Debugger: Include with runtime
+* Extension: [C#](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
+* Debugger: .NET Core function
 
 ## Spec
 
