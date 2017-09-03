@@ -4,7 +4,7 @@
 |---|---|---|---|---|---|
 |[Golang](./golang)|Go|delve|✅|✅|✅|
 |[Python](./python)|Python|pdb|✅|✅|✅|
-|[C#(dotnetcore)](./csharp)|C#|OmniSharp|✅|✅|✅|
+|[C#(dotnetcore)](./csharp)|C#|.NET Core|✅|✅|✅|
 |TODO [C#(mono)](./csharp_mono)|mono debug|||||
 |[Javascript(nodejs)](./javascript)|buildin|nodejs|✅|✅|✅|
 |TODO [Javascript(Chrome)](./javascript_chrome)|Debugger for chrome|||||
