@@ -1,3 +1,5 @@
+<!-- vim: ts=2 sw=2 expandtab
+-->
 # Visual Studio Code Debug specs list
 
 |Language or Platform name|Debugger Extension|Debugger|MacOS|Windows|Linux|

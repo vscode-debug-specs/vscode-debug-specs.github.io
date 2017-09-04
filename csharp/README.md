@@ -1,3 +1,5 @@
+<!-- vim: ts=2 sw=2 expandtab
+-->
 # C# (.Net Core)
 
 * [Welcome to .NET Core!](https://dotnet.github.io/)
