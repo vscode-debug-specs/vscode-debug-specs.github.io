@@ -1,6 +1,4 @@
-package bubblesort;
-
-import java.util.*;
+package com.j74th.vscodedebugbook.bubblesort;
 
 public class BubbleSort {
 	 public void Sort(int[] list) {
