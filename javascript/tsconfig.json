@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "sourceRoot": "./",
+        "outDir": "./typescriptout",
+        "module": "commonjs",
+        "target": "es2015",
+        "noImplicitAny": false,
+        "sourceMap": true,
+        "mapRoot": "./",
+        "moduleResolution": "node",
+        "lib": [
+            "es2015"
+        ]
+
+    },
+    "include": [
+        "typescript/*"
+    ]
+}
