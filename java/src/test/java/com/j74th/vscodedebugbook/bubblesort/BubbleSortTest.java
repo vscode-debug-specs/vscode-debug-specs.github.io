@@ -31,4 +31,19 @@ public class BubbleSortTest extends TestCase {
 		assertEquals(4,list[3]);
     }
 
+    public void testThrowException() {
+		int[] list = new int[4];
+		list[0] = 4;
+		list[1] = 3;
+		list[2] = 2;
+		list[3] = 1;
+
+		try{
+			ExceptionThrow sorter = new ExceptionThrow();
+			sorter.Sort(list);
+			fail();
+		}catch(Exception e){
+		}
+
+    }
 }
