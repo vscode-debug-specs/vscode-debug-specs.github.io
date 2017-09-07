@@ -79,7 +79,7 @@ Codelens on test function shows run and debug test button.
 
 ![CodelensUnitTest6.png](CodelensUnitTest6.png)
 
-TODO: but it does not on my machine.
+But it sometimes doesn't start debug in my machine. Then, it restarts VSCode and retry.
 
 ### use launch.json
 
@@ -89,32 +89,32 @@ Menu: Python:Python module
 
 ```json
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Python Module",
-            "type": "python",
-            "request": "launch",
-            "stopOnEntry": true,
-            "pythonPath": "${config:python.pythonPath}",
-            "module": "unittest",
-            "args": [
-                // test package
-                // <test_file>
-                // <test_file>.<test_class>
-                // <test_file>.<test_class>.<test_method>
-                "test_bubble_sort.TestBubbleSort.test_bubble_sort"
-            ],
-            "cwd": "${workspaceRoot}",
-            "env": {},
-            "envFile": "${workspaceRoot}/.env",
-            "debugOptions": [
-                "WaitOnAbnormalExit",
-                "WaitOnNormalExit",
-                "RedirectOutput"
-            ]
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python Module",
+      "type": "python",
+      "request": "launch",
+      "stopOnEntry": true,
+      "pythonPath": "${config:python.pythonPath}",
+      "module": "unittest",
+      "args": [
+        // test package
+        // <test_file>
+        // <test_file>.<test_class>
+        // <test_file>.<test_class>.<test_method>
+        "test_bubble_sort.TestBubbleSort.test_bubble_sort"
+      ],
+      "cwd": "${workspaceRoot}",
+      "env": {},
+      "envFile": "${workspaceRoot}/.env",
+      "debugOptions": [
+        "WaitOnAbnormalExit",
+        "WaitOnNormalExit",
+        "RedirectOutput"
+      ]
+    }
+  ]
 }
 ```
 
@@ -122,27 +122,27 @@ Menu: Python:Python module
 
 Menu: Python: Python program with Integrated Terminal/Console
 
-```
+```json
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-			"name": "Integrated Terminal/Console",
-			"type": "python",
-			"request": "launch",
-			"stopOnEntry": true,
-			"pythonPath": "${config:python.pythonPath}",
-			"program": "bubble_sorter.py",
-			"cwd": "",
-			"console": "integratedTerminal",
-			"env": {},
-			"envFile": "${workspaceRoot}/.env",
-			"debugOptions": [
-				"WaitOnAbnormalExit",
-				"WaitOnNormalExit"
-			]
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Integrated Terminal/Console",
+      "type": "python",
+      "request": "launch",
+      "stopOnEntry": true,
+      "pythonPath": "${config:python.pythonPath}",
+      "program": "bubble_sorter.py",
+      "cwd": "",
+      "console": "integratedTerminal",
+      "env": {},
+      "envFile": "${workspaceRoot}/.env",
+      "debugOptions": [
+        "WaitOnAbnormalExit",
+        "WaitOnNormalExit"
+      ]
+    }
+  ]
 }
 ```
 
@@ -154,32 +154,32 @@ Menu: Python: Python program with Integrated Terminal/Console
 
 ```json
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Python",
-            "type": "python",
-            "request": "launch",
-            "stopOnEntry": true,
-            "pythonPath": "${config:python.pythonPath}",
-            //"program": "${file}",
-            "program": "bubble_sorter.py",
-            "args": [
-                "4",
-                "3",
-                "2",
-                "1"
-            ],
-            "cwd": "${workspaceRoot}",
-            "env": {},
-            "envFile": "${workspaceRoot}/.env",
-            "debugOptions": [
-                "WaitOnAbnormalExit",
-                "WaitOnNormalExit",
-                "RedirectOutput"
-            ]
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python",
+      "type": "python",
+      "request": "launch",
+      "stopOnEntry": true,
+      "pythonPath": "${config:python.pythonPath}",
+      //"program": "${file}",
+      "program": "bubble_sorter.py",
+      "args": [
+        "4",
+        "3",
+        "2",
+        "1"
+      ],
+      "cwd": "${workspaceRoot}",
+      "env": {},
+      "envFile": "${workspaceRoot}/.env",
+      "debugOptions": [
+        "WaitOnAbnormalExit",
+        "WaitOnNormalExit",
+        "RedirectOutput"
+      ]
+    }
+  ]
 }
 ```
 
