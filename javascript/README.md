@@ -212,6 +212,8 @@ node --inspect=5858 --inspect-brk ./bin/bubble_sort.js
 
 ## use typescript
 
+source [./typescript/bubble_sort.ts](./typescript/bubble_sort.ts)
+
 ### instraction
 
 ```
