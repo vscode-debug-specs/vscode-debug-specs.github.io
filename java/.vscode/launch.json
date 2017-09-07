@@ -7,10 +7,13 @@
 			"request": "launch",
 			"stopOnEntry": true,
 			"jdkPath": "${env:JAVA_HOME}/bin",
-			"cwd": "${workspaceRoot}/src/bubblesort/",
-			"startupClass": "bubblesort.BubbleSorter",
+			"cwd": "${workspaceRoot}/src/main/java",
+			"sourcePath": [
+				"${workspaceRoot}/src/main/java"
+			],
+			"startupClass": "com.j74th.vscodedebugbook.bubblesort.BubbleSorter",
 			"classpath": [
-				"${workspaceRoot}/class/"
+				"${workspaceRoot}/target/classes"
 			],
 			"args": [
 				"4",
@@ -20,16 +23,39 @@
 			]
 		},
 		{
-			"name": "Java Console App",
+			"name": "junit test",
 			"type": "java",
 			"request": "launch",
-			"stopOnEntry": true,
 			"jdkPath": "${env:JAVA_HOME}/bin",
-			"cwd": "${fileDirname}",
-			"startupClass": "${fileBasenameNoExtension}",
+			"sourcePath": [
+				"${workspaceRoot}/src/main/java",
+				"${workspaceRoot}/src/test/java"
+			],
+			"cwd": "${workspaceRoot}/src/test/java/com/j74th/vscodedebugbook/bubblesort",
+			"startupClass": "junit.textui.TestRunner",
+			"args": [
+				"com.j74th.vscodedebugbook.bubblesort.BubbleSortTest"
+			],
 			"classpath": [
-				".",
-				"${fileDirname}"
+				"${workspaceRoot}/target/classes",
+				"${workspaceRoot}/target/test-classes",
+				"${workspaceRoot}/junit-3.8.2.jar"
+			]
+		},
+		{
+			"name": "Java attach",
+			"type": "java",
+			"request": "attach",
+			"jdkPath": "${env:JAVA_HOME}/bin",
+			"cwd": "${workspaceRoot}/src/test/java/com/j74th/vscodedebugbook/bubblesort",
+			"startupClass": "${fileBasenameNoExtension}",
+			"remoteHost": "localhost",
+			"remotePort": 5005,
+			"sourcePath": [
+				"${workspaceRoot}/src/main/java"
+			],
+			"classpath": [
+				"${workspaceRoot}/target/classes"
 			],
 			"externalConsole": true
 		}
