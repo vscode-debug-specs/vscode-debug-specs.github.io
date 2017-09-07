@@ -1,12 +1,17 @@
 {
     "compilerOptions": {
+        // for node_modules dir
         "baseUrl": "./",
+        // .ts root directory
         "sourceRoot": "./typescript",
+        // must set output dir
         "outDir": "./typescriptout",
         "module": "commonjs",
         "target": "es2015",
         "noImplicitAny": false,
+        // must set for debug
         "sourceMap": true,
+        // must set for debug
         "mapRoot": "./",
         "moduleResolution": "node",
         "lib": [
@@ -14,6 +19,7 @@
         ]
 
     },
+    // set if you'll like to divide .ts and others
     "include": [
         "typescript/**/*"
     ]
