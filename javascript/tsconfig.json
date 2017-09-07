@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "baseUrl": "./",
-        "sourceRoot": "./",
+        "sourceRoot": "./typescript",
         "outDir": "./typescriptout",
         "module": "commonjs",
         "target": "es2015",
@@ -15,6 +15,6 @@
 
     },
     "include": [
-        "typescript/*"
+        "typescript/**/*"
     ]
 }
