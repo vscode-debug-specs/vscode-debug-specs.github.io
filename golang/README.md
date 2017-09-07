@@ -189,5 +189,18 @@ launch.json is same settings as remote debug;
 
 ## Google App Engine
 
-TODO
+1. get delveAppengine
+
+```sh
+go get github.com/dbenque/delveAppengine
+```
+
+2. launch app engine and delveAppengine
+
+```sh
+dev_appserver.py app.yaml
+sudo delveAppengine -port 2345
+```
+
+3. attach as remote
 
