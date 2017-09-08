@@ -8,5 +8,6 @@ browserify:
 webpack:
 	$(NODE_BIN)/webpack -d js/webpack_main.js html/js/webpack_main.js
 clean:
-	rm -rf html/js/*.js
+	rm -rf html/js/browserify_main.js
+	rm -rf html/js/webpack_main.js
 	rm -rf html/js/*.map

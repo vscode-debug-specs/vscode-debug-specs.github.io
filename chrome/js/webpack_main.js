@@ -1,6 +1,6 @@
-import { bubbleSort } from "./browserify_bubble_sort";
+import { bubbleSort } from "./webpack_bubble_sort";
 
-document.querySelector("#browserify").addEventListener("click", (e) => {
+document.querySelector("#webpack").addEventListener("click", (e) => {
 	const line = document.querySelector("#input").value;
 	const list = [];
 	line.split(" ").forEach((item) => {
