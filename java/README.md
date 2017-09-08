@@ -20,7 +20,7 @@
 
 * OS
 	* ✅ MacOS
-	*  Windows
+	* ✅ Windows
 	*  Linux
 * Break Point
 	* ✅ break point
@@ -82,6 +82,7 @@
 ```
 
 * must set "jdkPath", "sourcePath" and "classpath" accurately
+* JAVA_HOME setting is also in user setting
 
 ## executable file debug
 
