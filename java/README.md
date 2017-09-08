@@ -129,24 +129,21 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": "junit test",
+			"name": "Java attach",
 			"type": "java",
-			"request": "launch",
+			"request": "attach",
 			"jdkPath": "${env:JAVA_HOME}/bin",
-			"sourcePath": [
-				"${workspaceRoot}/src/main/java",
-				"${workspaceRoot}/src/test/java"
-			],
 			"cwd": "${workspaceRoot}/src/test/java/com/j74th/vscodedebugbook/bubblesort",
-			"startupClass": "junit.textui.TestRunner",
-			"args": [
-				"com.j74th.vscodedebugbook.bubblesort.BubbleSortTest"
+			"startupClass": "${fileBasenameNoExtension}",
+			"remoteHost": "localhost",
+			"remotePort": 5005,
+			"sourcePath": [
+				"${workspaceRoot}/src/main/java"
 			],
 			"classpath": [
-				"${workspaceRoot}/target/classes",
-				"${workspaceRoot}/target/test-classes",
-				"${workspaceRoot}/junit-3.8.2.jar"
-			]
+				"${workspaceRoot}/target/classes"
+			],
+			"externalConsole": true
 		}
 	]
 }
