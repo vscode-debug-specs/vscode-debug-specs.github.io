@@ -1,5 +1,12 @@
 NODE_BIN=./node_modules/.bin
 launch:
 	$(NODE_BIN)/http-server html/
+launch-webpack:
+	$(NODE_BIN)/webpack-dev-server -d --progress --colors --context html js/webpack_main.js
 browserify:
-	$(NODE_BIN)/browserify --debug js/main.js -o html/js/browserify_main.js -t [ babelify --presets [ es2015 ] --sourceMapsAbsolute  ]
+	$(NODE_BIN)/browserify --debug js/browserify_main.js -o html/js/browserify_main.js -t [ babelify --presets [ es2015 ] --sourceMapsAbsolute  ]
+webpack:
+	$(NODE_BIN)/webpack -d js/webpack_main.js html/js/webpack_main.js
+clean:
+	rm -rf html/js/*.js
+	rm -rf html/js/*.map
