@@ -2,7 +2,7 @@ NODE_BIN=./node_modules/.bin
 launch:
 	$(NODE_BIN)/http-server html/
 launch-webpack:
-	$(NODE_BIN)/webpack-dev-server -d --progress --colors --context html js/webpack_main.js
+	$(NODE_BIN)/webpack-dev-server --debug --devtool inline-source-map --output-pathinfo --progress --colors --context html js/webpack_main.js
 browserify:
 	$(NODE_BIN)/browserify --debug js/browserify_main.js -o html/js/browserify_main.js -t [ babelify --presets [ es2015 ] --sourceMapsAbsolute  ]
 webpack:
