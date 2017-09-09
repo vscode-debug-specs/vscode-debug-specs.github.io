@@ -58,6 +58,7 @@
             "browse": {
                 "path": [
                     "C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include/*",
+                    "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\VC\\Tools\\MSVC\\14.11.25503\\include\\*",
                     "${workspaceRoot}"
                 ],
                 "limitSymbolsToIncludedHeaders": true,

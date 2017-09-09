@@ -204,3 +204,35 @@ gcc bubble_sort.c main.c -g -O0 -W -Wall
 
 2. Start "Launch Program"
 
+## Windows VC
+
+### launch.json
+
+```json
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "(Windows) Launch",
+			"type": "cppvsdbg",
+			"request": "launch",
+			"program": "${workspaceRoot}/main.exe",
+			"args": ["4","3","2","1" ],
+			"stopAtEntry": false,
+			"cwd": "${workspaceRoot}",
+			"environment": [],
+			"externalConsole": true
+		}
+  ]
+}
+```
+
+### how-to
+
+1. Start Developer Command Prompt and build with /ZI option
+
+```cmd
+cl main.c bubble_sort.c /ZI
+```
+
+2. Start debug.
