@@ -105,7 +105,8 @@ Need to add some option when you launch Chrome browser.
 
 ```
 # Windows
-(TODO)chrome.exe --remote-debugging-port=9222
+"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222
+%USERPROFILE%AppData\Local\Google\Chrome\Application\chrome.exe --remote-debugging-port=9222
 # Mac
 /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222
 # Linux
