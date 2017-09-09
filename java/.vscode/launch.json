@@ -6,8 +6,8 @@
 			"type": "java",
 			"request": "launch",
 			"stopOnEntry": true,
+			"cwd":"${fileDirname}",
 			"jdkPath": "${env:JAVA_HOME}/bin",
-			"cwd": "${workspaceRoot}/src/main/java",
 			"sourcePath": [
 				"${workspaceRoot}/src/main/java"
 			],
@@ -20,7 +20,16 @@
 				"3",
 				"2",
 				"1"
-			]
+			],
+			"windows":{
+				"jdkPath": "${env:JAVA_HOME}\\bin",
+				"sourcePath": [
+					"${workspaceRoot}\\src\\main\\java"
+				],
+				"classpath": [
+					"${workspaceRoot}\\target\\classes"
+				]
+			}
 		},
 		{
 			"name": "junit test",
