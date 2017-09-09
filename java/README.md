@@ -20,8 +20,8 @@
 
 * OS
 	* ✅ MacOS
-	* ✅ Windows
-	*  Linux
+	*  Windows
+	* ✅ Linux
 * Break Point
 	* ✅ break point
 	* ✅ condition break point
