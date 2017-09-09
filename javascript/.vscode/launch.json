@@ -25,7 +25,7 @@
 				"4",
 				"3",
 				"2",
-				"aa"
+				"1"
 			],
 			"internalConsoleOptions": "openOnSessionStart"
 		},
@@ -55,6 +55,19 @@
 				"${workspaceRoot}/mocha"
 				// "-g",
 				// "bubble_sort"
+			],
+			"internalConsoleOptions": "openOnSessionStart"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Launch Program (typescript)",
+			"program": "${workspaceRoot}/typescriptout/bubble_sorter.js",
+			"args": [
+				"4",
+				"3",
+				"2",
+				"1"
 			],
 			"internalConsoleOptions": "openOnSessionStart"
 		}

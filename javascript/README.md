@@ -1,10 +1,13 @@
-# Javascript(Nodejs)
+<!-- vim: ts=2 sw=2 expandtab
+-->
+# Javascript(NodeJS) and AltJS(typescript)
 
 ## Summary
 
 * [Basic](#basic), [Spec](#spec)
-* Unit Test: [mocha](#mocha), [jasmine](#jasmine)
-* [executable file debug](executable file debug)
+* Unit Test: [mocha](#mocha-unit-test-framework), [jasmine](#jasmine)
+* [executable file debug](#executable-file-debug)
+* [use typescript](#use-typescript)
 
 ## Basic
 
@@ -18,7 +21,7 @@
 * OS
 	* ✅ MacOS
 	* ✅ Windows
-	*  Linux
+	* ✅ Linux
 * Break Point
 	* ✅ break point
 	* ✅ condition break point
@@ -46,7 +49,7 @@
 
 ## Instraction
 
-no instraction.
+no other instraction.
 
 ## [mocha](https://mochajs.org/) (unit test framework)
 
@@ -206,3 +209,73 @@ node --inspect=5858 --inspect-brk ./bin/bubble_sort.js
 ```
 
 2. start debug
+
+## use typescript
+
+source [./typescript/bubble_sort.ts](./typescript/bubble_sort.ts)
+
+### instraction
+
+```
+npm install typescript @types/node
+tsc --init
+```
+
+edit [./tsconfig.json.](./tsconfig.json).
+
+```json
+{
+    "compilerOptions": {
+        // for node_modules dir
+        "baseUrl": "./",
+        // .ts root directory
+        "sourceRoot": "./typescript",
+        // must set output dir
+        "outDir": "./typescriptout",
+        "module": "commonjs",
+        "target": "es2015",
+        "noImplicitAny": false,
+        // must set for debug
+        "sourceMap": true,
+        // must set for debug
+        "mapRoot": "./",
+        "moduleResolution": "node",
+        "lib": [
+            "es2015"
+        ]
+
+    },
+    // set if you'll like to divide .ts and others
+    "include": [
+        "typescript/**/*"
+    ]
+}
+```
+
+### launch.json
+
+```json
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Launch Program (typescript)",
+			"program": "${workspaceRoot}/typescriptout/bubble_sorter.js",
+			"args": [
+				"4",
+				"3",
+				"2",
+				"1"
+			],
+			"internalConsoleOptions": "openOnSessionStart"
+		}
+	]
+}
+```
+
+### how-to
+
+1. build .ts by `tsc`.
+2. launch debug!

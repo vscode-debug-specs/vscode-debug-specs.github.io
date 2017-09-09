@@ -1,5 +1,6 @@
-<!-- vim: ts=2 sw=2 expandtab : -->
-# Javascript(Nodejs)
+<!-- vim: ts=2 sw=2 expandtab
+-->
+# C/C++
 
 ## Summary
 
@@ -19,7 +20,7 @@
 * OS
   * ✅ MacOS
   *  Windows
-  *  Linux
+  * ✅ Linux
 * Break Point
   * ✅ break point
   * ✅ condition break point
@@ -195,11 +196,11 @@ Enter command: R
 
 ### how-to
 
-1. build with `-g -O0` and `-lcunit` option 
+1. build with `-g -O0` option
 
 ```
 gcc bubble_sort.c main.c -g -O0 -W -Wall
 ```
 
-2. Start "Launch Program(lldb)"
+2. Start "Launch Program"
 
