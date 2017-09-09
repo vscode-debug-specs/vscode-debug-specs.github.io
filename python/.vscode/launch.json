@@ -2,7 +2,7 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": "Python Module",
+			"name": "Python Module test",
 			"type": "python",
 			"request": "launch",
 			"stopOnEntry": true,

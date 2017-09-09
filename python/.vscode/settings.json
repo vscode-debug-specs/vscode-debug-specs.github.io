@@ -1,5 +1,5 @@
 {
-	"python.pythonPath": "/Users/nnyn/.pyenv/versions/3.6.1/bin/python",
+	"python.pythonPath": "C:/Users/atsushi/AppData/Local/Programs/Python/Python36-32/python.exe",
 	"python.unitTest.unittestArgs": [
 		"-v",
 		"-s",
