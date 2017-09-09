@@ -5,12 +5,18 @@
 			"type": "chrome",
 			"request": "launch",
 			"sourceMapPathOverrides": {
-				// "webpack://./js/*": "${webRoot}/js/*",
-				"webpack://./js/*": "js/*"
+				"webpack:///./js/*": "${webRoot}/js/*"
 			},
 			"sourceMaps": true,
 			"name": "Launch Chrome against localhost",
 			"url": "http://localhost:8080",
+			"webRoot": "${workspaceRoot}/html"
+		},
+		{
+			"type": "chrome",
+			"request": "attach",
+			"name": "Attach to Chrome",
+			"port": 9222,
 			"webRoot": "${workspaceRoot}/html"
 		}
 	]
