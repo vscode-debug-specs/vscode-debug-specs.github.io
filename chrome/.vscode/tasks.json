@@ -1,0 +1,57 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "taskName": "launch web server",
+            "type": "shell",
+            "isBackground": true,
+            "windows": {
+                "command": ".\\node_modules\\.bin\\http-server"
+            },
+            "command": "./node_modules/.bin/http-server",
+            "args": [
+                "html"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "taskName": "build browserify",
+            "type": "shell",
+            "windows": {
+                "command": ".\\node_modules\\.bin\\browserify"
+            },
+            "command": "./node_modules/.bin/browserify",
+            "args": [
+                "--debug",
+                "js/browserify_main.js",
+                "-o",
+                "html/js/browserify_main.js",
+                "-t",
+                "[",
+                "babelify",
+                "--presets",
+                "[","es2015","]",
+                "--sourceMapsAbsolute",
+                "",
+                "]"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "taskName": "build webpack",
+            "type": "shell",
+            "windows": {
+                "command": ".\\node_modules\\.bin\\webpack"
+            },
+            "command": "./node_modules/.bin/webpack",
+            "args": [
+                "-d",
+                "js/webpack_main.js",
+                "html/js/webpack_main.js"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}
