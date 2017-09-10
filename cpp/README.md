@@ -199,13 +199,13 @@ Enter command: R
 
 ### how-to
 
-1. build with `-g -O0` option
+ 1. build with `-g -O0` option
 
 ```
 gcc bubble_sort.c main.c -g -O0 -W -Wall
 ```
 
-2. Start "Launch Program"
+ 2. Start "Launch Program"
 
 ## Windows VC
 
@@ -232,10 +232,10 @@ gcc bubble_sort.c main.c -g -O0 -W -Wall
 
 ### how-to
 
-1. Start Developer Command Prompt and build with /ZI option
+ 1. Start Developer Command Prompt and build with /ZI option
 
 ```cmd
 cl main.c bubble_sort.c /ZI
 ```
 
-2. Start debug.
+ 2. Start debug.
