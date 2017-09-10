@@ -45,7 +45,7 @@
 * Type of Execution
 	* ✅ debug unit test
 	* ✅ debug executable package
-	*  remote debugging
+	* ✅ remote debugging
 
 ## Instraction
 
