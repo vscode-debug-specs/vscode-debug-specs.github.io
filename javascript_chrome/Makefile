@@ -8,8 +8,9 @@ browserify:
 webpack:
 	$(NODE_BIN)/webpack -d js/webpack_main.js html/js/webpack_main.webpack.js
 clean:
-	rm -rf html/js/browserify_main.js
-	rm -rf html/js/webpack_main.js
+	rm -rf html/js/*.browserify.js
+	rm -rf html/js/*.webpack.js
 	rm -rf html/js/*.map
 typescript:
 	$(NODE_BIN)/webpack -d js/typescript_main.ts html/js/typescript_main.webpack.js
+build: browserify webpack typescript
