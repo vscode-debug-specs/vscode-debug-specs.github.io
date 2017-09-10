@@ -5,8 +5,7 @@
 			"type": "chrome",
 			"request": "launch",
 			"sourceMapPathOverrides": {
-				// "webpack:///./js/*": "${webRoot}/js/*"
-				"webpack:///./js/*": "./html/js/*"
+			"webpack:///./js/*": "${workspaceRoot}/js/*"
 			},
 			"sourceMaps": true,
 			"name": "Launch Chrome against localhost",
