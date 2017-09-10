@@ -1,2 +1,2 @@
-browserify_main.js
-webpack_main.js
+*.browserify.js
+*.webpack.js

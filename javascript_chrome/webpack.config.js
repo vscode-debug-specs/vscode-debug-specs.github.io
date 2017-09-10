@@ -1,7 +1,15 @@
-const config = {
+module.exports = {
 	devtool: "source-map",
-	entry: __dirname + "/app/App.js",
+	resolve: {
+		extensions: [".ts", ".js"]
+	},
+	module: {
+		rules: [
+			{ test: /\.ts$/, loader: "awesome-typescript-loader" },
+			{ enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
+		]
+	},
 	devServer: {
 		contentBase: "html/"
-	}
-}
+	},
+};
