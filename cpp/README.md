@@ -4,16 +4,17 @@
 
 ## Summary
 
-* [Basic](#basic), [Spec](#spec)
+* [Basic](#basic)
+* [Spec](#spec)
 * Unit Test: [cunit](#cunit)
-* [executable file debug](executable-file-debug)
+* [executable file debug](#executable-file-debug)
 
 ## Basic
 
 * [GNU GCC](https://gcc.gnu.org/)
 * Extension: [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
 * Debugger: lldb(MacOS), gdb(Linux)
-* target module code: [bubble_sort.c](bubble_sort.c)
+* module code: [bubble_sort.c](https://github.com/74th/vscode-debug-specs/blob/master/cpp/bubble_sort.c)
 
 ## Spec
 
@@ -51,6 +52,8 @@
 no instraction.
 
 ## cunit
+
+* test code: [bubble_sort_cunit.c](https://github.com/74th/vscode-debug-specs/blob/master/cpp/bubble_sort_cunit.c)
 
 ### MacOS instaraction
 
@@ -113,7 +116,6 @@ menu: C/C++: Launch
 
 ### how-to
 
-
 1. build cunit
 
 ```
@@ -139,7 +141,7 @@ Enter command: R
 
 ## executable file debug
 
-* Program: [main.c](main.c)
+* Program: [main.c](https://github.com/74th/vscode-debug-specs/blob/master/cpp/main.c)
 
 ### launch.json
 

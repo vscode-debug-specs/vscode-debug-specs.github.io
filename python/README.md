@@ -4,14 +4,18 @@
 
 ## Summary
 
-[Basic](#basic),[Spec](#spec),[Instraction](#instraction)
-[Google App Engine](#google-app-engine)
+* [Basic](#basic)
+* [Spec](#spec)
+* [Instraction](#instraction)
+* [unit test](#unit-test)
+* [executable file debug](#executable-file-debug)
 
 ## Basic
 
 * [Python.org](https://www.python.org/)
 * Extension: [Python](https://marketplace.visualstudio.com/items?itemName=donjayamanne.python)
 * Debugger: Python
+* module code: [bubble_sort.py](https://github.com/74th/vscode-debug-specs/blob/master/python/bubble_sort.py)
 
 ## Spec
 
@@ -58,6 +62,8 @@ If you want to pyenv or other environment tools, select your environment with be
 ![SelectWorkspaceInterpreter2.png](SelectWorkspaceInterpreter2.png)
 
 ## unit test
+
+* test code: [test_bubble_sort.py](https://github.com/74th/vscode-debug-specs/blob/master/python/test_bubble_sort.py)
 
 ### inline
 
@@ -148,7 +154,9 @@ Menu: Python: Python program with Integrated Terminal/Console
 
 ## executable file debug
 
-![DebugPython](DebugPython.png)
+executable file: [bubble_sorter.py](https://github.com/74th/vscode-debug-specs/blob/master/python/bubble_sorter.py)
+
+note: ![DebugPython](DebugPython.png)
 
 ### launch.json
 

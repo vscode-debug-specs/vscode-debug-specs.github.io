@@ -2,9 +2,20 @@
 -->
 # C# (.Net Core)
 
+## Summary
+
+* [Basic](#Basic)
+* [Spec](#Spec)
+* [install](#install)
+* [XUnit Test](#XUnit-Test)
+* [Console Program](#Console-Program)
+
+## Basic
+
 * [Welcome to .NET Core!](https://dotnet.github.io/)
 * Extension: [C#](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
 * Debugger: .NET Core function
+* module code: [BubbleSort/BubbleSorter.cs](https://github.com/74th/vscode-debug-specs/blob/master/csharp/BubbleSort/BubbleSorter.cs)
 
 ## Spec
 
@@ -44,6 +55,8 @@
 
 ## XUnit Test
 
+* test code: [BubbleSortTest/TestSort.cs](https://github.com/74th/vscode-debug-specs/blob/master/csharp/BubbleSortTest/TestSort.cs)
+
 ### Inline
 
 1. open xunit code.
@@ -56,6 +69,8 @@
 ![XUnit](xunit.png)
 
 ## Console Program
+
+* Console Program code: [BubbleSorter/Program.cs](https://github.com/74th/vscode-debug-specs/blob/master/csharp/BubbleSorter/Program.cs)
 
 ### way need to open project dir
 

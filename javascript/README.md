@@ -4,8 +4,11 @@
 
 ## Summary
 
-* [Basic](#basic), [Spec](#spec)
-* Unit Test: [mocha](#mocha-unit-test-framework), [jasmine](#jasmine)
+* [Basic](#basic)
+* [Spec](#spec)
+* Unit Test: 
+  * [mocha](#mocha-unit-test-framework)
+  * [jasmine](#jasmine)
 * [executable file debug](#executable-file-debug)
 * [use typescript](#use-typescript)
 
@@ -14,7 +17,7 @@
 * [nodejs](https://nodejs.org/)
 * Extension: build-in
 * Debugger: node
-* target module code: [bubble_sort.js](bubble_sort.js)
+* module code: [bubble_sort.js](https://github.com/74th/vscode-debug-specs/blob/master/javascript/bubble_sort.js)
 
 ## Spec
 
@@ -59,7 +62,7 @@ npm install --save-dev mocha assert
 
 ### launch.json
 
-* test code: [mocha/bubble_sort.test.js](mocha/bubble_sort.test.js)
+* test code: [mocha/bubble_sort.test.js](https://github.com/74th/vscode-debug-specs/blob/master/javascript/mocha/bubble_sort.test.js)
 * menu: "Node.js: Mocha Tests"
 
 ```json
@@ -95,7 +98,7 @@ npm install --save-dev jasmine-node assert
 
 ### launch.json
 
-* test code: [jasmine/bubble_sort.spec.js](jasmine/bubble_sort.spec.js)
+* test code: [jasmine/bubble_sort.spec.js](https://github.com/74th/vscode-debug-specs/blob/master/javascript/jasmine/bubble_sort.spec.js)
 * menu: "Node.js: Launch Program"
 
 ```json
@@ -124,7 +127,7 @@ npm install --save-dev jasmine-node assert
 
 ## executable file debug
 
-* Program: [bin/bubble_sort.js](bin/bubble_sort.js)
+* Program: [bin/bubble_sort.js](https://github.com/74th/vscode-debug-specs/blob/master/javascript/bin/bubble_sort.js)
 
 ### launch.json
 
@@ -212,7 +215,7 @@ node --inspect=5858 --inspect-brk ./bin/bubble_sort.js
 
 ## use typescript
 
-source [./typescript/bubble_sort.ts](./typescript/bubble_sort.ts)
+source [./typescript/bubble_sort.ts](https://github.com/74th/vscode-debug-specs/blob/master/javascript/typescript/bubble_sort.ts)
 
 ### instraction
 

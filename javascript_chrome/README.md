@@ -4,7 +4,8 @@
 
 ## Summary
 
-* [Basic](#basic), [Spec](#spec)
+* [Basic](#basic)
+* [Spec](#spec)
 * [launch Chrome browser](#launch-Chrome-browser)
 * [attach Chrome browser](#attach-Chrome-browser)
 * [using browserify](#using-browserify)
@@ -62,7 +63,7 @@
 npm install --save-dev mocha assert
 ```
 
-* test target: [html/js/normal_main.js](html/js/normal_main.js)
+* module code: [html/js/normal_main.js](https://github.com/74th/vscode-debug-specs/blob/master/javascript_chrome/html/js/normal_main.js)
 * menu: "Chrome launch"
 
 ```json
@@ -131,6 +132,9 @@ And start debug.
 
 ## using broserify
 
+* module code: [js/browserify_bubble_sort.js](https://github.com/74th/vscode-debug-specs/blob/master/javascript_chrome/js/browserify_bubble_sort.js), [js/browserify_main.js](https://github.com/74th/vscode-debug-specs/blob/master/javascript_chrome/js/browserify_main.js)
+
+
 If you use browserify, you can use baberify's --sourceMapsAbsolute for useful. But do not use at production.
 
 ### 1. install
@@ -153,11 +157,11 @@ http-server html
 
 ### 4. start debug
 
-```
-webpack debug
-```
+start debug
 
 ## using webpack
+
+* module code: [js/webpack_bubble_sort.js](https://github.com/74th/vscode-debug-specs/blob/master/javascript_chrome/js/webpack_bubble_sort.js), [js/webpack_main.js](https://github.com/74th/vscode-debug-specs/blob/master/javascript_chrome/js/webpack_main.js)
 
 ### 1. install
 
@@ -200,7 +204,7 @@ launch debugger
 
 ## using typescript and webpack
 
-target code: [js/typescript_main.ts](js/typescript_main.ts)
+target code: [js/typescript_bubble_sort.ts](https://github.com/74th/vscode-debug-specs/blob/master/javascript_chrome/js/typescript_bubble_sort.ts), [js/typescript_main.ts](https://github.com/74th/vscode-debug-specs/blob/master/javascript_chrome/js/typescript_main.ts)
 
 use `awesome-typescript-loader` and `source-map-loader` module.
 

@@ -14,7 +14,7 @@
 * [Java](https://www.java.com/)
 * Extension:[Java Debugger](https://marketplace.visualstudio.com/items?itemName=donjayamanne.javadebugger)
 * Debugger: jdb
-* target module code: [src/main/java/com/j74th/vscodedebugbook/bubblesort/BubbleSort.java](src/main/java/com/j74th/vscodedebugbook/bubblesort/BubbleSort.java)
+* module code: [src/main/java/com/j74th/vscodedebugbook/bubblesort/BubbleSort.java](src/main/java/com/j74th/vscodedebugbook/bubblesort/BubbleSort.java)
 
 ## Spec
 

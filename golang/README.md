@@ -4,15 +4,21 @@
 
 ## Summary
 
-[Basic](#basic), [Spec](#spec), [Instraction](#instraction)
-
-[unit test](#unit-test), [executable file debug](#executable-file-debug), [remote debug](#remote-debug), [Running process](#running-process), [Google App Engine](#google-app-engine)
+* [Basic](#basic)
+* [Spec](#spec)
+* [Instraction](#instraction)
+* [unit test](#unit-test)
+* [executable file debug](#executable-file-debug)
+* [remote debug](#remote-debug)
+* [Running process](#running-process)
+* [Google App Engine](#google-app-engine)
 
 ## Basic
 
 * [The Go Programming Language](https://golang.org/)
 * Extension: [Go](https://marketplace.visualstudio.com/items?itemName=lukehoban.Go)
 * Debugger: [delve](https://github.com/derekparker/delve)
+* module code: [bubbleSort.go](https://github.com/74th/vscode-debug-specs/blob/master/golang/bubbleSort.go)
 
 ## Spec
 
@@ -73,7 +79,7 @@
 
 ## unit test
 
-source : [module_test.go](module_test.go)
+source : [bubbleSort_test.go](https://github.com/74th/vscode-debug-specs/blob/master/golang/bubbleSort_test.go)
 
 ### inline
 
@@ -109,7 +115,7 @@ menu:`Go: Launch test function`
 
 ## executable file debug
 
-souce: [cmd/bubbleSorter/main.go](cmd/bubbleSorter/main.go)
+souce: [cmd/bubbleSorter/main.go](https://github.com/74th/vscode-debug-specs/blob/master/golang/cmd/bubbleSorter/bubbleSorter.go)
 
 ### launch.json
 
@@ -134,7 +140,7 @@ menu:`Go: Launch package`
 
 ## remote debug
 
-souce: [cmd/bubbleSorter/main.go](cmd/bubbleSorter/main.go)
+souce: [cmd/bubbleSorter/main.go](https://github.com/74th/vscode-debug-specs/blob/master/golang/cmd/bubbleSorter/bubbleSorter.go)
 
 ### prepare
 
