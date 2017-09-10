@@ -27,7 +27,7 @@
                 "--debug",
                 "js/browserify_main.js",
                 "-o",
-                "html/js/browserify_main.js",
+                "html/js/browserify_main.browserify.js",
                 "-t",
                 "[",
                 "babelify",
@@ -37,7 +37,11 @@
                 "",
                 "]"
             ],
-            "problemMatcher": []
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         },
         {
             "taskName": "build webpack",
@@ -49,9 +53,31 @@
             "args": [
                 "-d",
                 "js/webpack_main.js",
-                "html/js/webpack_main.js"
+                "html/js/webpack_main.webpack.js"
             ],
-            "problemMatcher": []
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "taskName": "build typescript",
+            "type": "shell",
+            "windows": {
+                "command": ".\\node_modules\\.bin\\webpack"
+            },
+            "command": "./node_modules/.bin/webpack",
+            "args": [
+                "-d",
+                "js/typescript_main.ts",
+                "html/js/typescript_main.webpack.js"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ]
 }
