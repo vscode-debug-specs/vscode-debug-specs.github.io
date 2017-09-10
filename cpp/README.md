@@ -116,14 +116,15 @@ menu: C/C++: Launch
 
 ### how-to
 
-1. build cunit
+ 1. build cunit
 
 ```
 gcc bubble_sort.c bubble_sort_cunit.c -g -O0 -W -Wall -lcunit
 ```
 
-2. Start "launch cunit"
-3. new window is opened, and Run cunit
+ 2. Start "launch cunit"
+
+ 3. new window is opened, and Run cunit
 
 ```
 ./a.out
