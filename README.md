@@ -24,5 +24,10 @@
 |TODO [OCaml](./ocaml)|OCaml|||||
 |TODO [Erlang](./erlang)|erlang|||||
 
-main site: https://74th.github.io/vscode-debug-specs/
+main site: [https://74th.github.io/vscode-debug-specs/](https://74th.github.io/vscode-debug-specs/)
+
+All codes are under MIT License.
+
+If you publish all pages, please contact site@j74th.com or twitter:@74th.
+If you use a part of the site, you can use under MIT License.
 
