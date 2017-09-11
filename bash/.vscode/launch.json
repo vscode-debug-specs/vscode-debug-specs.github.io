@@ -1,0 +1,21 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Bash-Debug (hardcoded script name)",
+			"type": "bashdb",
+			"request": "launch",
+			"scriptPath": "${workspaceRoot}/bubbleSort.sh",
+			"commandLineArguments": "4 3 2 1",
+			"windows": {
+				"bashPath": "C:\\Windows\\sysnative\\bash.exe"
+			},
+			"linux": {
+				"bashPath": "bash"
+			},
+			"osx": {
+				"bashPath": "bash"
+			}
+		}
+	]
+}
