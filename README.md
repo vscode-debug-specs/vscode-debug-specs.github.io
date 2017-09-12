@@ -28,4 +28,4 @@ main site: [https://74th.github.io/vscode-debug-specs/](https://74th.github.io/v
 
 If you use a part of the site, you can use as [Public Domain](https://en.wikipedia.org/wiki/Public_domain).
 
-I you publish all pages, please contact site@j74th.com or twitter:@74th.
+If you want to publish all pages, I'm grad to contact me site@j74th.com or twitter:@74th.
