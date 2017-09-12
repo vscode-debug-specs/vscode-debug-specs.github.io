@@ -1,6 +1,6 @@
 <!-- vim: ts=2 sw=2 expandtab
 -->
-# ServerSide JavaScript(NodeJS) and TypeScript
+# How to Debug ServerSide JavaScript(NodeJS) and TypeScript with VSCode
 
 ## Summary
 

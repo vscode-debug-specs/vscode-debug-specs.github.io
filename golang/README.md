@@ -1,6 +1,6 @@
 <!-- vim: ts=2 sw=2 expandtab
 -->
-# Golang
+# How to Debug Golang with VSCode 
 
 ## Summary
 

@@ -1,6 +1,6 @@
 <!-- vim: ts=2 sw=2 expandtab
 -->
-# C# (.Net Core)
+# How to Debug C# (.Net Core) with VSCode
 
 ## Summary
 

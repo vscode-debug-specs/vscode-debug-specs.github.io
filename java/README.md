@@ -1,6 +1,6 @@
 <!-- vim: ts=2 sw=2 expandtab
 -->
-# Java
+# How to Debug Java with VSCode
 
 ## Summary
 

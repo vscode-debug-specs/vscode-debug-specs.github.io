@@ -1,6 +1,6 @@
 <!-- vim: ts=2 sw=2 expandtab
 -->
-# FrontEnd JavaScript(Chrome) and TypeScript
+# How to Debug FrontEnd JavaScript(Chrome) and TypeScript with VSCode
 
 ## Summary
 

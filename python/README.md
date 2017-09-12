@@ -1,6 +1,6 @@
 <!-- vim: ts=2 sw=2 expandtab
 -->
-# Python
+# How to Debug Python with VSCode
 
 ## Summary
 
