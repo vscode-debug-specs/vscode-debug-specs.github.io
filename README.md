@@ -7,8 +7,8 @@
 |[Golang](./golang)|Go|delve|✅|✅|✅|
 |[Python](./python)|Python|pdb|✅|✅|✅|
 |[C#(dotnetcore)](./csharp)|C#|.NET Core|✅|✅|✅|
-|[JavaScript and TypeScript(nodejs)](./javascript)|buildin|nodejs|✅|✅|✅|
-|[JavaScript and TypeScript(Chrome)](./javascript_chrome)|Debugger for chrome|Chrome|✅|✅|✅|
+|[ServerSide JavaScript(NodeJS) and TypeScript](./javascript)|buildin|nodejs|✅|✅|✅|
+|[FrontEnd JavaScript(Chrome) and TypeScript](./javascript_chrome)|Debugger for chrome|Chrome|✅|✅|✅|
 |[C/C++](./cpp)|C/C++|lldb,gdb|✅|✅|✅|
 |[Java](./java)|Java debugger||✅|HELP|✅|
 |[Bash](./bash)|Bash Debug|bashdb|✅||✅|

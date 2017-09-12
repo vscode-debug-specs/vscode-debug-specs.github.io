@@ -1,6 +1,6 @@
 <!-- vim: ts=2 sw=2 expandtab
 -->
-# Javascript(NodeJS) and AltJS(typescript)
+# ServerSide JavaScript(NodeJS) and TypeScript
 
 ## Summary
 
