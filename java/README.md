@@ -45,7 +45,7 @@
 * Type of Execution
 	* ✅ debug unit test
 	* ✅ debug executable package
-	* ✅ remote debugging
+	* ❌ remote debugging: will support soon
 
 ## unit test (Junit)
 
@@ -121,7 +121,7 @@
 
 * must set "jdkPath", "sourcePath" and "classpath" accurately
 
-## attach running and remote process
+## attach running
 
 ### launch.json
 
@@ -160,3 +160,7 @@ java -cp target/classes -Xdebug -Xrunjdwp:transport=dt_socket,server=y,address=5
 ```
 
 2. start debug
+
+## remote process
+
+will support soon
