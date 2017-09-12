@@ -26,8 +26,6 @@
 
 main site: [https://74th.github.io/vscode-debug-specs/](https://74th.github.io/vscode-debug-specs/)
 
-All codes are under MIT License.
+If you use a part of the site, you can use as [Public Domain](https://en.wikipedia.org/wiki/Public_domain).
 
-If you publish all pages, please contact site@j74th.com or twitter:@74th.
-If you use a part of the site, you can use under MIT License.
-
+I you publish all pages, please contact site@j74th.com or twitter:@74th.
