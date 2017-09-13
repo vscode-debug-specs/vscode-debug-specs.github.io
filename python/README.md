@@ -1,4 +1,5 @@
 ---
+layout: default
 title: How to Debug Python with VSCode
 permalink: /python/
 ---
