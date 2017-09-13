@@ -7,7 +7,48 @@ permalink: /php/
 ## Summary
 
 * [Basic](#basic), [Spec](#spec)
+* [instraction](#instraction)
 * [attach running and remote process](#attach-running-and-remote-process)
+
+## basic
+
+* [PHP](https://www.php.net/)
+* Extension: 
+* Debugger: php-xdebug
+* module code: [bubble_sort.php](bubble_sort.php)
+
+## spec
+
+* OS
+	* ✅ MacOS
+	*  Windows
+	*  Linux
+* Break Point
+	* ✅ break point
+	* ✅ condition break point
+	* ✅ function breakpoint
+	* ✅ Notice, Warning, Error
+	* ✅ Exception
+* Step Execution
+	* ✅ Step Over
+	* ✅ Step Into
+	* ✅ Step Out
+	* ✅ Continue
+	* ❌ Step Back
+	* ❌ Move To
+	* ❌ Pause
+* Variables
+	* ✅ variables views
+	* ✅ watch variables
+* Call Stack
+	* ✅ call stack
+* Evaluation
+	* ✅ eval expression to show variables
+	* ✅ eval expression to change variables
+* Type of Execution
+	* ✅ debug unit test
+	* ✅ debug executable package
+	* ❌ remote debugging: will support soon
 
 ## instraction
 
@@ -51,8 +92,9 @@ http {
 			#fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;
 			fastcgi_param  SCRIPT_FILENAME  $document_root/$fastcgi_script_name;
 			include        fastcgi_params;
-        }
+		}
 	}
+}
 ```
 
 #### 3. enable php-xdbug
@@ -104,4 +146,44 @@ nginx -s stop
 launchctl unload -w /usr/local/opt/php56/homebrew.mxcl.php56.plist
 ```
 
-## 
+## attach running and remote process
+
+enable php-xdebug below instraction.
+
+### launch.json
+
+select debug php, this setting will be created.
+
+```json
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Listen for XDebug",
+			"type": "php",
+			"request": "launch",
+			"port": 9000
+		}
+	]
+}
+```
+
+## execute program
+
+select debug php, this setting will be created.
+
+```json
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launch currently open script",
+			"type": "php",
+			"request": "launch",
+			"program": "${file}",
+			"cwd": "${fileDirname}",
+			"port": 9000
+		}
+	]
+}
+```
