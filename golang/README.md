@@ -1,4 +1,5 @@
 ---
+layout: default
 title: How to Debug Golang with VSCode 
 ---
 <!-- vim: ts=2 sw=2 expandtab
