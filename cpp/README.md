@@ -1,5 +1,6 @@
-<!-- vim: ts=2 sw=2 expandtab
--->
+---
+title: How to Debug C/C++ with VSCode
+---
 # How to Debug C/C++ with VSCode
 
 ## Summary

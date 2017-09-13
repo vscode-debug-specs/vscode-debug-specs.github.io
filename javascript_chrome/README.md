@@ -1,5 +1,6 @@
-<!-- vim: ts=2 sw=2 expandtab
--->
+---
+title: How to Debug FrontEnd JavaScript(Chrome) and TypeScript with VSCode
+---
 # How to Debug FrontEnd JavaScript(Chrome) and TypeScript with VSCode
 
 ## Summary

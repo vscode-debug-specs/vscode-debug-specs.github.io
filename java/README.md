@@ -1,5 +1,6 @@
-<!-- vim: ts=2 sw=2 expandtab
--->
+---
+title: How to Debug Java with VSCode
+---
 # How to Debug Java with VSCode
 
 ## Summary
@@ -121,7 +122,7 @@
 
 * must set "jdkPath", "sourcePath" and "classpath" accurately
 
-## attach running
+## attach running and remote process
 
 ### launch.json
 

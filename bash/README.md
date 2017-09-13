@@ -1,5 +1,6 @@
-<!-- vim: ts=2 sw=2 expandtab
--->
+---
+title: How to Debug Bash with VSCode
+---
 # How to Debug Bash with VSCode
 
 ## Summary
