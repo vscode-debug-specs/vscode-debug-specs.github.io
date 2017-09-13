@@ -1,5 +1,6 @@
 ---
 title: How to Debug Bash with VSCode
+permalink: /bash/
 ---
 # How to Debug Bash with VSCode
 

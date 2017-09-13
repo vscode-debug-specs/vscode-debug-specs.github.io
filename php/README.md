@@ -1,5 +1,6 @@
 ---
 title: How to Debugging PHP with VSCode
+permalink: /php/
 ---
 # How to Debugging PHP with VSCode
 

@@ -1,5 +1,6 @@
 ---
 title: How to Debug ServerSide JavaScript(NodeJS) and TypeScript with VSCode
+permalink: /javascript/
 ---
 # How to Debug ServerSide JavaScript(NodeJS) and TypeScript with VSCode
 

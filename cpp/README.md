@@ -1,5 +1,6 @@
 ---
 title: How to Debug C/C++ with VSCode
+permalink: /cpp/
 ---
 # How to Debug C/C++ with VSCode
 
