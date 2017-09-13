@@ -1,5 +1,6 @@
 ---
 title: How to Debug C# (.Net Core) with VSCode
+permalink: /csharp/
 ---
 # How to Debug C# (.Net Core) with VSCode
 
