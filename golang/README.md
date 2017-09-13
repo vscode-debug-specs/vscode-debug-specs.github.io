@@ -1,3 +1,8 @@
+---
+layout: default
+title: How to Debug Golang with VSCode 
+permalink: /golang/
+---
 <!-- vim: ts=2 sw=2 expandtab
 -->
 # How to Debug Golang with VSCode 
