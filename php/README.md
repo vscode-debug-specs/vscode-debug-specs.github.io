@@ -22,7 +22,7 @@ permalink: /php/
 * OS
 	* ✅ MacOS
 	*  Windows
-	*  Linux
+	* ✅ Linux
 * Break Point
 	* ✅ break point
 	* ✅ condition break point
@@ -144,6 +144,68 @@ access http://localhost:8080/phpinfo.php
 ```
 nginx -s stop
 launchctl unload -w /usr/local/opt/php56/homebrew.mxcl.php56.plist
+```
+
+### Linux Ubuntu 17.04
+
+#### 1. install packages
+
+```
+sudo apt install php php-fpm php-xdebug nginx
+```
+
+#### 2. set up nginx
+
+* commentout php-fpm settings
+* update `root` directory
+
+```
+sudo vi /etc/nginx/sites-enabled/default
+# Default server configuration
+#
+server {
+	listen 80 default_server;
+	listen [::]:80 default_server;
+
+	~
+
+	#root /var/www/html;
+	root /home/nnyn/vscode-debug-specs/php;
+
+	# pass PHP scripts to FastCGI server
+	#
+	location ~ \.php$ {
+		include snippets/fastcgi-php.conf;
+		
+		# With php-fpm (or other unix sockets):
+		fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
+		#  # With php-cgi (or other tcp sockets):
+		#  fastcgi_pass 127.0.0.1:9000;
+	}
+}
+```
+
+#### 3. enable Xdebug
+
+add remote_enable setting
+
+```
+sudo vi /etc/php/7.0/fpm/conf.d/20-xdebug.ini
+
+xdebug.remote_enable=1
+xdebug.remote_autostart=1
+xdebug.remote_port="9000"
+xdebug.profiler_enable=0
+xdebug.profiler_output_dir="/tmp"
+xdebug.max_nesting_level=1000
+xdebug.idekey = "PHPSTORM"
+```
+
+#### 4. start
+
+```
+sudo systemctl start php7.0-fpm.service
+sudo systemctl start nginx.service
 ```
 
 ## attach running and remote process
