@@ -73,13 +73,13 @@ npm install --save-dev mocha assert
 	"version": "0.2.0",
 	"configurations": [
 		{
-    	"type": "chrome",
+			"type": "chrome",
 			"request": "launch",
 			"sourceMaps": true,
 			"name": "Launch Chrome against localhost",
-      // your web server url
+			// your web server url
 			"url": "http://localhost:8080",
-      // set your webroot directory
+			// set your webroot directory
 			"webRoot": "${workspaceRoot}/html"
 		}
 	]
@@ -258,7 +258,7 @@ module.exports = {
 ### 4. compile and webpack
 
 ```sh
-webpack
+webpack -d ts/typescript_main.ts html/js/typescript_main.webpack.js
 ```
 
 ### 5. start debug
