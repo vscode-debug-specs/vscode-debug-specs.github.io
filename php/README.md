@@ -146,6 +146,40 @@ nginx -s stop
 launchctl unload -w /usr/local/opt/php56/homebrew.mxcl.php56.plist
 ```
 
+### Windows
+
+#### 1. download and install xampp
+
+xampp [https://www.apachefriends.org/](https://www.apachefriends.org/)
+
+default install path `C:\xampp`
+
+#### 2. download xdebug dll
+
+xdbug [https://xdebug.org/download.php]
+
+download 32bit module. set to `c:\xampp\php\ext`.
+
+#### 4. update php.ini
+
+`c:\xampp\php\php.ini`
+
+```
+[XDebug]
+zend_extension = "c:\xampp\php\ext\php_xdebug-2.5.5-7.1-vc14.dll"
+xdebug.remote_enable=1
+xdebug.remote_autostart=1
+xdebug.remote_port="9000"
+xdebug.profiler_enable=0
+xdebug.profiler_output_dir="c:\xampp\tmp"
+xdebug.max_nesting_level=1000
+xdebug.idekey = "PHPSTORM"
+```
+
+#### 5. launch web server
+
+launch xampp at start menu. and start apache.
+
 ### Linux Ubuntu 17.04
 
 #### 1. install packages
