@@ -21,7 +21,7 @@ permalink: /php/
 
 * OS
 	* ✅ MacOS
-	*  Windows
+	* ✅ Windows
 	* ✅ Linux
 * Break Point
 	* ✅ break point

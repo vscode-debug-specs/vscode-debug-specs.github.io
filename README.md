@@ -12,11 +12,11 @@
 |[C/C++](./cpp)|C/C++|lldb,gdb|✅|✅|✅|
 |[Java](./java)|Java debugger||✅|HELP|✅|
 |[Bash](./bash)|Bash Debug|bashdb|✅||✅|
+|[PHP](./php)|PHP Debug|Xdebug|✅|✅|✅|
 |TODO [C#(mono)](./csharp_mono)|mono debug|||||
 |TODO [Javascript(FireFox)](./javascript_firefox)|Debugger for firefox|||||
 |TODO [Javascript(Edge)](./javascript_edge)|Debugger for Edge|||||
 |TODO [Javascript(iOS Web)](./javascript_ios)|Debugger for iOS Web|||||
-|TODO [PHP](./php)|PHP Debug|||||
 |TODO [Ruby](./ruby)|Ruby||HELP|HELP|HELP|
 |TODO [Lua](./Lua)|Lua 5.3 Debugger|||||
 |TODO [Perl](./perl)|Perl Debug|||||
