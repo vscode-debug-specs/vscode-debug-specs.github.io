@@ -8,8 +8,9 @@ permalink: /cpp/
 
 * [Basic](#basic)
 * [Spec](#spec)
-* Unit Test: [cunit](#cunit)
-* [executable file debug](#executable-file-debug)
+* [debugging Unit Test (cunit)](#debugging-unit-test-cunit)
+* [debugging executable file](#debugging-executable-file)
+* [debugging on Windows](#debugging-on-windows)
 
 ## Basic
 
@@ -51,9 +52,22 @@ permalink: /cpp/
 
 ## Instraction
 
-no instraction.
+### MacOS
 
-## cunit
+* install XCode
+* install Extension [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
+
+### Windows
+
+* install Visual Studio 2017
+* install Extension [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
+
+### Linux
+
+* install gcc
+* install Extension [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
+
+## debugging unit test (cunit)
 
 * test code: [bubble_sort_cunit.c](https://github.com/74th/vscode-debug-specs/blob/master/cpp/bubble_sort_cunit.c)
 
@@ -135,14 +149,14 @@ gcc bubble_sort.c bubble_sort_cunit.c -g -O0 -W -Wall -lcunit
 Enter command: R
 ```
 
-### gcc option
+### gcc option for debugging
 
 * `-W` and `-Wall` : show warnings (not must)
 * `-g` : debug
 * `-O0` : no optimisation
 * `-lcunit` : load cunit
 
-## executable file debug
+## debugging executable file 
 
 * Program: [main.c](https://github.com/74th/vscode-debug-specs/blob/master/cpp/main.c)
 
@@ -209,7 +223,7 @@ gcc bubble_sort.c main.c -g -O0 -W -Wall
 
  2. Start "Launch Program"
 
-## Windows VC
+## debugging on Windows
 
 ### launch.json
 
