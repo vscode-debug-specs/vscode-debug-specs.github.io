@@ -8,7 +8,8 @@ permalink: /bash/
 
 * [Basic](#basic)
 * [Spec](#spec)
-* [executable file debug](#executable-file-debug)
+* [Instraction](#instraction)
+* [debugging executable file](#debugging-executable-file)
 
 ## Basic
 
@@ -54,7 +55,7 @@ permalink: /bash/
 	* Ubuntu: `apt install bashdb`
 
 
-## executable file debug
+## debugging executable file
 
 * Program: [bubble_sort.sh](https://github.com/74th/vscode-debug-specs/blob/master/bash/bubbleSort.sh)
 

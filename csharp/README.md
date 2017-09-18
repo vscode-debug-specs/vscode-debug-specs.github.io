@@ -9,8 +9,8 @@ permalink: /csharp/
 * [Basic](#Basic)
 * [Spec](#Spec)
 * [install](#install)
-* [XUnit Test](#XUnit-Test)
-* [Console Program](#Console-Program)
+* [debugging unit test (XUnit)](#debugging-unit-test-xunit)
+* [debugging Console Program](#debugging-console-program)
 
 ## Basic
 
@@ -55,7 +55,7 @@ permalink: /csharp/
 * [install Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
 * When you open C# code, it'll start to install necessary tools.
 
-## XUnit Test
+## debugging unit test (XUnit)
 
 * test code: [BubbleSortTest/TestSort.cs](https://github.com/74th/vscode-debug-specs/blob/master/csharp/BubbleSortTest/TestSort.cs)
 
@@ -70,7 +70,7 @@ permalink: /csharp/
 
 ![XUnit](xunit.png)
 
-## Console Program
+## debugging Console Program
 
 * Console Program code: [BubbleSorter/Program.cs](https://github.com/74th/vscode-debug-specs/blob/master/csharp/BubbleSorter/Program.cs)
 
@@ -138,7 +138,7 @@ launch.json
 }
 ```
 
-## Remote debug
+## debugging Remote process
 
 TODO
 
