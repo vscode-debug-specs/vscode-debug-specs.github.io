@@ -17,7 +17,7 @@ namespace BubbleSorterAPI.Controllers
         {
 			var args = input.Split(" ");
 			var list = new List<int>();
-			foreach (var arg 1 args)
+			foreach (var arg in args)
 			{
 				list.Add(int.Parse(arg));
 			}
