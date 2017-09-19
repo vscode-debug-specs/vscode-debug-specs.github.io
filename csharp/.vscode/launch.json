@@ -64,6 +64,10 @@
             "type": "coreclr",
             "request": "attach",
             "processId": "${command:pickRemoteProcess}",
+            "sourceFileMap": {
+                // "remote machine directory" : "VSCode machine directory"
+                "/home/nnyn/vscode-debug-specs/csharp": "/Users/nnyn/Documents/vscode-debug-specs/csharp"
+            },
             "pipeTransport": {
                 "pipeCwd": "${workspaceRoot}",
                 "pipeProgram": "ssh",
