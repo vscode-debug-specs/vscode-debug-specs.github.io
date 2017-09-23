@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es2015",
+        "noImplicitAny": false,
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "lib": [
+            "es2016",
+            "dom"
+        ],
+        "baseUrl": "."
+    }
+}

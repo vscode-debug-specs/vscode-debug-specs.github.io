@@ -145,3 +145,90 @@ node --inspect=5858 ./node_modules/.bin/electron --remote-debugging-port=9222 .
 
  3. start `Attach to Render process`
 
+## debug TypeScript for main process
+
+If you set `"sourceMap":true` to tsconfig.json, you will debug typescript source.
+
+### tsconfig.json
+
+```json
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es2015",
+        "noImplicitAny": false,
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "lib": [
+            "es2016",
+            "dom"
+        ],
+        "baseUrl": "."
+    }
+}
+```
+
+### how-to
+
+ 1. install typescript: `npm install -g typescript`
+
+ 2. add tsconfig.json and compile typescript: `tsc`
+
+ 3. start debug main process
+
+## debug TypeScript and webpack for render process
+
+If you want to use typescript for render process, it is better to use webpack.
+
+### webpack.config.js
+
+```
+module.exports = {
+	devtool: "source-map",
+	resolve: {
+		extensions: [".ts", ".js"]
+	},
+	module: {
+		rules: [
+			{ test: /\.ts$/, loader: "awesome-typescript-loader" },
+			{ enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
+		]
+	},
+	devServer: {
+		contentBase: "html/"
+	},
+};
+```
+
+### launch.json
+
+```json
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "chrome",
+			"request": "attach",
+			"name": "Attach to Render process",
+			"port": 9222,
+			"webRoot": "${workspaceRoot}/html",
+			"sourceMaps": true,
+			"sourceMapPathOverrides": {
+				"webpack:///lib/*": "${workspaceRoot}/lib/*"
+			}
+		}
+	]
+}
+```
+
+### how-to
+
+ 1. install some tools: `npm install -g typescript webpack awesome-typescript-loader source-map-loader`
+
+ 2. add tsconfig.json and webpack.config.js
+
+ 3. compile webpack: `webpack -d lib/typescript_main.ts html/js/typescript_main.webpack.js`
+
+ 4. launch electron with remote debug option: `electron --remote-debugging-port=9222 .`
+
+ 5. start debug

@@ -10,6 +10,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "1.7.6"
+    "electron": "1.7.6",
+    "typescript": "^2.5.2"
+  },
+  "dependencies": {
+    "awesome-typescript-loader": "^3.2.3",
+    "source-map-loader": "^0.2.1",
+    "webpack": "^3.6.0"
   }
 }
