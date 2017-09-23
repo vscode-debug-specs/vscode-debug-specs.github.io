@@ -7,7 +7,7 @@
 			"request": "launch",
 			"name": "Debug Main Process",
 			"runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron",
-			"program": "${workspaceRoot}/index.js",
+			"program": "${workspaceRoot}/app/index.js",
 			"runtimeArgs": [
 				".",
 				"--remote-debugging-port=9222"

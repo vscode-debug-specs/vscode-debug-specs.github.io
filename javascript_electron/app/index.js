@@ -19,7 +19,7 @@ app.on('ready', () => {
 	});
 
 	const indexURL = url.format({
-		pathname: '/html/index.html',
+		pathname: "html/index.html",
 		protocol: 'file:'
 	});
 	win = new electron.BrowserWindow({ width: 640, height: 480 });
