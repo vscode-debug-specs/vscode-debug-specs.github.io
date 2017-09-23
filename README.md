@@ -7,8 +7,11 @@
 |[Golang](./golang)|Go|delve|✅|✅|✅|
 |[Python](./python)|Python|pdb|✅|✅|✅|
 |[C#(dotnetcore)](./csharp)|C#|.NET Core|✅|✅|✅|
-|[ServerSide JavaScript(NodeJS) and TypeScript](./javascript)|buildin|nodejs|✅|✅|✅|
-|[FrontEnd JavaScript(Chrome) and TypeScript](./javascript_chrome)|Debugger for chrome|Chrome|✅|✅|✅|
+|[ServerSide(NodeJS) JavaScript and TypeScript](./javascript)|buildin|nodejs|✅|✅|✅|
+|[Browser(Chrome) JavaScript and TypeScript](./javascript_chrome)|Debugger for chrome|Chrome|✅|✅|✅|
+|TODO [Browser(iOS) JavaScript and TypeScript](./javascript_ios)|Debugger for iOS Web|||||
+|[DesktopApp(Electron) JavaScript and TypeScript](./javascript_electron)|buildin,Debugger for chrome|nodejs,Chrome|✅|TODO|TODO|
+|TODO [MobileApp(Cordova) JavaScript and TypeScript](./javascript_cordova)|Cordova Tools|||||
 |[C/C++](./cpp)|C/C++|lldb,gdb|✅|✅|✅|
 |[Java](./java)|Java debugger||✅|HELP|✅|
 |[Bash](./bash)|Bash Debug|bashdb|✅||✅|
@@ -16,7 +19,6 @@
 |TODO [C#(mono)](./csharp_mono)|mono debug|||||
 |TODO [Javascript(FireFox)](./javascript_firefox)|Debugger for firefox|||||
 |TODO [Javascript(Edge)](./javascript_edge)|Debugger for Edge|||||
-|TODO [Javascript(iOS Web)](./javascript_ios)|Debugger for iOS Web|||||
 |TODO [Ruby](./ruby)|Ruby||HELP|HELP|HELP|
 |TODO [Lua](./Lua)|Lua 5.3 Debugger|||||
 |TODO [Perl](./perl)|Perl Debug|||||
