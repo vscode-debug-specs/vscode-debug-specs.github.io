@@ -1,19 +1,21 @@
 {
 	"version": "0.2.0",
 	"configurations": [
+
 		{
-			"name": "Debug Main Process",
 			"type": "node",
 			"request": "launch",
-			"cwd": "${workspaceRoot}",
+			"name": "Debug Main Process",
 			"runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron",
+			"program": "${workspaceRoot}/index.js",
 			"runtimeArgs": [
 				".",
 				"--remote-debugging-port=9222"
 			],
 			"windows": {
 				"runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron.cmd"
-			}
+			},
+			"protocol": "legacy"
 		},
 		{
 			"type": "node",
