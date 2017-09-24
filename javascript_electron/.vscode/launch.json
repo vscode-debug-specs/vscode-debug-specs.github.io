@@ -32,7 +32,8 @@
 			"webRoot": "${workspaceRoot}/html",
 			"sourceMaps": true,
 			"sourceMapPathOverrides": {
-				"webpack:///lib/*": "${workspaceRoot}/lib/*"
+				"webpack:///lib/*": "${workspaceRoot}/lib/*",
+				"webpack:///./lib/*": "${workspaceRoot}/lib/*"
 			}
 		},
 		{
