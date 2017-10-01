@@ -1,0 +1,29 @@
+{
+    "name": "com.j74th.javascript_cordova",
+    "displayName": "JavaScriptCordova",
+    "version": "1.0.0",
+    "description": "A sample Apache Cordova application that responds to the deviceready event.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Apache Cordova Team",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "cordova-android": "^6.2.3",
+        "cordova-ios": "^4.4.0",
+        "cordova-plugin-whitelist": "^1.3.2"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-whitelist": {}
+        },
+        "platforms": [
+            "android",
+            "ios"
+        ]
+    },
+    "devDependencies": {
+        "ios-sim": "^6.1.2"
+    }
+}

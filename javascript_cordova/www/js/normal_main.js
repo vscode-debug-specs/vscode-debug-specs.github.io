@@ -1,25 +1,25 @@
 {
 	function bubbleSort(list) {
-		for (let i = 0; i < list.length; i++) {
-			for (let j = 0; j < list.length - i - 1; j++) {
+		for (var i = 0; i < list.length; i++) {
+			for (var j = 0; j < list.length - i - 1; j++) {
 				if (list[j] > list[j + 1]) {
-					const tmp = list[j];
+					var tmp = list[j];
 					list[j] = list[j + 1];
 					list[j + 1] = tmp;
 				}
 			}
 		}
 	}
-	document.querySelector("#normal").addEventListener("click", (e) => {
-		const line = document.querySelector("#input").value;
-		const list = [];
-		line.split(" ").forEach((item) => {
+	document.querySelector("#normal").addEventListener("click", function(e){
+		var line = document.querySelector("#input").value;
+		var list = [];
+		line.split(" ").forEach(function(item){
 			list.push(parseInt(item, 10));
 		});
 		bubbleSort(list);
 
-		let output = "";
-		list.forEach((item) => {
+		var output = "";
+		list.forEach(function(item){
 			output += item + " ";
 		});
 		document.querySelector("#output").innerHTML = output;
