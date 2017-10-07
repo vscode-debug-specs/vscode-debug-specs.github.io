@@ -14,7 +14,7 @@ permalink: /java/
 ## Basic
 
 * [Java](https://www.java.com/)
-* Extension:[Java Debugger](https://marketplace.visualstudio.com/items?itemName=donjayamanne.javadebugger)
+* Extension:[Java Debug Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug)
 * Debugger: jdb
 * module code: [src/main/java/com/j74th/vscodedebugbook/bubblesort/BubbleSort.java](src/main/java/com/j74th/vscodedebugbook/bubblesort/BubbleSort.java)
 
@@ -22,8 +22,8 @@ permalink: /java/
 
 * OS
 	* ✅ MacOS
-	*  Windows
-	* ✅ Linux
+	* ✅ Windows
+	* ？ Linux
 * Break Point
 	* ✅ break point
 	* ✅ condition break point
@@ -47,7 +47,7 @@ permalink: /java/
 * Type of Execution
 	* ✅ debug unit test
 	* ✅ debug executable package
-	* ❌ remote debugging: will support soon
+	* ✅ remote debugging
 
 ## unit test (Junit)
 
@@ -60,31 +60,15 @@ permalink: /java/
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": "junit test",
-			"type": "java",
-			"request": "launch",
-			"jdkPath": "${env:JAVA_HOME}/bin",
-			"sourcePath": [
-				"${workspaceRoot}/src/main/java",
-				"${workspaceRoot}/src/test/java"
-			],
-			"cwd": "${workspaceRoot}/src/test/java/com/j74th/vscodedebugbook/bubblesort",
-			"startupClass": "junit.textui.TestRunner",
-			"args": [
-				"com.j74th.vscodedebugbook.bubblesort.BubbleSortTest"
-			],
-			"classpath": [
-				"${workspaceRoot}/target/classes",
-				"${workspaceRoot}/target/test-classes",
-				"${workspaceRoot}/junit-3.8.2.jar"
-			]
-		},
+            "type": "java",
+            "name": "Test Debug (Launch)",
+            "request": "launch",
+            "mainClass": "junit.textui.TestRunner",
+            "args": "com.j74th.vscodedebugbook.bubblesort.BubbleSortTest"
+		}
 	]
 }
 ```
-
-* must set "jdkPath", "sourcePath" and "classpath" accurately
-* JAVA_HOME setting is also in user setting
 
 ## executable file debug
 
@@ -97,31 +81,15 @@ permalink: /java/
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": "Java",
-			"type": "java",
-			"request": "launch",
-			"stopOnEntry": true,
-			"jdkPath": "${env:JAVA_HOME}/bin",
-			"cwd": "${workspaceRoot}/src/main/java",
-			"sourcePath": [
-				"${workspaceRoot}/src/main/java"
-			],
-			"startupClass": "com.j74th.vscodedebugbook.bubblesort.BubbleSorter",
-			"classpath": [
-				"${workspaceRoot}/target/classes"
-			],
-			"args": [
-				"4",
-				"3",
-				"2",
-				"1"
-			]
+            "type": "java",
+            "name": "Debug (Launch)",
+            "request": "launch",
+            "mainClass": "com.j74th.vscodedebugbook.bubblesort.BubbleSorter",
+            "args": "4 3 2 1"
 		}
 	]
 }
 ```
-
-* must set "jdkPath", "sourcePath" and "classpath" accurately
 
 ## attach running and remote process
 
@@ -132,21 +100,11 @@ permalink: /java/
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": "Java attach",
-			"type": "java",
-			"request": "attach",
-			"jdkPath": "${env:JAVA_HOME}/bin",
-			"cwd": "${workspaceRoot}/src/test/java/com/j74th/vscodedebugbook/bubblesort",
-			"startupClass": "${fileBasenameNoExtension}",
-			"remoteHost": "localhost",
-			"remotePort": 5005,
-			"sourcePath": [
-				"${workspaceRoot}/src/main/java"
-			],
-			"classpath": [
-				"${workspaceRoot}/target/classes"
-			],
-			"externalConsole": true
+            "type": "java",
+            "name": "Debug (Attach)",
+            "request": "attach",
+            "hostName": "localhost",
+            "port": 5005
 		}
 	]
 }
@@ -162,7 +120,3 @@ java -cp target/classes -Xdebug -Xrunjdwp:transport=dt_socket,server=y,address=5
 ```
 
 2. start debug
-
-## remote process
-
-will support soon
