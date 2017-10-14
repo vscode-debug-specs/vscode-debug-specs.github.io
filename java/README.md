@@ -43,7 +43,7 @@ permalink: /java/
 	* ✅ call stack
 * Evaluation
 	* ✅ eval expression to show variables
-	* ✅ eval expression to change variables
+	* ❌ eval expression to change variables
 * Type of Execution
 	* ✅ debug unit test
 	* ✅ debug executable package
