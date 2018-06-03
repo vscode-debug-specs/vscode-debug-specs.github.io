@@ -1,1 +1,7 @@
 node_modules
+lib/typescript_bubble_sort.js
+lib/typescript_bubble_sort.js.map
+html/js/normal_main.webpack.js
+html/js/typescript_main.webpack.js
+app/typescript_index.js
+app/typescript_index.js.map
