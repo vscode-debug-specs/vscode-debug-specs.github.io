@@ -214,7 +214,8 @@ module.exports = {
 			"webRoot": "${workspaceRoot}/html",
 			"sourceMaps": true,
 			"sourceMapPathOverrides": {
-				"webpack:///lib/*": "${workspaceRoot}/lib/*"
+				"webpack:///render/*": "${workspaceRoot}/render/*",
+				"webpack:///./render/*": "${workspaceRoot}/render/*"
 			}
 		}
 	]
@@ -227,8 +228,10 @@ module.exports = {
 
  2. add tsconfig.json and webpack.config.js
 
- 3. compile webpack: `webpack -d lib/typescript_main.ts html/js/typescript_main.webpack.js`
+ 3. compile webpack: `webpack -d render/typescript_main.ts html/js/typescript_main.webpack.js`
 
  4. launch electron with remote debug option: `electron --remote-debugging-port=9222 .`
 
  5. start debug
+
+ * You must not open Developer tools window.

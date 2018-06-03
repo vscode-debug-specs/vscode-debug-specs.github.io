@@ -4,6 +4,24 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
+			"taskName": "typescript",
+			"type": "shell",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"linux": {
+				"command": "./node_modules/.bin/tsc"
+			},
+			"osx": {
+				"command": "./node_modules/.bin/tsc"
+			},
+			"windows": {
+				"command": ".\\node_modules\\.bin\\tsc"
+			},
+			"problemMatcher": []
+		},
+		{
 			"taskName": "webpack",
 			"type": "shell",
 			"group": {
@@ -14,7 +32,8 @@
 				"command": "./node_modules/.bin/webpack",
 				"args": [
 					"-d",
-					"lib/normal_main.js",
+					"render/normal_main.js",
+					"-o",
 					"html/js/normal_main.webpack.js"
 				]
 			},
@@ -22,7 +41,8 @@
 				"command": "./node_modules/.bin/webpack",
 				"args": [
 					"-d",
-					"lib/normal_main.js",
+					"render/normal_main.js",
+					"-o",
 					"html/js/normal_main.webpack.js"
 				]
 			},
@@ -30,7 +50,8 @@
 				"command": ".\\node_modules\\.bin\\webpack",
 				"args": [
 					"-d",
-					"lib\\normal_main.js",
+					"render\\normal_main.js",
+					"-o",
 					"html\\js\\normal_main.webpack.js"
 				]
 			},
@@ -47,7 +68,8 @@
 				"command": "./node_modules/.bin/webpack",
 				"args": [
 					"-d",
-					"lib/typescript_main.ts",
+					"render/typescript_main.ts",
+					"-o",
 					"html/js/typescript_main.webpack.js"
 				]
 			},
@@ -55,7 +77,8 @@
 				"command": "./node_modules/.bin/webpack",
 				"args": [
 					"-d",
-					"lib/typescript_main.ts",
+					"render/typescript_main.ts",
+					"-o",
 					"html/js/typescript_main.webpack.js"
 				]
 			},
@@ -63,7 +86,8 @@
 				"command": ".\\node_modules\\.bin\\webpack",
 				"args": [
 					"-d",
-					"lib\\typescript_main.ts",
+					"render\\typescript_main.ts",
+					"-o",
 					"html\\js\\typescript_main.webpack.js"
 				]
 			},
