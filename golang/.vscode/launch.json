@@ -6,7 +6,12 @@
 			"type": "go",
 			"request": "launch",
 			"mode": "debug",
-			"program": "${workspaceRoot}/cmd/bubbleSorter"
+			"program": "${workspaceRoot}/cmd/bubbleSorter",
+			"args": [
+				"3",
+				"2",
+				"1"
+			]
 		},
 		{
 			"name": "Launch test function",
@@ -20,7 +25,7 @@
 			]
 		},
 		{
-			"name": "Launch Remote",
+			"name": "Attach remote process",
 			"type": "go",
 			"request": "launch",
 			"mode": "remote",
