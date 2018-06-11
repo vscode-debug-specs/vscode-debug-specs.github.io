@@ -8,9 +8,11 @@
   },
   "author": "74th",
   "license": "MIT",
-  "dependencies": {
-    "@types/node": "^8.0.27",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^10.3.2",
     "jasmine-node": "^1.14.5",
-    "mocha": "^3.5.0"
+    "mocha": "^5.2.0",
+    "typescript": "^2.9.1"
   }
 }
