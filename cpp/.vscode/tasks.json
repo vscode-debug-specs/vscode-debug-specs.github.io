@@ -17,7 +17,11 @@
 			],
 			"problemMatcher": [
 				"$gcc"
-			]
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
 		},
 		{
 			"taskName": "build cunit",
@@ -30,7 +34,6 @@
 				"-O0",
 				"-W",
 				"-Wall",
-				// "-L/usr/local/lib",
 				"-lcunit"
 			],
 			"problemMatcher": [

@@ -2,6 +2,14 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
+			"name": "(lldb) Attach",
+			"type": "cppdbg",
+			"request": "attach",
+			"program": "enter program name, for example ${workspaceFolder}/a.out",
+			"processId": "${command:pickProcess}",
+			"MIMode": "lldb"
+		},
+		{
 			"name": "(gdb) Bash on Windows Launch",
 			"type": "cppdbg",
 			"request": "launch",
