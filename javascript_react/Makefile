@@ -1,4 +1,7 @@
 NODE_BIN=./node_modules/.bin
-build: js/index.js
-js/index.js: src/index.jsx
-	$(NODE_BIN)/babel --plugins transform-react-jsx src/index.jsx -o js/index.js
+SRC_DIR=src
+OUT_DIR=html
+build:
+	$(NODE_BIN)/babel -D src/js -d html/js
+clean:
+	rm html/js/*
