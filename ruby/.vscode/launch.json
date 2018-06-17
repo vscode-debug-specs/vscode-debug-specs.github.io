@@ -1,0 +1,30 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Debug execute File",
+			"type": "Ruby",
+			"request": "launch",
+			"cwd": "${workspaceRoot}",
+			"program": "${workspaceRoot}/bin.rb"
+		},
+		{
+			"name": "Debug test/unit",
+			"type": "Ruby",
+			"request": "launch",
+			"cwd": "${workspaceRoot}",
+			"program": "${workspaceRoot}/test_bubble_sort.rb",
+			"args":[
+				"--name=test_bubble_sort"
+			]
+		},
+		{
+			"name": "Debug remote",
+			"type": "Ruby",
+			"request": "launch",
+			"debuggerPort": "1234",
+			"cwd": "${workspaceRoot}",
+			"program": "${workspaceRoot}/bin.rb"
+		},
+	]
+}
