@@ -7,7 +7,7 @@ A declarative, efficient, and flexible JavaScript library for building user inte
 
 ## spec
 
-same for javascript for chrome.
+[this is same spec as javascript for chrome](../javascript_chrome/)
 
 ## react with ES2015 modules
 
