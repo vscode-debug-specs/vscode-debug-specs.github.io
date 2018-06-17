@@ -152,7 +152,7 @@ module.exports = {
 
 ### codes
 
-* [src/ts/index.tsx](https://github.com/74th/vscode-debug-specs/blob/master/javascript_react/src/ts/index_.tsx)
+* [src/ts/index.tsx](https://github.com/74th/vscode-debug-specs/blob/master/javascript_react/src/ts/index_ts.tsx)
 * [src/ts/bubble_sort_ts.ts](https://github.com/74th/vscode-debug-specs/blob/master/javascript_react/src/ts/bubble_sort_ts.ts)
 
 ### build
