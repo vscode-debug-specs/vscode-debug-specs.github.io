@@ -1,7 +1,10 @@
 NODE_BIN=./node_modules/.bin
-SRC_DIR=src
-OUT_DIR=html
-build:
-	$(NODE_BIN)/babel -D src/js -d html/js
+build: build_js build_ts
+build_js:
+	$(NODE_BIN)/babel -D src/js -d html/js --source-maps
+build_ts:
+	$(NODE_BIN)/webpack-cli
 clean:
 	rm html/js/*
+server:
+	$(NODE_BIN)/http-server html -c-1

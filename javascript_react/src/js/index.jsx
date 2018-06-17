@@ -1,4 +1,4 @@
-import { sort } from './bubble_sort.js'
+import { sort } from './bubble_sort.js';
 
 class AnswerNumber extends React.Component {
 	render() {
