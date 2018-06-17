@@ -38,7 +38,7 @@ You need to use babel for compiling react(jsx).
 
 ### codes
 
-* [html/index.html](html/index.html): script tag has `type="module"`
+* [html/index.html](https://github.com/74th/vscode-debug-specs/blob/master/javascript_react/html/index.html): script tag has `type="module"`
 
 ```html
 <!DOCTYPE html>
@@ -55,8 +55,8 @@ You need to use babel for compiling react(jsx).
 </html>
 ```
 
-* [src/js/index.jsx](src/js/index.jsx)
-* [src/js/bubble_sort.js](src/js/bubble_sort.js)
+* [src/js/index.jsx](https://github.com/74th/vscode-debug-specs/blob/master/javascript_react/src/js/index.jsx)
+* [src/js/bubble_sort.js](https://github.com/74th/vscode-debug-specs/blob/master/javascript_react/src/js/bubble_sort.js)
 
 ### build
 
@@ -142,7 +142,8 @@ module.exports = {
 ### directory structure
 
 * html/
-	* js/ : output directory
+	* js/
+		* index_ts.js : output file 
 	* index.html
 * src/
 	* ts/
@@ -151,8 +152,8 @@ module.exports = {
 
 ### codes
 
-* [src/ts/index.tsx](src/ts/index_.tsx)
-* [src/ts/bubble_sort_ts.ts](src/ts/bubble_sort_ts.ts)
+* [src/ts/index.tsx](https://github.com/74th/vscode-debug-specs/blob/master/javascript_react/src/ts/index_.tsx)
+* [src/ts/bubble_sort_ts.ts](https://github.com/74th/vscode-debug-specs/blob/master/javascript_react/src/ts/bubble_sort_ts.ts)
 
 ### build
 
