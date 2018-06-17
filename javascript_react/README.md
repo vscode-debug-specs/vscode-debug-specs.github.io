@@ -1,6 +1,9 @@
 # React
 
-[React](https://reactjs.org/)
+A declarative, efficient, and flexible JavaScript library for building user interfaces.
+
+* [React(official)](https://reactjs.org/)
+* [React(github)](https://github.com/facebook/react)
 
 ## spec
 
