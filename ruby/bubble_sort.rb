@@ -1,5 +1,6 @@
 module BubbleSort
 
+	# bubble sort
 	def sort(list)
 		for i in 0..list.length-2
 			for j in 0..list.length-2-i

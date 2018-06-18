@@ -1,5 +1,5 @@
 require 'test/unit'
-require './bubble_sort'
+require_relative '../bubble_sort'
 
 class BubbleSortTest < Test::Unit::TestCase
 
