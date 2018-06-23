@@ -5,6 +5,6 @@ build_js:
 build_ts:
 	$(NODE_BIN)/webpack-cli
 clean:
-	rm html/js/*
+	rm html/js/*.{js,map}
 server:
 	$(NODE_BIN)/http-server html -c-1

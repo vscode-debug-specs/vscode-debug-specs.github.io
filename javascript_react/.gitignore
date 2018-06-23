@@ -1,3 +1,4 @@
 node_modules
 html/js/*.js
-html/js/*.js.map
+html/js/*.map
+lib/
