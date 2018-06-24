@@ -9,13 +9,13 @@
 |[C#(dotnetcore)](./csharp)|C#|.NET Core|✅|✅|✅|
 |Javascript and Typescript|-|-|-|-|-|
 |├[for ServerSide(NodeJS)](./javascript)|buildin|nodejs|✅|✅|✅|
-|├[for Browser(Chrome)](./javascript_chrome)|Debugger for chrome|Chrome|✅|✅|✅|
-|├[for Browser(iOS)](./javascript_ios)|Debugger for iOS Web|TODO|TODO|TODO|TODO|
-|├[for Browser(FireFox) JavaScript and TypeScript](./javascript_firefox)|Debugger for firefox|TODO|TODO|TODO|TODO|
-|├[for Browser(Edge) JavaScript and TypeScript](./javascript_edge)|Debugger for Edge|TODO|TODO|TODO|TODO|
-|├[for DesktopApp(Electron)](./javascript_electron)|buildin,Debugger for chrome|nodejs,Chrome|✅|TODO|TODO|
-|├[for MobileApp(Cordova)](./javascript_cordova)|Cordova Tools|||||
-|└[for React(Broweser, Chrome)](./javascript_react)|buildin,Debugger for chrome|nodejs,Chrome|✅|TODO|TODO|
+|├[for Chrome Browser](./javascript_chrome)|Debugger for chrome|Chrome|✅|✅|✅|
+|├[for iOS Browser](./javascript_ios)|Debugger for iOS Web|TODO|TODO|TODO|TODO|
+|├[for Firefox Browser](./javascript_firefox)|Debugger for firefox|TODO|TODO|TODO|TODO|
+|├[for Edge Browser](./javascript_edge)|Debugger for Edge|TODO|TODO|TODO|TODO|
+|├[for Electron Desktop App](./javascript_electron)|buildin,Debugger for chrome|nodejs,Chrome|✅|TODO|TODO|
+|├[for Cordova Mobile App](./javascript_cordova)|Cordova Tools|||||
+|└[for React(Browser)](./javascript_react)|buildin,Debugger for chrome|nodejs,Chrome|✅|TODO|TODO|
 |[Ruby](./ruby)|Ruby|Ruby|✅|TODO|TODO|
 |[Ruby on Rails](./ruby_rails)|Ruby|Ruby|✅|TODO|TODO|
 |[C/C++](./cpp)|C/C++|lldb,gdb|✅|✅|✅|
