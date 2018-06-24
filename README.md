@@ -7,12 +7,13 @@
 |[Golang](./golang)|Go|delve|✅|✅|✅|
 |[Python](./python)|Python|pdb|✅|✅|✅|
 |[C#(dotnetcore)](./csharp)|C#|.NET Core|✅|✅|✅|
-|[ServerSide(NodeJS) JavaScript and TypeScript](./javascript)|buildin|nodejs|✅|✅|✅|
-|[Browser(Chrome) JavaScript and TypeScript](./javascript_chrome)|Debugger for chrome|Chrome|✅|✅|✅|
-|[DesktopApp(Electron) JavaScript and TypeScript](./javascript_electron)|buildin,Debugger for chrome|nodejs,Chrome|✅|TODO|TODO|
-|TODO [MobileApp(Cordova) JavaScript and TypeScript](./javascript_cordova)|Cordova Tools|||||
-|[React(Broweser, Chrome) JavaScript and TypeScript](./javascript_react)|buildin,Debugger for chrome|nodejs,Chrome|✅|TODO|TODO|
-|TODO [Ruby](./ruby)|Ruby||HELP|HELP|HELP|
+|[Javascript and Typescript for ServerSide(NodeJS)](./javascript)|buildin|nodejs|✅|✅|✅|
+|[Javascript and Typescript for Browser(Chrome)](./javascript_chrome)|Debugger for chrome|Chrome|✅|✅|✅|
+|[Javascript and Typescript for DesktopApp(Electron)](./javascript_electron)|buildin,Debugger for chrome|nodejs,Chrome|✅|TODO|TODO|
+|TODO [JavaScript and TypeScript for MobileApp(Cordova)](./javascript_cordova)|Cordova Tools|||||
+|[JavaScript and TypeScript React(Broweser, Chrome)](./javascript_react)|buildin,Debugger for chrome|nodejs,Chrome|✅|TODO|TODO|
+|[Ruby](./ruby)|Ruby||✅|TODO|TODO|
+|[Ruby on Rails](./ruby_rails)|Ruby||✅|TODO|TODO|
 |[C/C++](./cpp)|C/C++|lldb,gdb|✅|✅|✅|
 |[Java](./java)|Java debugger||✅|HELP|✅|
 |[Bash](./bash)|Bash Debug|bashdb|✅||✅|
