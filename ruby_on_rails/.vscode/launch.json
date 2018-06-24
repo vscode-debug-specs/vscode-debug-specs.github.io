@@ -1,0 +1,25 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "launch Rails server",
+			"type": "Ruby",
+			"request": "launch",
+			"cwd": "${workspaceRoot}",
+			"program": "${workspaceRoot}/bin/rails",
+			"args": [
+				"server"
+			],
+			"useBundler": true,
+		},
+		{
+			"name": "attach remote Rails Server",
+			"type": "Ruby",
+			"request": "attach",
+			"remoteHost": "127.0.0.1",
+			"remotePort": "1234",
+			"cwd": "${workspaceRoot}",
+			"remoteWorkspaceRoot": "${workspaceRoot}",
+		}
+	]
+}
