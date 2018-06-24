@@ -8,14 +8,14 @@
 |[Python](./python)|Python|pdb|✅|✅|✅|
 |[C#(dotnetcore)](./csharp)|C#|.NET Core|✅|✅|✅|
 |Javascript and Typescript|-|-|-|-|-|
-|.[for ServerSide(NodeJS)](./javascript)|buildin|nodejs|✅|✅|✅|
-|.[for Browser(Chrome)](./javascript_chrome)|Debugger for chrome|Chrome|✅|✅|✅|
-|.[for DesktopApp(Electron)](./javascript_electron)|buildin,Debugger for chrome|nodejs,Chrome|✅|TODO|TODO|
-|.[for MobileApp(Cordova)](./javascript_cordova)|Cordova Tools|||||
-|.[React(Broweser, Chrome)](./javascript_react)|buildin,Debugger for chrome|nodejs,Chrome|✅|TODO|TODO|
-|.[Browser(iOS)](./javascript_ios)|Debugger for iOS Web|||||
-|.[Browser(FireFox) JavaScript and TypeScript](./javascript_firefox)|Debugger for firefox|||||
-|.[Browser(Edge) JavaScript and TypeScript](./javascript_edge)|Debugger for Edge|||||
+|├for ServerSide(NodeJS)](./javascript)|buildin|nodejs|✅|✅|✅|
+|├for Browser(Chrome)](./javascript_chrome)|Debugger for chrome|Chrome|✅|✅|✅|
+|├for DesktopApp(Electron)](./javascript_electron)|buildin,Debugger for chrome|nodejs,Chrome|✅|TODO|TODO|
+|├for MobileApp(Cordova)](./javascript_cordova)|Cordova Tools|||||
+|├React(Broweser, Chrome)](./javascript_react)|buildin,Debugger for chrome|nodejs,Chrome|✅|TODO|TODO|
+|├Browser(iOS)](./javascript_ios)|Debugger for iOS Web|||||
+|├Browser(FireFox) JavaScript and TypeScript](./javascript_firefox)|Debugger for firefox|||||
+|└[Browser(Edge) JavaScript and TypeScript](./javascript_edge)|Debugger for Edge|||||
 |[Ruby](./ruby)|Ruby|Ruby|✅|TODO|TODO|
 |[Ruby on Rails](./ruby_rails)|Ruby|Ruby|✅|TODO|TODO|
 |[C/C++](./cpp)|C/C++|lldb,gdb|✅|✅|✅|
