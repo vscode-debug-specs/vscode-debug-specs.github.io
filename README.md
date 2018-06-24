@@ -12,8 +12,8 @@
 |[Javascript and Typescript for DesktopApp(Electron)](./javascript_electron)|buildin,Debugger for chrome|nodejs,Chrome|✅|TODO|TODO|
 |TODO [JavaScript and TypeScript for MobileApp(Cordova)](./javascript_cordova)|Cordova Tools|||||
 |[JavaScript and TypeScript React(Broweser, Chrome)](./javascript_react)|buildin,Debugger for chrome|nodejs,Chrome|✅|TODO|TODO|
-|[Ruby](./ruby)|Ruby||✅|TODO|TODO|
-|[Ruby on Rails](./ruby_rails)|Ruby||✅|TODO|TODO|
+|[Ruby](./ruby)|Ruby|Ruby|✅|TODO|TODO|
+|[Ruby on Rails](./ruby_rails)|Ruby|Ruby|✅|TODO|TODO|
 |[C/C++](./cpp)|C/C++|lldb,gdb|✅|✅|✅|
 |[Java](./java)|Java debugger||✅|HELP|✅|
 |[Bash](./bash)|Bash Debug|bashdb|✅||✅|
