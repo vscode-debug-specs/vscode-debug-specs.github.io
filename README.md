@@ -15,7 +15,7 @@
 |├[for Edge Browser](./javascript_edge)|Debugger for Edge|TODO|TODO|TODO|TODO|
 |├[for Electron Desktop App](./javascript_electron)|buildin,Debugger for chrome|nodejs,Chrome|✅|TODO|TODO|
 |├[for Cordova Mobile App](./javascript_cordova)|Cordova Tools|||||
-|└[for React(Browser)](./javascript_react)|buildin,Debugger for chrome|nodejs,Chrome|✅|TODO|TODO|
+|└[for React (Browser)](./javascript_react)|buildin,Debugger for chrome|nodejs,Chrome|✅|TODO|TODO|
 |[Ruby](./ruby)|Ruby|Ruby|✅|TODO|TODO|
 |[Ruby on Rails](./ruby_rails)|Ruby|Ruby|✅|TODO|TODO|
 |[C/C++](./cpp)|C/C++|lldb,gdb|✅|✅|✅|
