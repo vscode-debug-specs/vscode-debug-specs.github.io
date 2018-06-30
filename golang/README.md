@@ -14,7 +14,6 @@ permalink : /golang/
 * [debugging executable file](#debugging-executable-file)
 * [debugging remote process](#debugging-remote-debug)
 * [debugging running process](#debugging-running-process)
-* [debugging Google App Engine](#debugging-google-app-engine)
 
 ## Basic
 

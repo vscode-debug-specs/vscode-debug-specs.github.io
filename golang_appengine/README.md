@@ -1,6 +1,26 @@
-# how to debug google add engine dev server for golang
+---
+layout: default
+title: How to Debug Google Appengine for Golang with VSCode
+permalink : /golang_appengine/
+---
+# How to Debug Google Appengine for Golang with VSCode
 
-## install
+## Summary
+
+* [Basic](#basic)
+* [Spec](#spec)
+* [Instraction](#instraction)
+* [debugging devserver](#debugging-devserver)
+
+## Basic
+
+see [Golang](../golang/)
+
+## Spec
+
+see [Golang](../golang/)
+
+## Instraction
 
 * install google-app-platform sdk : https://cloud.google.com/sdk/install
 	* we installed to `~/google-cloud-sdk`
@@ -56,7 +76,7 @@ export PATH=~/google-cloud-sdk/platform/google_appengine/gopath/bin:$PATH
 export PATH=~/google-cloud-sdk/platform/google_appengine/goroot-1.9/bin:$PATH
 ```
 
-## how to debug
+## debugging devserver
 
 ### settings.json
 
