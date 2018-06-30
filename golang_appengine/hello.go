@@ -7,13 +7,12 @@ package main
 import (
 	"fmt"
 	"net/http"
-
-	"google.golang.org/appengine"
+	// "google.golang.org/appengine"
 )
 
 func main() {
 	http.HandleFunc("/", handle)
-	appengine.Main()
+	// 	appengine.Main()
 }
 
 func handle(w http.ResponseWriter, r *http.Request) {
