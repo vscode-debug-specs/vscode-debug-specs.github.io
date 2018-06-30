@@ -1,9 +1,9 @@
 ---
 layout: default
-title: How to Debug Google Appengine for Golang with VSCode
+title: How to Debug Google App Engine for Golang with VSCode
 permalink : /golang_appengine/
 ---
-# How to Debug Google Appengine for Golang with VSCode
+# How to Debug Google App Engine for Golang with VSCode
 
 ## Summary
 
@@ -28,11 +28,11 @@ see [Golang](../golang/)
 * create go symbolic link in sdk (`goapp` command in goroot can be used as `go` command)
 
 ```
-#ln -s go ~google-cloud-sdk/platform/google_appengine/goroot-1.9/goapp
+$ln -s go ~/google-cloud-sdk/platform/google_appengine/goroot-1.9/goapp
 ```
 
 * install vscode-go extension
-* configure workspace settings
+* set workspace settings
 
 ```json
 {
@@ -44,9 +44,7 @@ see [Golang](../golang/)
 
 * execute F1->`Go: Install/Update Tools`
 
-```
-
-### when you fail install some package (ex: delve)
+### when failing install some packages (ex: delve, godoc)
 
 * check goapp version
 
