@@ -120,6 +120,3 @@ install [extension](https://marketplace.visualstudio.com/items?itemName=rebornix
 }
 ```
 
-### Ruby on Rails
-
-TODO
