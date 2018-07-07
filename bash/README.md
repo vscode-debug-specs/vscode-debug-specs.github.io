@@ -50,10 +50,11 @@ permalink: /bash/
 
 ## Instraction
 
+original source: https://github.com/rogalmic/vscode-bash-debug#vs-code-bash-debug
+
 1. Install [bashdb](http://bashdb.sourceforge.net/)
 	* MacOS: `brew install bashdb`
 	* Ubuntu: `apt install bashdb`
-
 
 ## debugging executable file
 
