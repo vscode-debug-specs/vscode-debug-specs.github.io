@@ -30,10 +30,10 @@
 			"type": "go",
 			"request": "launch",
 			"mode": "remote",
-			"remotePath": "${workspaceRoot}/cmd/bubbleSorter",
+			"remotePath": "/home/nnyn/go/src/github.com/74th/vscode-debug-specs/golang/bubblesorter/cmd/bubblesorter",
 			"port": 2345,
 			"host": "192.168.56.101",
-			"program": "${workspaceRoot}/cmd/bubbleSorter",
+			"program": "${workspaceRoot}/bubblesorter/cmd/bubblesorter",
 			"env": {},
 			"args": [],
 			"showLog": true

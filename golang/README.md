@@ -1,15 +1,15 @@
 ---
 layout: default
-title: How to Debug Golang with VSCode 
+title: How to Debug Golang with VSCode
 permalink : /golang/
 ---
-# How to Debug Golang with VSCode 
+# How to Debug Golang with VSCode
 
 ## Summary
 
 * [Basic](#basic)
 * [Spec](#spec)
-* [Instraction](#instraction)
+* [Instruction](#instruction)
 * [debugging unit test](#debugging-unit)
 * [debugging executable file](#debugging-executable-file)
 * [debugging remote process](#debugging-remote-debug)
@@ -81,7 +81,7 @@ permalink : /golang/
 
 ## unit test
 
-source : [bubbleSort_test.go](https://github.com/74th/vscode-debug-specs/blob/master/golang/bubbleSort_test.go)
+source : [bubbleSort_test.go](https://github.com/74th/vscode-debug-specs/blob/master/golang/bubblesorter/bubbleSort_test.go)
 
 ### inline
 
@@ -118,7 +118,7 @@ menu:`Go: Launch test function`
 
 ## debugging executable file
 
-souce: [cmd/bubbleSorter/main.go](https://github.com/74th/vscode-debug-specs/blob/master/golang/cmd/bubbleSorter/bubbleSorter.go)
+source: [bubblesorter/cmd/bubbleSorter/main.go](https://github.com/74th/vscode-debug-specs/blob/master/golang/bubblesorter/cmd/bubbleSorter/bubbleSorter.go)
 
 ### launch.json
 
@@ -143,13 +143,13 @@ menu:`Go: Launch package`
 
 ## debugging remote process
 
-souce: [cmd/bubbleSorter/main.go](https://github.com/74th/vscode-debug-specs/blob/master/golang/cmd/bubbleSorter/bubbleSorter.go)
+source: [bubblesorter/cmd/bubbleSorter/main.go](https://github.com/74th/vscode-debug-specs/blob/master/golang/bubblesorter/cmd/bubbleSorter/bubbleSorter.go)
 
 ### prepare
 
 ```sh
-cd cmd/bubbleSorter/
-dlv debug --headless --listen=:2345 --log
+cd bubblesorter/cmd/bubbleSorter/
+dlv debug --headless --listen=0.0.0.0:2345 --log
 ```
 
 ### launch.json
@@ -164,11 +164,11 @@ dlv debug --headless --listen=:2345 --log
 			"request": "launch",
 			"mode": "remote",
 			// remotePath must be remote package path
-			"remotePath": "${workspaceRoot}/cmd/bubbleSorter",
+			"remotePath": "/home/nnyn/go/src/github.com/74th/vscode-debug-specs/golang/bubblesorter/cmd/bubblesorter",
 			"port": 2345,
-			"host": "127.0.0.1",
+			"host": "192.168.56.101",
 			// program must be remote package path
-			"program": "${workspaceRoot}/cmd/bubbleSorter",
+			"program": "${workspaceRoot}/bubblesorter/cmd/bubblesorter",
 			"env": {},
 			"args": [],
 			"showLog": true
@@ -195,21 +195,3 @@ dlv attach $PID ./bubbleSorter --headless --listen=:2345 --log
 ```
 
 launch.json is same settings as remote debug;
-
-## debugging Google App Engine
-
- 1. get delveAppengine
-
-```sh
-go get github.com/dbenque/delveAppengine
-```
-
- 2. launch app engine and delveAppengine
-
-```sh
-dev_appserver.py app.yaml
-sudo delveAppengine -port 2345
-```
-
- 3. attach as remote
-
