@@ -109,7 +109,7 @@
 			"name": "(gdb) Launch cunit",
 			"type": "cppdbg",
 			"request": "launch",
-			"program": "${workspaceRoot}/a.out",
+			"program": "${workspaceRoot}/bubble_sort_cunit",
 			"args": [],
 			"stopAtEntry": false,
 			"cwd": "${workspaceRoot}",
@@ -129,7 +129,7 @@
 			"name": "(gdb) Launch",
 			"type": "cppdbg",
 			"request": "launch",
-			"program": "${workspaceRoot}/a.out",
+			"program": "${workspaceRoot}/main",
 			"args": [
 				"4",
 				"3",
