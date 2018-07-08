@@ -50,7 +50,7 @@ permalink : /golang/
 	* ✅ debug executable package
 	* ✅ remote debugging
 
-## Instraction
+## Instruction
 
 * note: [Delve official instraction](https://github.com/derekparker/delve/tree/master/Documentation/installation)
 
