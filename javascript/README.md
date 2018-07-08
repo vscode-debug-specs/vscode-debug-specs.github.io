@@ -8,7 +8,7 @@ permalink: /javascript/
 
 * [Basic](#basic)
 * [Spec](#spec)
-* Unit Test: 
+* Unit Test:
   * [mocha](#mocha-unit-test-framework)
   * [jasmine](#jasmine)
 * [executable file debug](#executable-file-debug)
@@ -52,9 +52,9 @@ permalink: /javascript/
 	* ✅ debug executable package
 	* ✅ remote debugging
 
-## Instraction
+## Instruction
 
-no other instraction.
+no other instruction.
 
 ## [mocha](https://mochajs.org/) (unit test framework)
 
@@ -80,7 +80,7 @@ npm install --save-dev mocha assert
 				"-u",
 				"tdd",
 				"--timeout",
-				"999999",
+				"1000000",
 				"--colors",
 				"${workspaceRoot}/mocha",
 				"-g",
@@ -114,8 +114,7 @@ npm install --save-dev jasmine-node assert
 			"program": "${workspaceRoot}/node_modules/jasmine-node/lib/jasmine-node/cli.js",
 			"cwd": "${workspaceRoot}",
 			"args": [
-				"./jasmine",
-				"--color"
+				"./jasmine"
 			],
 			"internalConsoleOptions": "openOnSessionStart"
 		}
@@ -123,7 +122,7 @@ npm install --save-dev jasmine-node assert
 }
 ```
 
-### Problom
+### Problem
 
 * When I set breakpoint to first line, debug didn't stop.
 
@@ -179,7 +178,7 @@ node --inspect --inspect-brk ./bin/bubble_sort.js
 
 2. start debug
 3. select process id
-	* ![attach_runnning_process.png](attach_runnning_process.png)
+	* ![attach_running_process.png](attach_running_process.png)
 
 ## remote process
 
@@ -219,7 +218,7 @@ node --inspect=5858 --inspect-brk ./bin/bubble_sort.js
 
 source [./typescript/bubble_sort.ts](https://github.com/74th/vscode-debug-specs/blob/master/javascript/typescript/bubble_sort.ts)
 
-### instraction
+### instruction
 
 ```
 npm install typescript @types/node
