@@ -63,13 +63,13 @@
             "processId": "${command:pickRemoteProcess}",
             "sourceFileMap": {
                 // "remote machine directory" : "VSCode machine directory"
-                "/home/nnyn/vscode-debug-specs/sharp": "/Users/nnyn/Documents/vscode-debug-specs/csharp"
+                "/home/nnyn/Documents/vscode-debug-specs/csharp": "/Users/nnyn/Documents/vscode-debug-specs/csharp"
             },
             "pipeTransport": {
                 "pipeCwd": "${workspaceRoot}",
                 "pipeProgram": "ssh",
                 // "pipeArgs": [],
-                "pipeArgs": [ "-T", "nnyn@192.168.64.6" ],
+                "pipeArgs": [ "-T", "nnyn@192.168.56.101" ],
                 "debuggerPath": "~/vsdbg/vsdbg"
             }
         }

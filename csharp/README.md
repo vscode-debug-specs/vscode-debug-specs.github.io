@@ -81,7 +81,7 @@ permalink: /csharp/
 
 1. change VSCode dir to the project dir.
 2. open C# code in the project.
-3. click Yes to message "Required assets to build and debug are missin from ...
+3. click Yes to message "Required assets to build and debug are missing from ...
 
 ![startup](startup.png)
 
@@ -153,33 +153,32 @@ add the debug setting to launch.json (Add Configuration Menu: '.NET: launch a .N
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": ".NET Core Launch (web)",
-			"type": "coreclr",
-			"request": "launch",
-			"preLaunchTask": "build",
-			// set dll path
-			"program": "${workspaceRoot}/BubbleSorterAPI/bin/Debug/netcoreapp2.0/BubbleSorterAPI.dll",
-			"args": [],
-			"cwd": "${workspaceRoot}/BubbleSorterAPI",
-			"stopAtEntry": false,
-			"launchBrowser": {
-				"enabled": true,
-				"args": "${auto-detect-url}",
-				"windows": {
-					"command": "cmd.exe",
-					"args": "/C start ${auto-detect-url}"
-				},
-				"osx": {
-					"command": "open"
-				},
-				"linux": {
-					"command": "xdg-open"
-				}
-			},
-			"env": {
-				"ASPNETCORE_ENVIRONMENT": "Development"
-			}
-		}
+            "name": ".NET Core Launch (web)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceRoot}/BubbleSorterAPI/bin/Debug/netcoreapp2.1/BubbleSorterAPI.dll",
+            "args": [],
+            "cwd": "${workspaceRoot}/BubbleSorterAPI",
+            "stopAtEntry": false,
+            "launchBrowser": {
+                "enabled": true,
+                "args": "${auto-detect-url}",
+                "windows": {
+                    "command": "cmd.exe",
+                    "args": "/C start ${auto-detect-url}"
+                },
+                "osx": {
+                    "command": "open"
+                },
+                "linux": {
+                    "command": "xdg-open"
+                }
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            }
+        }
 	]
 }
 ```
