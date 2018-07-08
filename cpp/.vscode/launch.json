@@ -1,8 +1,7 @@
 {
 	"version": "0.2.0",
-	"configurations": [
-		{
-			"name": "(lldb) Launch Program",
+	"configurations": [{
+			"name": "(Mac lldb) Launch Program",
 			"type": "cppdbg",
 			"request": "launch",
 			"program": "${workspaceRoot}/main",
@@ -20,7 +19,8 @@
 			"MIMode": "lldb"
 		},
 		{
-			"name": "(lldb) Attach",
+			// not working
+			"name": "(Mac lldb) Attach",
 			"type": "cppdbg",
 			"request": "attach",
 			"program": "${workspaceFolder}/main",
@@ -28,7 +28,7 @@
 			"MIMode": "lldb"
 		},
 		{
-			"name": "(lldb) Launch cunit",
+			"name": "(Mac lldb) Launch cunit",
 			"type": "cppdbg",
 			"request": "launch",
 			"program": "${workspaceRoot}/bubble_sort_cunit",
@@ -41,7 +41,7 @@
 			"MIMode": "lldb"
 		},
 		{
-			"name": "pipe transport",
+			"name": "(Mac to Linux)pipe transport launch",
 			"type": "cppdbg",
 			"request": "launch",
 			"program": "/home/nnyn/Documents/vscode-debug-specs/cpp/main",
@@ -70,6 +70,26 @@
 			"MIMode": "gdb"
 		},
 		{
+			"name": "(Mac to Linux)pipe transport attach",
+			"type": "cppdbg",
+			"request": "attach",
+			"program": "/home/nnyn/Documents/vscode-debug-specs/cpp/bubble_sort_cunit",
+			"processId": "21073",
+			"pipeTransport": {
+				"pipeCwd": "",
+				"pipeProgram": "/usr/bin/ssh",
+				"pipeArgs": [
+					"nnyn@192.168.56.101"
+				],
+				"debuggerPath": "sudo /usr/bin/gdb"
+			},
+			"sourceFileMap": {
+				// "remote": "local"
+				"/home/nnyn/Documents/vscode-debug-specs/cpp": "${workspaceFolder}"
+			},
+			"MIMode": "gdb"
+		},
+		{
 			"name": "(gdb) Bash on Windows Launch",
 			"type": "cppdbg",
 			"request": "launch",
@@ -86,20 +106,18 @@
 				"pipeArgs": [],
 				"pipeCwd": ""
 			},
-			"setupCommands": [
-				{
-					"description": "Enable pretty-printing for gdb",
-					"text": "-enable-pretty-printing",
-					"ignoreFailures": true
-				}
-			]
+			"setupCommands": [{
+				"description": "Enable pretty-printing for gdb",
+				"text": "-enable-pretty-printing",
+				"ignoreFailures": true
+			}]
 		},
 		{
 			"name": "(Windows) Launch",
 			"type": "cppvsdbg",
 			"request": "launch",
 			"program": "${workspaceRoot}/main.exe",
-			"args": ["4","3","2","1" ],
+			"args": ["4", "3", "2", "1"],
 			"stopAtEntry": false,
 			"cwd": "${workspaceRoot}",
 			"environment": [],
@@ -117,13 +135,11 @@
 			"externalConsole": true,
 			"MIMode": "gdb",
 			"preLaunchTask": "build cunit",
-			"setupCommands": [
-				{
-					"description": "Enable pretty-printing for gdb",
-					"text": "-enable-pretty-printing",
-					"ignoreFailures": true
-				}
-			]
+			"setupCommands": [{
+				"description": "Enable pretty-printing for gdb",
+				"text": "-enable-pretty-printing",
+				"ignoreFailures": true
+			}]
 		},
 		{
 			"name": "(gdb) Launch",
@@ -141,13 +157,11 @@
 			"environment": [],
 			"externalConsole": true,
 			"MIMode": "gdb",
-			"setupCommands": [
-				{
-					"description": "Enable pretty-printing for gdb",
-					"text": "-enable-pretty-printing",
-					"ignoreFailures": true
-				}
-			]
+			"setupCommands": [{
+				"description": "Enable pretty-printing for gdb",
+				"text": "-enable-pretty-printing",
+				"ignoreFailures": true
+			}]
 		},
 	]
 }
