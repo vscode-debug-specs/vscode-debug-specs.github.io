@@ -23,7 +23,7 @@ permalink: /cpp/
 
 * OS
   * ✅ MacOS
-  *  Windows
+  * ✅ Windows
   * ✅ Linux
 * Break Point
   * ✅ break point
@@ -48,6 +48,7 @@ permalink: /cpp/
 * Type of Execution
   * ✅ debug unit test
   * ✅ debug executable package
+  * ✅ attach debug process (but cannot work on MacOS)
   * ✅ remote debugging (but cannot start server on Mac)
 
 ## Instraction
@@ -256,7 +257,34 @@ cl main.c bubble_sort.c /ZI
 
  2. Start debug.
 
-## debug to remote machine
+## attach to process
+
+### launch.json
+
+```json
+{
+  "version": "0.2.0",
+  "configurations": [
+		{
+			"name": "(Linux gdb) Attach",
+			"type": "cppdbg",
+			"request": "attach",
+			"program": "${workspaceFolder}/bubble_sort_cunit",
+			"processId": "${command:pickProcess}",
+			"MIMode": "gdb",
+			"setupCommands": [
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			]
+		}
+  ]
+}
+```
+
+## debug to remote machine (Mac to Linux)
 
 With pipe transport, you'll debug remote linux from macos.
 
@@ -267,7 +295,7 @@ With pipe transport, you'll debug remote linux from macos.
   "version": "0.2.0",
   "configurations": [
 		{
-			"name": "pipe transport",
+			"name": "(Mac to Linux)pipe transport",
 			"type": "cppdbg",
 			"request": "launch",
 			"program": "/home/nnyn/Documents/vscode-debug-specs/cpp/main",
