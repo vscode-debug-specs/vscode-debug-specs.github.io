@@ -284,11 +284,13 @@ cl main.c bubble_sort.c /ZI
 }
 ```
 
-## debug to remote machine (Mac to Linux)
+## debug to remote machine (Mac/Linux to Linux)
 
 With pipe transport, you'll debug remote linux from macos.
 
 ### launch.json
+
+* set gdb path with sudo
 
 ```json
 {
@@ -315,7 +317,7 @@ With pipe transport, you'll debug remote linux from macos.
 				"pipeArgs": [
 					"nnyn@192.168.56.101"
 				],
-				"debuggerPath": "/usr/bin/gdb"
+				"debuggerPath": "sudo /usr/bin/gdb"
 			},
 			"sourceFileMap": {
 				// "remote": "local"
@@ -337,3 +339,44 @@ gcc -O0 -g -W -Wall -o main bubble_sort.c main.c
 ```
 
  2. launch debug.
+
+## debug to remote process (Mac/Linux to Linux)
+
+With pipe transport, you'll debug remote linux from macos.
+
+### launch.json
+
+```json
+{
+  "version": "0.2.0",
+  "configurations": [
+		{
+			"name": "(Mac to Linux)pipe transport attach",
+			"type": "cppdbg",
+			"request": "attach",
+			"program": "/home/nnyn/Documents/vscode-debug-specs/cpp/bubble_sort_cunit",
+			"processId": "21073",
+			"pipeTransport": {
+				"pipeCwd": "",
+				"pipeProgram": "/usr/bin/ssh",
+				"pipeArgs": [
+					"nnyn@192.168.56.101"
+				],
+				"debuggerPath": "sudo /usr/bin/gdb"
+			},
+			"sourceFileMap": {
+				// "remote": "local"
+				"/home/nnyn/Documents/vscode-debug-specs/cpp": "${workspaceFolder}"
+			},
+			"MIMode": "gdb"
+    }
+	}
+ ]
+```
+
+### how to
+
+ 1. build at remote machine
+ 2. launch program at remote machine
+ 3. set process id to launch.json
+ 2. launch debug

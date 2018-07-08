@@ -124,7 +124,7 @@
 			"externalConsole": true
 		},
 		{
-			"name": "(gdb) Launch cunit",
+			"name": "(Linux gdb) Launch cunit",
 			"type": "cppdbg",
 			"request": "launch",
 			"program": "${workspaceRoot}/bubble_sort_cunit",
@@ -142,7 +142,7 @@
 			}]
 		},
 		{
-			"name": "(gdb) Launch",
+			"name": "(Linux gdb) Launch",
 			"type": "cppdbg",
 			"request": "launch",
 			"program": "${workspaceRoot}/main",
@@ -164,7 +164,7 @@
 			}]
 		},
 		{
-			"name": "(gdb) Attach",
+			"name": "(Linux gdb) Attach",
 			"type": "cppdbg",
 			"request": "attach",
 			"program": "${workspaceFolder}/bubble_sort_cunit",
@@ -179,7 +179,7 @@
 			]
 		},
 		{
-			"name": "(gdb) Pipe Launch",
+			"name": "(Linux to Linux gdb) Pipe Launch",
 			"type": "cppdbg",
 			"request": "launch",
 			"program": "/home/nnyn/Documents/vscode-debug-specs/cpp/main",
@@ -209,7 +209,7 @@
 			]
 		},
 		{
-			"name": "(gdb) Pipe attach",
+			"name": "(Linux to Linux gdb) Pipe attach",
 			"type": "cppdbg",
 			"request": "attach",
 			"program": "/home/nnyn/Documents/vscode-debug-specs/cpp/bubble_sort_cunit",
