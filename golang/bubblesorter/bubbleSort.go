@@ -1,4 +1,4 @@
-package golang
+package bubblesorter
 
 // BubbleSort sorts the list
 func BubbleSort(list []int) []int {

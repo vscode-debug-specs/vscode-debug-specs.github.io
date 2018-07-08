@@ -1,4 +1,4 @@
-package golang
+package bubblesorter
 
 import "testing"
 

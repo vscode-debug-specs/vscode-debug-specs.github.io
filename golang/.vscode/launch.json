@@ -6,8 +6,9 @@
 			"type": "go",
 			"request": "launch",
 			"mode": "debug",
-			"program": "${workspaceRoot}/cmd/bubbleSorter",
+			"program": "${workspaceRoot}/bubblesorter/cmd/bubblesorter",
 			"args": [
+				"4",
 				"3",
 				"2",
 				"1"
@@ -18,7 +19,7 @@
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
-			"program": "${workspaceRoot}",
+			"program": "${workspaceRoot}/bubblesorter",
 			"args": [
 				"-test.run",
 				"TestBubbleSort"
@@ -31,7 +32,7 @@
 			"mode": "remote",
 			"remotePath": "${workspaceRoot}/cmd/bubbleSorter",
 			"port": 2345,
-			"host": "127.0.0.1",
+			"host": "192.168.56.101",
 			"program": "${workspaceRoot}/cmd/bubbleSorter",
 			"env": {},
 			"args": [],

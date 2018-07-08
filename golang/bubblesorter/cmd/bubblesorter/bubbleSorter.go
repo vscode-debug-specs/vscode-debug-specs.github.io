@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"time"
 
-	module "github.com/74th/vscode-debug-specs/golang"
+	"github.com/74th/vscode-debug-specs/golang/bubblesorter"
 )
 
 func main() {
@@ -30,7 +30,7 @@ func main() {
 		}
 		in = append(in, n)
 	}
-	out := module.BubbleSort(in)
+	out := bubblesorter.BubbleSort(in)
 	for _, n := range out {
 		fmt.Printf("%d ", n)
 	}
