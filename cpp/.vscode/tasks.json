@@ -34,11 +34,11 @@
 				"-O0",
 				"-W",
 				"-Wall",
-				"-lcunit",
 				"-o",
 				"bubble_sort_cunit",
-				"bubble_sort.c",
 				"bubble_sort_cunit.c",
+				"bubble_sort.c",
+				"-lcunit",
 			],
 			"problemMatcher": [
 				"$gcc"

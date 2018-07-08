@@ -1,6 +1,8 @@
 {
 	"files.associations": {
 		"unistd.h": "c",
-		"stdlib.h": "c"
+		"stdlib.h": "c",
+		"cunit.h": "c",
+		"console.h": "c"
 	}
 }
