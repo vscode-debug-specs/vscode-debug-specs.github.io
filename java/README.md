@@ -43,7 +43,7 @@ permalink: /java/
 	* ✅ call stack
 * Evaluation
 	* ✅ eval expression to show variables
-	* ❌ eval expression to change variables
+	* ✅ eval expression to change variables
 * Type of Execution
 	* ✅ debug unit test
 	* ✅ debug executable package
@@ -113,7 +113,7 @@ permalink: /java/
 ### how-to
 
 1. run program with debug option
-	* set `suspend=y` when you like to stop before attach, othrewise `suspend=n` when you like to start right away.
+	* set `suspend=y` when you like to stop before attach, otherwise `suspend=n` when you like to start right away.
 
 ```sh
 java -cp target/classes -Xdebug -Xrunjdwp:transport=dt_socket,server=y,address=5005,suspend=y com.j74th.vscodedebugbook.bubblesort.BubbleSorter 4 3 2 1
