@@ -15,31 +15,28 @@
 			"env": {},
 			"envFile": "${workspaceRoot}/.env",
 			"debugOptions": [
-				"WaitOnAbnormalExit",
-				"WaitOnNormalExit",
+				"BreakOnSystemExitZero",
 				"RedirectOutput"
 			]
 		},
 		{
-			"name": "Python",
+			"name": "launch Python",
 			"type": "python",
 			"request": "launch",
 			"stopOnEntry": true,
 			"pythonPath": "${config:python.pythonPath}",
 			//"program": "${file}",
-			"program": "bubble_sorter.py",
+			"program": "${workspaceFolder}/bubble_sorter.py",
 			"args": [
 				"4",
 				"3",
 				"2",
 				"1"
 			],
-			"cwd": "${workspaceRoot}",
+			"cwd": "${workspaceFolder}",
 			"env": {},
-			"envFile": "${workspaceRoot}/.env",
+			"envFile": "${workspaceFolder}/.env",
 			"debugOptions": [
-				"WaitOnAbnormalExit",
-				"WaitOnNormalExit",
 				"RedirectOutput"
 			]
 		},
@@ -55,8 +52,6 @@
 			"env": {},
 			"envFile": "${workspaceRoot}/.env",
 			"debugOptions": [
-				"WaitOnAbnormalExit",
-				"WaitOnNormalExit"
 			]
 		},
 		{
@@ -65,8 +60,9 @@
 			"request": "attach",
 			"localRoot": "${workspaceRoot}",
 			"remoteRoot": "${workspaceRoot}",
-			"port": 3000,
+			"port": 3333,
 			"secret": "my_secret",
+			// "host": "192.168.56.101"
 			"host": "localhost"
 		}
 	],

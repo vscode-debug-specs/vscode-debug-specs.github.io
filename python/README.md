@@ -9,7 +9,7 @@ permalink: /python/
 
 * [Basic](#basic)
 * [Spec](#spec)
-* [Instraction](#instraction)
+* [Instruction](#instruction)
 * [unit test](#unit-test)
 * [executable file debug](#executable-file-debug)
 
@@ -50,7 +50,7 @@ permalink: /python/
 	* ✅ debug executable package
 	* ❓ remote debugging
 
-## Instraction
+## Instruction
 
 Only installing Extension.
 

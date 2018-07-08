@@ -6,5 +6,6 @@
 		"-p",
 		"test_*.py"
 	],
-	"python.unitTest.unittestEnabled": true
+	"python.unitTest.unittestEnabled": true,
+	"python.pythonPath": "/Users/nnyn/.pyenv/versions/3.6.5/bin/python"
 }
