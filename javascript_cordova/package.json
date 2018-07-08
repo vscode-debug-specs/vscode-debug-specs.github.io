@@ -10,8 +10,8 @@
     "author": "Apache Cordova Team",
     "license": "Apache-2.0",
     "dependencies": {
-        "cordova-android": "^6.2.3",
-        "cordova-ios": "^4.4.0",
+        "cordova-android": "^7.1.0",
+        "cordova-ios": "^4.5.4",
         "cordova-plugin-whitelist": "^1.3.2"
     },
     "cordova": {
@@ -24,6 +24,6 @@
         ]
     },
     "devDependencies": {
-        "ios-sim": "^6.1.2"
+        "ios-sim": "^7.0.0"
     }
 }

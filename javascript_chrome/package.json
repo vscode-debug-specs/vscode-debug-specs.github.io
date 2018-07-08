@@ -9,14 +9,14 @@
   "author": "74th",
   "license": "MIT",
   "dependencies": {
+    "awesome-typescript-loader": "^5.0.0",
     "babel-preset-es2015": "^6.24.1",
     "babelify": "^8.0.0",
     "browserify": "^16.2.2",
     "http-server": "^0.11.1",
     "source-map-loader": "^0.2.1",
     "typescript": "^2.5.2",
-    "webpack": "^4.12.0",
-    "webpack-dev-server": "^3.1.4",
-    "awesome-typescript-loader": "^5.0.0"
+    "webpack": "^4.15.1",
+    "webpack-dev-server": "^3.1.4"
   }
 }
