@@ -107,7 +107,7 @@ menu:`Go: Launch test function`
 				// * can use reguler expression
 				// * NOT include "Test"
 				// * the first charactor MUST be small
-				"bubbleSort"
+				"bubblesort"
 			]
 		}
 	]
@@ -133,7 +133,7 @@ menu:`Go: Launch package`
 			"type": "go",
 			"request": "launch",
 			"mode": "debug",
-			"program": "${workspaceRoot}/cmd/bubbleSorter"
+			"program": "${workspaceRoot}/bubblesorter/cmd/bubbleSorter"
 		}
 	]
 }
@@ -141,7 +141,7 @@ menu:`Go: Launch package`
 
 * `program` must be main package folder or *.go file
 
-## debugging remote process
+## debugging at remote machine
 
 source: [bubblesorter/cmd/bubbleSorter/main.go](https://github.com/74th/vscode-debug-specs/blob/master/golang/bubblesorter/cmd/bubbleSorter/bubbleSorter.go)
 
@@ -177,7 +177,7 @@ dlv debug --headless --listen=0.0.0.0:2345 --log
 }
 ```
 
-## debugging running process
+## debugging running remote process
 
 For comfortable debugging it is necessary to build avoiding the optimization option.
 
@@ -191,7 +191,7 @@ cd cmd/bubbleSorter/
 # runnning process
 ./bubbleSorter -sleep 30 &
 PID=$!
-dlv attach $PID ./bubbleSorter --headless --listen=:2345 --log
+dlv attach $PID ./bubbleSorter --headless --listen=0.0.0.0:2345 --log
 ```
 
 launch.json is same settings as remote debug;
