@@ -49,9 +49,9 @@ permalink: /cpp/
   * ✅ debug unit test
   * ✅ debug executable package
   * ✅ attach debug process (but cannot work on MacOS)
-  * ✅ remote debugging (but cannot start server on Mac)
+  * ✅ remote debugging (but cannot start server on MacOS)
 
-## Instraction
+## Instruction
 
 ### MacOS
 
@@ -72,13 +72,13 @@ permalink: /cpp/
 
 * test code: [bubble_sort_cunit.c](https://github.com/74th/vscode-debug-specs/blob/master/cpp/bubble_sort_cunit.c)
 
-### MacOS instaraction
+### MacOS instruction
 
 ```
 brew install cunit
 ```
 
-### Ubuntu instaraction
+### Ubuntu instruction
 
 ```
 sudo apt install libcunit1 libcunit1-dev
@@ -340,9 +340,9 @@ gcc -O0 -g -W -Wall -o main bubble_sort.c main.c
 
  2. launch debug.
 
-## debug to remote process (Mac/Linux to Linux)
+## attach to remote process (Mac/Linux to Linux)
 
-With pipe transport, you'll debug remote linux from macos.
+With pipe transport, you'll attach remote linux process from macos.
 
 ### launch.json
 
@@ -376,7 +376,8 @@ With pipe transport, you'll debug remote linux from macos.
 
 ### how to
 
- 1. build at remote machine
- 2. launch program at remote machine
- 3. set process id to launch.json
- 2. launch debug
+1. build at remote machine
+2. launch program at remote machine
+3. check the process id of remote process
+4. set the process id to launch.json
+5. launch debug
