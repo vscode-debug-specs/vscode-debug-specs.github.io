@@ -24,11 +24,41 @@
             "internalConsoleOptions": "openOnSessionStart"
         },
         {
+            "name": ".NET Core Launch (web)2",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceRoot}/BubbleSorterAPI/bin/Debug/netcoreapp2.1/BubbleSorterAPI.dll",
+            "args": [],
+            "cwd": "${workspaceRoot}/BubbleSorterAPI",
+            "stopAtEntry": false,
+            "launchBrowser": {
+                "enabled": true,
+                "args": "${auto-detect-url}",
+                "windows": {
+                    "command": "cmd.exe",
+                    "args": "/C start ${auto-detect-url}"
+                },
+                "osx": {
+                    "command": "open"
+                },
+                "linux": {
+                    "command": "xdg-open"
+                }
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceRoot}/Views"
+            }
+        },
+        {
             "name": ".NET Core Launch (web)",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceRoot}/BubbleSorterAPI/bin/Debug/netcoreapp2.0/BubbleSorterAPI.dll",
+            "program": "${workspaceRoot}/BubbleSorterAPI",
             "args": [],
             "cwd": "${workspaceRoot}/BubbleSorterAPI",
             "stopAtEntry": false,
@@ -63,7 +93,7 @@
             "processId": "${command:pickRemoteProcess}",
             "sourceFileMap": {
                 // "remote machine directory" : "VSCode machine directory"
-                "/home/nnyn/vscode-debug-specs/csharp": "/Users/nnyn/Documents/vscode-debug-specs/csharp"
+                "/home/nnyn/vscode-debug-specs/sharp": "/Users/nnyn/Documents/vscode-debug-specs/csharp"
             },
             "pipeTransport": {
                 "pipeCwd": "${workspaceRoot}",

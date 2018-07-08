@@ -231,7 +231,6 @@ add settings to launch.json.
 	"version": "0.2.0",
 	"configurations": [
 		{
-		{
 			"name": ".NET Core remote Attach",
 			"type": "coreclr",
 			"request": "attach",

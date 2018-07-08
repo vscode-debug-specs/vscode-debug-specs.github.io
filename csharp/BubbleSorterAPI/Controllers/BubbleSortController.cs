@@ -8,12 +8,12 @@ using BubbleSort;
 namespace BubbleSorterAPI.Controllers
 {
     [Route("api/[controller]")]
-    public class BubbleSortController : Controller
+    [ApiController]
+    public class BubbleSortController : ControllerBase
     {
-
-        // POST api/BubbleSort
+        // POST api/values
         [HttpPost]
-        public string Post([FromBody]string input)
+        public string Post([FromBody] string input)
         {
 			var args = input.Split(" ");
 			var list = new List<int>();
@@ -30,7 +30,7 @@ namespace BubbleSorterAPI.Controllers
 			{
 				output += n.ToString() + " ";
 			}
-            return output;
+			return output;
         }
     }
 }
