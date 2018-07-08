@@ -1,3 +1,7 @@
+main
+bubble_sort_cunit
+main.dSYM/
+bubble_sort_cunit.dSYM/
 *.o
 *.out
 a.out.dSYM/

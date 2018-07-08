@@ -4,7 +4,7 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"taskName": "build",
+			"label": "build",
 			"type": "shell",
 			"command": "gcc",
 			"args": [
@@ -12,6 +12,8 @@
 				"-O0",
 				"-W",
 				"-Wall",
+				"-o",
+				"main",
 				"bubble_sort.c",
 				"main.c"
 			],
@@ -24,17 +26,19 @@
 			}
 		},
 		{
-			"taskName": "build cunit",
+			"label": "build cunit",
 			"type": "shell",
 			"command": "gcc",
 			"args": [
-				"bubble_sort.c",
-				"bubble_sort_cunit.c",
 				"-g",
 				"-O0",
 				"-W",
 				"-Wall",
-				"-lcunit"
+				"-lcunit",
+				"-o",
+				"bubble_sort_cunit",
+				"bubble_sort.c",
+				"bubble_sort_cunit.c",
 			],
 			"problemMatcher": [
 				"$gcc"

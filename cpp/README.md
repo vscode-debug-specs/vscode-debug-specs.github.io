@@ -48,7 +48,7 @@ permalink: /cpp/
 * Type of Execution
   * ✅ debug unit test
   * ✅ debug executable package
-  * ❌ remote debugging
+  * ✅ remote debugging (but cannot start server on Mac)
 
 ## Instraction
 
@@ -93,17 +93,17 @@ menu: C/C++: Launch
   "configurations": [
     {
       // for MacOS
-      "name": "(lldb) Launch cunit",
-      "type": "cppdbg",
-      "request": "launch",
-      "program": "${workspaceRoot}/a.out",
-      "args": [],
-      "stopAtEntry": false,
-      "cwd": "${workspaceRoot}",
-      "environment": [],
-      "externalConsole": true,
-      "preLaunchTask": "build cunit",
-      "MIMode": "lldb"
+			"name": "(lldb) Launch cunit",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${workspaceRoot}/bubble_sort_cunit",
+			"args": [],
+			"stopAtEntry": false,
+			"cwd": "${workspaceRoot}",
+			"environment": [],
+			"externalConsole": true,
+			"preLaunchTask": "build cunit",
+			"MIMode": "lldb"
     },
     {
       // for Linux
@@ -156,7 +156,7 @@ Enter command: R
 * `-O0` : no optimisation
 * `-lcunit` : load cunit
 
-## debugging executable file 
+## debugging executable file
 
 * Program: [main.c](https://github.com/74th/vscode-debug-specs/blob/master/cpp/main.c)
 
@@ -255,3 +255,57 @@ cl main.c bubble_sort.c /ZI
 ```
 
  2. Start debug.
+
+## debug to remote machine
+
+With pipe transport, you'll debug remote linux from macos.
+
+### launch.json
+
+```json
+{
+  "version": "0.2.0",
+  "configurations": [
+		{
+			"name": "pipe transport",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "/home/nnyn/Documents/vscode-debug-specs/cpp/main",
+			"args": [
+				"4",
+				"3",
+				"2",
+				"1"
+			],
+			"stopAtEntry": false,
+			"cwd": "/home/nnyn/Documents/vscode-debug-specs/cpp",
+			"environment": [],
+			"externalConsole": true,
+			"pipeTransport": {
+				"pipeCwd": "/usr/bin",
+				"pipeProgram": "/usr/bin/ssh",
+				"pipeArgs": [
+					"nnyn@192.168.56.101"
+				],
+				"debuggerPath": "/usr/bin/gdb"
+			},
+			"sourceFileMap": {
+				// "remote": "local"
+				"/home/nnyn/Documents/vscode-debug-specs/cpp": "${workspaceFolder}"
+			},
+			"MIMode": "gdb"
+		},
+	}
+ ]
+```
+
+### how to
+
+ 1. build at remote machine
+
+```
+cd /home/nnyn/Documents/vscode-debug-specs/cpp
+gcc -O0 -g -W -Wall -o main bubble_sort.c main.c
+```
+
+ 2. launch debug.

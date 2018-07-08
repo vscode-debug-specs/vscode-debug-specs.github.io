@@ -2,12 +2,72 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
+			"name": "(lldb) Launch Program",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${workspaceRoot}/main",
+			"preLaunchTask": "build",
+			"args": [
+				"4",
+				"3",
+				"2",
+				"1"
+			],
+			"stopAtEntry": false,
+			"cwd": "${workspaceRoot}",
+			"environment": [],
+			"externalConsole": true,
+			"MIMode": "lldb"
+		},
+		{
 			"name": "(lldb) Attach",
 			"type": "cppdbg",
 			"request": "attach",
-			"program": "enter program name, for example ${workspaceFolder}/a.out",
+			"program": "${workspaceFolder}/main",
 			"processId": "${command:pickProcess}",
 			"MIMode": "lldb"
+		},
+		{
+			"name": "(lldb) Launch cunit",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${workspaceRoot}/bubble_sort_cunit",
+			"args": [],
+			"stopAtEntry": false,
+			"cwd": "${workspaceRoot}",
+			"environment": [],
+			"externalConsole": true,
+			"preLaunchTask": "build cunit",
+			"MIMode": "lldb"
+		},
+		{
+			"name": "pipe transport",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "/home/nnyn/Documents/vscode-debug-specs/cpp/main",
+			"args": [
+				"4",
+				"3",
+				"2",
+				"1"
+			],
+			"stopAtEntry": false,
+			"cwd": "/home/nnyn/Documents/vscode-debug-specs/cpp",
+			"environment": [],
+			"externalConsole": true,
+			"pipeTransport": {
+				"pipeCwd": "/usr/bin",
+				"pipeProgram": "/usr/bin/ssh",
+				"pipeArgs": [
+					"nnyn@192.168.56.101"
+				],
+				"debuggerPath": "/usr/bin/gdb"
+			},
+			"sourceFileMap": {
+				// "remote": "local"
+				"/home/nnyn/Documents/vscode-debug-specs/cpp": "${workspaceFolder}"
+			},
+			"MIMode": "gdb"
 		},
 		{
 			"name": "(gdb) Bash on Windows Launch",
@@ -89,36 +149,5 @@
 				}
 			]
 		},
-		{
-			"name": "(lldb) Launch cunit",
-			"type": "cppdbg",
-			"request": "launch",
-			"program": "${workspaceRoot}/a.out",
-			"args": [],
-			"stopAtEntry": false,
-			"cwd": "${workspaceRoot}",
-			"environment": [],
-			"externalConsole": true,
-			"preLaunchTask": "build cunit",
-			"MIMode": "lldb"
-		},
-		{
-			"name": "(lldb) Launch Program",
-			"type": "cppdbg",
-			"request": "launch",
-			"program": "${workspaceRoot}/a.out",
-			"preLaunchTask": "build",
-			"args": [
-				"4",
-				"3",
-				"2",
-				"1"
-			],
-			"stopAtEntry": false,
-			"cwd": "${workspaceRoot}",
-			"environment": [],
-			"externalConsole": true,
-			"MIMode": "lldb"
-		}
 	]
 }
