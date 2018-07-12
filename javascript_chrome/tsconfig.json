@@ -1,11 +1,18 @@
 {
     "compilerOptions": {
+        // must set output dir
         "outDir": "./html/js/",
-        "sourceMap": true,
-        "noImplicitAny": true,
+        // for node_modules dir
+        "baseUrl": "./",
         "module": "commonjs",
-        "target": "es5"
+        "target": "es2017",
+        // must set for debug
+        "sourceMap": true,
+        "noImplicitAny": false,
+        "strict": true,
+        "esModuleInterop": true
     },
+    // set if you'll like to divide .ts and others
     "include": [
         "./js/**/*"
     ]
