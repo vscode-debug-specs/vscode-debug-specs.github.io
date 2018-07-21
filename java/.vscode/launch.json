@@ -22,7 +22,7 @@
             "type": "java",
             "name": "Debug (Attach)",
             "request": "attach",
-            "hostName": "localhost",
+            "hostName": "192.168.1.24",
             "port": 5005
         }
     ]

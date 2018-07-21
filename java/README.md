@@ -14,7 +14,7 @@ permalink: /java/
 ## Basic
 
 * [Java](https://www.java.com/)
-* Extension:[Java Debug Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug)
+* Extension:[Debugger for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug)
 * Debugger: jdb
 * module code: [src/main/java/com/j74th/vscodedebugbook/bubblesort/BubbleSort.java](src/main/java/com/j74th/vscodedebugbook/bubblesort/BubbleSort.java)
 
@@ -70,6 +70,12 @@ permalink: /java/
 }
 ```
 
+## Instruction
+
+* Install OpenJDK or OracleJDK
+* set JDK path to environment value JAVA_HOME
+* set JDK/bin path to PATH
+
 ## executable file debug
 
 * Program: [src/main/java/com/j74th/vscodedebugbook/bubblesort/BubbleSorter.java](src/main/java/com/j74th/vscodedebugbook/bubblesort/BubbleSorter.java)
@@ -103,7 +109,7 @@ permalink: /java/
             "type": "java",
             "name": "Debug (Attach)",
             "request": "attach",
-            "hostName": "localhost",
+            "hostName": "192.168.1.24",
             "port": 5005
 		}
 	]
