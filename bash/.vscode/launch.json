@@ -9,16 +9,7 @@
 			"program": "${workspaceFolder}/bubbleSort.sh",
 			"args": [
 				"4", "3", "2", "1"
-			],
-			"windows": {
-				"bashPath": "C:\\Windows\\sysnative\\bash.exe"
-			},
-			"linux": {
-				"bashPath": "bash"
-			},
-			"osx": {
-				"bashPath": "bash"
-			}
+			]
 		}
 	]
 }

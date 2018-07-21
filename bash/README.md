@@ -8,7 +8,7 @@ permalink: /bash/
 
 * [Basic](#basic)
 * [Spec](#spec)
-* [Instraction](#instraction)
+* [Instruction](#instruction)
 * [debugging executable file](#debugging-executable-file)
 
 ## Basic
@@ -22,7 +22,7 @@ permalink: /bash/
 
 * OS
 	* ✅ MacOS
-	*  Windows
+	* ✅ Windows
 	* ✅ Linux
 * Break Point
 	* ✅ break point
@@ -48,13 +48,24 @@ permalink: /bash/
 	* ✅ debug executable package
 	* ❌ remote debugging
 
-## Instraction
+## Instruction
 
-original source: https://github.com/rogalmic/vscode-bash-debug#vs-code-bash-debug
+### MacOS
 
-1. Install [bashdb](http://bashdb.sourceforge.net/)
-	* MacOS: `brew install bashdb`
-	* Ubuntu: `apt install bashdb`
+```
+brew install bashdb
+```
+
+### Linux(Ubuntu 18.04)
+
+Ubuntu 18.04 don't have bashdb package. You need build from source.
+
+see https://github.com/rogalmic/vscode-bash-debug/issues/67
+
+### Windows
+
+* [install wsl Ubuntu18.04](https://www.microsoft.com/store/productId/9N9TNGVNDL3Q)
+* see Linux instruction
 
 ## debugging executable file
 
@@ -71,16 +82,7 @@ original source: https://github.com/rogalmic/vscode-bash-debug#vs-code-bash-debu
 			"type": "bashdb",
 			"request": "launch",
 			"scriptPath": "${workspaceRoot}/bubbleSort.sh",
-			"commandLineArguments": "4 3 2 1",
-			"windows": {
-				"bashPath": "C:\\Windows\\sysnative\\bash.exe"
-			},
-			"linux": {
-				"bashPath": "bash"
-			},
-			"osx": {
-				"bashPath": "bash"
-			}
+			"commandLineArguments": "4 3 2 1"
 		}
 	]
 }
