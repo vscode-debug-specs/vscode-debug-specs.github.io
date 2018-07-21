@@ -65,7 +65,7 @@ permalink: /cpp/
 
 ### Linux
 
-* install gcc
+* install gcc: `sudo apt get -y gcc`
 * install Extension [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
 
 ## debugging unit test (cunit)
@@ -83,6 +83,10 @@ brew install cunit
 ```
 sudo apt install libcunit1 libcunit1-dev
 ```
+
+### Windows instruction
+
+HELP Wanted
 
 ### launch.json
 
@@ -157,7 +161,7 @@ Enter command: R
 * `-O0` : no optimisation
 * `-lcunit` : load cunit
 
-## debugging executable file
+## debugging executable file (MacOS, Linux)
 
 * Program: [main.c](https://github.com/74th/vscode-debug-specs/blob/master/cpp/main.c)
 
@@ -224,7 +228,7 @@ gcc bubble_sort.c main.c -g -O0 -W -Wall
 
  2. Start "Launch Program"
 
-## debugging on Windows
+## debugging execute file (Windows)
 
 ### launch.json
 

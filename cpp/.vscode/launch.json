@@ -1,6 +1,7 @@
 {
 	"version": "0.2.0",
-	"configurations": [{
+	"configurations": [
+		{
 			"name": "(Mac lldb) Launch Program",
 			"type": "cppdbg",
 			"request": "launch",
@@ -90,38 +91,54 @@
 			"MIMode": "gdb"
 		},
 		{
-			"name": "(gdb) Bash on Windows Launch",
-			"type": "cppdbg",
-			"request": "launch",
-			"program": "${workspaceRoot}/a.exe",
-			"args": [],
-			"stopAtEntry": false,
-			"cwd": "${workspaceRoot}",
-			"environment": [],
-			"externalConsole": true,
-			"pipeTransport": {
-				"debuggerPath": "/usr/bin/gdb",
-				// "pipeProgram": "C:\\Windows\\sysnative\\bash.exe",
-				"pipeProgram": "C:\\Windows\\System32\\bash.exe",
-				"pipeArgs": [],
-				"pipeCwd": ""
-			},
-			"setupCommands": [{
-				"description": "Enable pretty-printing for gdb",
-				"text": "-enable-pretty-printing",
-				"ignoreFailures": true
-			}]
-		},
-		{
 			"name": "(Windows) Launch",
 			"type": "cppvsdbg",
 			"request": "launch",
-			"program": "${workspaceRoot}/main.exe",
-			"args": ["4", "3", "2", "1"],
+			"program": "main.exe",
+			"args": [
+				"4",
+				"3",
+				"2",
+				"1"
+			],
 			"stopAtEntry": false,
 			"cwd": "${workspaceRoot}",
 			"environment": [],
 			"externalConsole": true
+		},
+		{
+			"name": "(Windows-wsl) Launch",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "main",
+			"args": [
+				"4",
+				"3",
+				"2",
+				"1"
+			],
+			"stopAtEntry": false,
+			"cwd": "/mnt/c/Users/nnyn/Documents/vscode-debug-specs/cpp",
+			"environment": [],
+			"externalConsole": true,
+			"pipeTransport": {
+				"debuggerPath": "/usr/bin/gdb",
+				"pipeProgram": "${env:windir}\\system32\\bash.exe",
+				"pipeArgs": [
+					"-c"
+				],
+				"pipeCwd": ""
+			},
+			"sourceFileMap": {
+				"/mnt/c/Users/nnyn/Documents/vscode-debug-specs/cpp": "${workspaceFolder}"
+			},
+			"setupCommands": [
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			]
 		},
 		{
 			"name": "(Linux gdb) Launch cunit",
@@ -135,11 +152,13 @@
 			"externalConsole": true,
 			"MIMode": "gdb",
 			"preLaunchTask": "build cunit",
-			"setupCommands": [{
-				"description": "Enable pretty-printing for gdb",
-				"text": "-enable-pretty-printing",
-				"ignoreFailures": true
-			}]
+			"setupCommands": [
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			]
 		},
 		{
 			"name": "(Linux gdb) Launch",
@@ -157,11 +176,13 @@
 			"environment": [],
 			"externalConsole": true,
 			"MIMode": "gdb",
-			"setupCommands": [{
-				"description": "Enable pretty-printing for gdb",
-				"text": "-enable-pretty-printing",
-				"ignoreFailures": true
-			}]
+			"setupCommands": [
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			]
 		},
 		{
 			"name": "(Linux gdb) Attach",
@@ -219,6 +240,64 @@
 				"pipeProgram": "/usr/bin/ssh",
 				"pipeArgs": [
 					"nnyn@192.168.56.101"
+				],
+				"pipeCwd": ""
+			},
+			"MIMode": "gdb",
+			"setupCommands": [
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			]
+		},
+		{
+			"name": "(Windows to Linux gdb) Pipe Launch",
+			"type": "cppdbg",
+			"request": "launch",
+			"cwd": "${workspaceFolder}",
+			"program": "/home/nnyn/vscode-debug-specs/main",
+			"args": [
+				"4",
+				"3",
+				"2",
+				"1"
+			],
+			"stopAtEntry": false,
+			"pipeTransport": {
+				"debuggerPath": "/usr/bin/gdb",
+				"pipeProgram": "C:\\Program Files\\PuTTY\\plink.exe",
+				"pipeArgs": [
+					"nnyn@192.168.1.24",
+					"-i",
+					"C:\\Users\\nnyn\\.ssh\\id_rsa.ppk"
+				],
+				"pipeCwd": "/home/nnyn/vscode-debug-specs",
+			},
+			"MIMode": "gdb",
+			"setupCommands": [
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			],
+			"sourceFileMap": {
+				"/home/nnyn/vscode-debug-specs/cpp": "${workspaceFolder}"
+			}
+		},
+		{
+			"name": "(Windows to Linux gdb) Pipe attach",
+			"type": "cppdbg",
+			"request": "attach",
+			"program": "/home/nnyn/Documents/vscode-debug-specs/cpp/bubble_sort_cunit",
+			"processId": "19626",
+			"pipeTransport": {
+				"debuggerPath": "sudo /usr/bin/gdb",
+				"pipeProgram": "/usr/bin/ssh",
+				"pipeArgs": [
+					"nnyn@192.168.1.24"
 				],
 				"pipeCwd": ""
 			},
