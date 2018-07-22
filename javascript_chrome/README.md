@@ -50,7 +50,7 @@ permalink: /javascript_chrome/
 	* ✅ launch debugging
 	* ✅ remote debugging
 
-## Instraction
+## Instruction
 
 * install Chrome browser
 * install nodejs
@@ -89,7 +89,7 @@ npm install --save-dev mocha assert
 ### how-to
 
 * start web server (task `launch web server`)
-* set breackpoint to html/js/normal_main.js
+* set breakpoint to html/js/normal_main.js
 * start debugger, Chrome browser will open
 
 ## attach Chrome browser
@@ -107,9 +107,9 @@ npm install --save-dev mocha assert
 			"request": "launch",
 			"sourceMaps": true,
 			"name": "Launch Chrome against localhost",
-      // your web server url
+      		// your web server url
 			"url": "http://localhost:8080",
-      // set your webroot directory
+      		// set your webroot directory
 			"webRoot": "${workspaceRoot}/html"
 		}
 	]
@@ -132,7 +132,7 @@ google-chrome --remote-debugging-port=9222
 
 And start debug.
 
-## using broserify
+## using browserify
 
 * module code: [js/browserify_bubble_sort.js](https://github.com/74th/vscode-debug-specs/blob/master/javascript_chrome/js/browserify_bubble_sort.js), [js/browserify_main.js](https://github.com/74th/vscode-debug-specs/blob/master/javascript_chrome/js/browserify_main.js)
 
@@ -171,13 +171,41 @@ start debug
 npm install -g webpack
 ```
 
-### 2. execute webpack with `-d` option
+### 2. create webpack.config.js
+
+```js
+const path = require('path');
+
+let exclude = [path.resolve(__dirname, "html")];
+console.log(exclude);
+
+module.exports = {
+	devtool: "source-map",
+	output: {
+		path: path.resolve(__dirname, "html", "js"),
+		filename: "webpack.js",
+	},
+	resolve: {
+		extensions: [".js"]
+	},
+	module: {
+		rules: [
+			{ test: /\.js$/, loader: "source-map-loader", exclude }
+		]
+	},
+	devServer: {
+		contentBase: "html/"
+	},
+};
+```
+
+### 3. execute webpack with `-d` option
 
 ```
-webpack -d js/webpack_main.js html/js/webpack_main.webpack.js
+webpack -d js/webpack_main.js -o html/js/webpack_main.webpack.js
 ```
 
-### 3. add sourceMapPathOverrides launch.json
+### 4. add sourceMapPathOverrides launch.json
 
 ```
 {
@@ -187,7 +215,7 @@ webpack -d js/webpack_main.js html/js/webpack_main.webpack.js
 			"type": "chrome",
 			"request": "launch",
 			"sourceMapPathOverrides": {
-        // add this map
+        		// add this map
 				"webpack:///./js/*": "${workspaceRoot}/js/*",
 				"webpack:///js/*": "${workspaceRoot}/js/*"
 			},
@@ -221,15 +249,24 @@ npm install -g webpack awesome-typescript-loader source-map-loader
 ts file to compile.
 
 ```javascript
+const path = require('path');
+
+let exclude = [path.resolve(__dirname, "html")];
+console.log(exclude);
+
 module.exports = {
 	devtool: "source-map",
+	output: {
+		path: path.resolve(__dirname, "html", "js"),
+		filename: "webpack.js",
+	},
 	resolve: {
 		extensions: [".ts", ".js"]
 	},
 	module: {
 		rules: [
-			{ test: /\.ts$/, loader: "awesome-typescript-loader" },
-			{ enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
+			{ test: /\.ts$/, loader: "awesome-typescript-loader", exclude },
+			{ enforce: "pre", test: /\.js$/, loader: "source-map-loader", exclude }
 		]
 	},
 	devServer: {
@@ -243,12 +280,19 @@ module.exports = {
 ```json
 {
     "compilerOptions": {
+        // must set output dir
         "outDir": "./html/js/",
-        "sourceMap": true,
-        "noImplicitAny": true,
+        // for node_modules dir
+        "baseUrl": "./",
         "module": "commonjs",
-        "target": "es5"
+        "target": "es2017",
+        // must set for debug
+        "sourceMap": true,
+        "noImplicitAny": false,
+        "strict": true,
+        "esModuleInterop": true
     },
+    // set if you'll like to divide .ts and others
     "include": [
         "./js/**/*"
     ]
@@ -258,10 +302,9 @@ module.exports = {
 ### 4. compile and webpack
 
 ```sh
-webpack -d ts/typescript_main.ts html/js/typescript_main.webpack.js
+webpack -d js/typescript_main.ts -o html/js/typescript_main.js
 ```
 
 ### 5. start debug
 
 add breakpoint to typescript code, and launch debug.
-

@@ -12,6 +12,7 @@
             },
             "command": "./node_modules/.bin/http-server",
             "args": [
+                "-c-1",
                 "html"
             ],
             "problemMatcher": []
@@ -55,7 +56,7 @@
             "args": [
                 "-d",
                 "js/webpack_main.js",
-                "html/js/webpack_main.webpack.js"
+                "js/typescript_main.ts",
             ],
             "problemMatcher": [],
             "group": {
