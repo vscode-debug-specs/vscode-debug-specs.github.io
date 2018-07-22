@@ -13,7 +13,7 @@ permalink: /php/
 ## basic
 
 * [PHP](https://www.php.net/)
-* Extension: 
+* Extension:
 * Debugger: php-xdebug
 * module code: [bubble_sort.php](bubble_sort.php)
 
@@ -100,6 +100,7 @@ http {
 #### 3. enable php-xdbug
 
 
+
 change `xdebug.remote_enable` to 1 and add `xdebug.remote_autostart=1`.
 
 ```
@@ -148,37 +149,15 @@ launchctl unload -w /usr/local/opt/php56/homebrew.mxcl.php56.plist
 
 ### Windows
 
-#### 1. download and install xampp
 
-xampp [https://www.apachefriends.org/](https://www.apachefriends.org/)
+ 1. download xampp [https://www.apachefriends.org/](https://www.apachefriends.org/)
+    * default install path `C:\xampp`
+ 2. start apache
+ 3. open phpinfo.php page on web server. And copy HTML source.
+ 4. open https://xdebug.org/wizard.php and paste its phpinfo source.
+ 5. see your instruction and do it.
+ 6. restart apache
 
-default install path `C:\xampp`
-
-#### 2. download xdebug dll
-
-xdbug [https://xdebug.org/download.php]
-
-download 32bit module. set to `c:\xampp\php\ext`.
-
-#### 4. update php.ini
-
-`c:\xampp\php\php.ini`
-
-```
-[XDebug]
-zend_extension = "c:\xampp\php\ext\php_xdebug-2.5.5-7.1-vc14.dll"
-xdebug.remote_enable=1
-xdebug.remote_autostart=1
-xdebug.remote_port="9000"
-xdebug.profiler_enable=0
-xdebug.profiler_output_dir="c:\xampp\tmp"
-xdebug.max_nesting_level=1000
-xdebug.idekey = "PHPSTORM"
-```
-
-#### 5. launch web server
-
-launch xampp at start menu. and start apache.
 
 ### Linux Ubuntu 17.04
 
@@ -210,7 +189,7 @@ server {
 	#
 	location ~ \.php$ {
 		include snippets/fastcgi-php.conf;
-		
+
 		# With php-fpm (or other unix sockets):
 		fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
 		#  # With php-cgi (or other tcp sockets):
@@ -283,3 +262,42 @@ select debug php, this setting will be created.
 	]
 }
 ```
+
+## remote debug
+
+ 1. add your ip to `xdebug.remote_host` and restart php
+
+```
+zend_extension=xdebug.so
+xdebug.remote_enable=1
+xdebug.remote_autostart=1
+xdebug.remote_port="9000"
+xdebug.remote_host="192.168.1.21"
+xdebug.remote_connect_back=1
+xdebug.profiler_enable=0
+xdebug.profiler_output_dir="/tmp"
+xdebug.max_nesting_level=1000
+xdebug.idekey="PHPSTORM"
+```
+
+ 2. write launch.json
+
+```
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "attach remote XDebug",
+			"type": "php",
+			"request": "launch",
+			"server": "192.168.1.24",
+			"port": 9000,
+			"pathMappings": {
+				"/home/nnyn/vscode-debug-specs/php": "${workspaceFolder}"
+			}
+		},
+	]
+}
+```
+
+ 3. start debugging

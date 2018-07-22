@@ -2,7 +2,7 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": "Listen for XDebug",
+			"name": "attach local XDebug",
 			"type": "php",
 			"request": "launch",
 			"port": 9000
@@ -13,7 +13,16 @@
 			"request": "launch",
 			"program": "${file}",
 			"cwd": "${fileDirname}",
-			"port": 9000
-		}
+		},
+		{
+			"name": "attach remote XDebug",
+			"type": "php",
+			"request": "launch",
+			"server": "192.168.1.24",
+			"port": 9000,
+			"pathMappings": {
+				"/home/nnyn/vscode-debug-specs/php": "${workspaceFolder}"
+			}
+		},
 	]
 }
