@@ -52,8 +52,9 @@
 				"1"
 			],
 			"sourceMaps": true,
-			"stopOnEntry": true,
-			"internalConsoleOptions": "openOnSessionStart"
+			"stopOnEntry": false,
+			"internalConsoleOptions": "openOnSessionStart",
+			"preLaunchTask": "tsc"
 		},
 		{
 			"type": "node",
