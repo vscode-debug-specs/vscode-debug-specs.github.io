@@ -9,7 +9,7 @@
 			"type": "cordova",
 			"request": "launch",
 			"platform": "android",
-			"target": "015d3248e05c1a04",
+			"target": "device",
 			"port": 9222,
 			"sourceMaps": true,
 			"cwd": "${workspaceRoot}",
@@ -63,7 +63,8 @@
 			"request": "launch",
 			"platform": "ios",
 			"target": "emulator",
-			"port": 9220,
+			"port": 9222,
+			"attachDelay": 10000,
 			"sourceMaps": true,
 			"cwd": "${workspaceRoot}",
 			"ionicLiveReload": false
