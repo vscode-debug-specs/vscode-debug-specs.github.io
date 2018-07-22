@@ -9,7 +9,7 @@ permalink: /ruby/
 
 * [Basic](#basic)
 * [Spec](#spec)
-* [Instraction](#instraction)
+* [Instruction](#instruction)
 * [unit test](#unit-test)
 * [executable file debug](#executable-file-debug)
 
@@ -24,44 +24,35 @@ permalink: /ruby/
 
 * OS
 	* ✅ MacOS
-	* ❓ Windows
+	* ✅ Windows
 	* ❓ Linux
 * Break Point
 	* ✅ break point
-	* ❓ condition break point : it does not work on my machine, always breaks
-	* ❓ function breakpoint
-	* ❓ uncaught exception breakpoint
-	* ❓ all exception breakpoint
+	* ✅ condition break point : it does not work on my machine, always breaks
+	* ❌ function breakpoint
+	* ❌ uncaught exception breakpoint
+	* ❌ all exception breakpoint
 * Step Execution
 	* ✅ Step Over
 	* ✅ Step Into
 	* ✅ Step Out
 	* ✅ Continue
 * Variables
-	* ❓ variables views
-	* ❓ watch variables
+	* ✅ variables views
+	* ✅ watch variables
 * Call Stack
-	* ❓ call stack
+	* ✅ call stack
 * Evaluation
-	* ❓ eval expression to show variables
-	* ❓ eval expression to change variables
+	* ✅ eval expression to show variables
+	* ✅ eval expression to change variables
 * Type of Execution
-	* ❓ debug unit test
-	* ❓ debug executable package
-	* ❓ remote debugging
+	* ✅ debug unit test
+	* ✅ debug executable package
+	* ✅ remote debugging
 
-## Instraction
+## Instruction
 
-```
-# JRuby or r Ruby v1.8.x
-gem install ruby-debug-ide
-# Ruby v1.9
-gem install ruby-debug-ide 
-gem install ruby-debug-base19x
-# Ruby v2.x
-gem install ruby-debug-ide -v 0.6.0
-gem install debase -v 0.2.2
-```
+install some gems https://github.com/rubyide/vscode-ruby/wiki/1.-Debugger-Installation
 
 install [extension](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby).
 
@@ -69,7 +60,7 @@ install [extension](https://marketplace.visualstudio.com/items?itemName=rebornix
 
 * module code: [bubble_sort.rb](https://github.com/74th/vscode-debug-specs/blob/master/ruby/bubble_sort.rb)
 
-## Unix Test
+## debug Unix Test
 
 ### test/unit
 
@@ -77,7 +68,7 @@ install [extension](https://marketplace.visualstudio.com/items?itemName=rebornix
 
 * [test_unit/test_bubble_sort.rb](https://github.com/74th/vscode-debug-specs/blob/master/ruby/test_unit/test_bubble_sort.rb)
 
-#### .vscode/launch.json
+#### launch.json
 
 ```json
 {
@@ -97,13 +88,13 @@ install [extension](https://marketplace.visualstudio.com/items?itemName=rebornix
 }
 ```
 
-### test/unit
+## debug executable script
 
-#### code
+### code
 
 * [bin/bin.rb](https://github.com/74th/vscode-debug-specs/blob/master/ruby/bin/bin.rb)
 
-#### vscode.json
+#### launch.json
 
 ```json
 {
@@ -120,3 +111,33 @@ install [extension](https://marketplace.visualstudio.com/items?itemName=rebornix
 }
 ```
 
+## debug remote process
+
+### launch.json
+
+```json
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Debug remote",
+			"type": "Ruby",
+			"request": "attach",
+			"cwd": "${workspaceRoot}",
+			"remoteHost": "192.168.1.24",
+			"remotePort": "1234",
+			"remoteWorkspaceRoot": "/home/nnyn/vscode-debug-specs/ruby"
+		},
+	]
+}
+```
+
+### how to
+
+ 1. start remote process
+
+```sh
+rdebug-ide --host 0.0.0.0 --port 1234 -- bin/bin.rb
+```
+
+ 2. start vscode debugger

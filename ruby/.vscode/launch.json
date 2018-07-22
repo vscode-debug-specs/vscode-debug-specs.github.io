@@ -6,14 +6,14 @@
 			"type": "Ruby",
 			"request": "launch",
 			"cwd": "${workspaceRoot}",
-			"program": "${workspaceRoot}/bin.rb"
+			"program": "${workspaceRoot}/bin/bin.rb"
 		},
 		{
 			"name": "Debug test/unit",
 			"type": "Ruby",
 			"request": "launch",
 			"cwd": "${workspaceRoot}",
-			"program": "${workspaceRoot}/test_bubble_sort.rb",
+			"program": "${workspaceRoot}/test_unit/test_bubble_sort.rb",
 			"args":[
 				"--name=test_bubble_sort"
 			]
@@ -21,10 +21,11 @@
 		{
 			"name": "Debug remote",
 			"type": "Ruby",
-			"request": "launch",
-			"debuggerPort": "1234",
+			"request": "attach",
 			"cwd": "${workspaceRoot}",
-			"program": "${workspaceRoot}/bin.rb"
+			"remoteHost": "192.168.1.24",
+			"remotePort": "1234",
+			"remoteWorkspaceRoot": "/home/nnyn/vscode-debug-specs/ruby"
 		},
 	]
 }
