@@ -52,14 +52,15 @@
 				"1"
 			],
 			"sourceMaps": true,
-			"stopOnEntry": true,
-			"internalConsoleOptions": "openOnSessionStart"
+			"stopOnEntry": false,
+			"internalConsoleOptions": "openOnSessionStart",
+			"preLaunchTask": "tsc"
 		},
 		{
 			"type": "node",
 			"request": "attach",
 			"name": "Attach to Remote",
-			"address": "localhost",
+			"address": "192.168.56.101",
 			"port": 5858,
 			"localRoot": "${workspaceRoot}",
 			"remoteRoot": "${workspaceRoot}"

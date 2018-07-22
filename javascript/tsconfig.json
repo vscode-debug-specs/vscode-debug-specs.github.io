@@ -1,19 +1,13 @@
 {
-    "compilerOptions": {
-        // for node_modules dir
-        "baseUrl": "./",
-        // must set output dir
-        "outDir": "./typescriptout",
-        "module": "commonjs",
-        "target": "es2017",
-        "noImplicitAny": false,
-        // must set for debug
-        "sourceMap": true,
-        "strict": true,
-        "esModuleInterop": true
-    },
-    // set if you'll like to divide .ts and others
-    "include": [
-        "typescript/**/*"
-    ]
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "commonjs",
+    // must set for debug
+    "sourceMap": true,
+    // must set output dir
+    "outDir": "./typescriptout",
+    "strict": true,
+    "esModuleInterop": true,
+    // "sourceRoot": "./typescript",
+  }
 }

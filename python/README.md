@@ -196,7 +196,7 @@ note: ![DebugPython](DebugPython.png)
 
 ## remote debug
 
-TODO: not work on my machine!
+TODO: This do not work on my machine!
 
 ### prepare
 
@@ -213,7 +213,7 @@ add remote debug code.
 ```python
 import ptvsd
 
-ptvsd.enable_attach("nnyn", address=('0.0.0.0', 2345))
+ptvsd.enable_attach("nnyn", address=('0.0.0.0', 3333))
 ptvsd.wait_for_attach()
 ```
 

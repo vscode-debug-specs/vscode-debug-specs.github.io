@@ -25,7 +25,6 @@
 			"request": "launch",
 			"stopOnEntry": true,
 			"pythonPath": "${config:python.pythonPath}",
-			//"program": "${file}",
 			"program": "${workspaceFolder}/bubble_sorter.py",
 			"args": [
 				"4",
@@ -46,10 +45,16 @@
 			"request": "launch",
 			"stopOnEntry": true,
 			"pythonPath": "${config:python.pythonPath}",
-			"program": "bubble_sorter.py",
+			"program": "${workspaceFolder}/bubble_sorter.py",
 			"cwd": "",
 			"console": "integratedTerminal",
 			"env": {},
+			"args": [
+				"4",
+				"3",
+				"2",
+				"1",
+			],
 			"envFile": "${workspaceRoot}/.env",
 			"debugOptions": [
 			]
@@ -59,11 +64,10 @@
 			"type": "python",
 			"request": "attach",
 			"localRoot": "${workspaceRoot}",
-			"remoteRoot": "${workspaceRoot}",
+			"remoteRoot": "/home/nnyn/vscode-debug-specs/python",
 			"port": 3333,
 			"secret": "my_secret",
-			// "host": "192.168.56.101"
-			"host": "localhost"
+			"host": "192.168.1.24"
 		}
 	],
 	"compounds": []
