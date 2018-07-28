@@ -50,18 +50,18 @@ permalink: /php/
 	* ✅ debug executable package
 	* ❌ remote debugging: will support soon
 
-## instraction
+## instruction
 
 ### MacOS
 
 PHP(PHP-fpm)+nginx
 
-#### 1. install
+MacOS has php7.1 and apache2 with no instruction. This instruction does not use it.
+
+#### 1. install php
 
 ```
-brew tap homebrew/homebrew-php
-brew install php56 --with-fpm
-brew install php56-xdebug
+brew install php@7.2
 brew install nginx
 ```
 
@@ -97,32 +97,23 @@ http {
 }
 ```
 
-#### 3. enable php-xdbug
-
-
-
-change `xdebug.remote_enable` to 1 and add `xdebug.remote_autostart=1`.
+#### install xdebug
 
 ```
-vi /usr/local/etc/php/5.6/conf.d/ext-xdebug.ini
-[xdebug]
-zend_extension="/usr/local/opt/php56-xdebug/xdebug.so"
-
-xdebug.remote_enable=1
-xdebug.remote_autostart=1
-xdebug.remote_port="9000"
-xdebug.profiler_enable=0
-xdebug.profiler_output_dir="/tmp"
-xdebug.max_nesting_level=1000
-xdebug.idekey = "PHPSTORM"
+pecl install xdebug
 ```
+
+/usr/local/Cellar/php/7.2.8/pecl/20170718/xdebug.so
 
 #### 4. start php-fpm and nginx
 
 ```
-nginx
-launchctl load -w /usr/local/opt/php56/homebrew.mxcl.php56.plist
+brew services start php@7.2
+brew services start nginx
 ```
+
+access http://localhost:8080/
+
 
 #### 5. test
 
@@ -140,15 +131,10 @@ phpinfo();
 
 access http://localhost:8080/phpinfo.php
 
-#### 6. stop
-
-```
-nginx -s stop
-launchctl unload -w /usr/local/opt/php56/homebrew.mxcl.php56.plist
-```
+* nginx log: /usr/local/var/log/nginx/
+* php log: /usr/local/var/log/php-fpm.log
 
 ### Windows
-
 
  1. download xampp [https://www.apachefriends.org/](https://www.apachefriends.org/)
     * default install path `C:\xampp`
@@ -207,7 +193,7 @@ sudo vi /etc/php/7.0/fpm/conf.d/20-xdebug.ini
 
 xdebug.remote_enable=1
 xdebug.remote_autostart=1
-xdebug.remote_port="9000"
+xdebug.remote_port="9001"
 xdebug.profiler_enable=0
 xdebug.profiler_output_dir="/tmp"
 xdebug.max_nesting_level=1000
