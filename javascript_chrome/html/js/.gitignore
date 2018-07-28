@@ -1,2 +1,3 @@
 *.browserify.js
-webpack.js
+*.webpack.js
+*.webpack.js.map

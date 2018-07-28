@@ -6,12 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": "https://github.com/74th/vscode-debug-specs.git",
   "author": "74th",
   "license": "MIT",
   "devDependencies": {
     "awesome-typescript-loader": "^5.2.0",
     "babel-core": "^6.26.3",
-    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
     "babelify": "^8.0.0",
     "browserify": "^16.2.2",
     "http-server": "^0.11.1",
