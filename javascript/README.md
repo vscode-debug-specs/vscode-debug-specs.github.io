@@ -209,7 +209,7 @@ node --inspect --inspect-brk ./bin/bubble_sort.js
 	* when you like to break a first line, add `--inspect-brk` option
 
 ```sh
-node --inspect=5858 --inspect-brk ./bin/bubble_sort.js
+node --inspect=0.0.0.0:5858 --inspect-brk ./bin/bubble_sort.js
 ```
 
 2. start debug
