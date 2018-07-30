@@ -156,6 +156,7 @@ sudo apt install php php-fpm php-xdebug nginx
 #### 2. set up nginx
 
 * commentout php-fpm settings
+* change unix socket path(php7.0-fpm.sock->php7.2-fpm.sock)
 * update `root` directory
 
 ```
@@ -177,7 +178,7 @@ server {
 		include snippets/fastcgi-php.conf;
 
 		# With php-fpm (or other unix sockets):
-		fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
+		fastcgi_pass unix:/var/run/php/php7.2-fpm.sock;
 		#  # With php-cgi (or other tcp sockets):
 		#  fastcgi_pass 127.0.0.1:9000;
 	}
@@ -203,7 +204,7 @@ xdebug.idekey = "PHPSTORM"
 #### 4. start
 
 ```
-sudo systemctl start php7.0-fpm.service
+sudo systemctl start php7.2-fpm.service
 sudo systemctl start nginx.service
 ```
 
@@ -243,7 +244,7 @@ select debug php, this setting will be created.
 			"request": "launch",
 			"program": "${file}",
 			"cwd": "${fileDirname}",
-			"port": 9000
+			"port": 9001
 		}
 	]
 }
@@ -257,8 +258,8 @@ select debug php, this setting will be created.
 zend_extension=xdebug.so
 xdebug.remote_enable=1
 xdebug.remote_autostart=1
-xdebug.remote_port="9000"
-xdebug.remote_host="192.168.1.21"
+xdebug.remote_port="9001"
+xdebug.remote_host="0.0.0.0"
 xdebug.remote_connect_back=1
 xdebug.profiler_enable=0
 xdebug.profiler_output_dir="/tmp"
@@ -277,7 +278,7 @@ xdebug.idekey="PHPSTORM"
 			"type": "php",
 			"request": "launch",
 			"server": "192.168.1.24",
-			"port": 9000,
+			"port": 9001,
 			"pathMappings": {
 				"/home/nnyn/vscode-debug-specs/php": "${workspaceFolder}"
 			}

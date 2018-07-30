@@ -25,7 +25,7 @@ permalink: /ruby/
 * OS
 	* ✅ MacOS
 	* ✅ Windows
-	* ❓ Linux
+	* ✅ Linux
 * Break Point
 	* ✅ break point
 	* ✅ condition break point : it does not work on my machine, always breaks
@@ -55,6 +55,8 @@ permalink: /ruby/
 install some gems https://github.com/rubyide/vscode-ruby/wiki/1.-Debugger-Installation
 
 install [extension](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby).
+
+If you use Ubuntu 18.04, it needs `sudo apt install libruby ruby-dev`.
 
 ## module code
 
