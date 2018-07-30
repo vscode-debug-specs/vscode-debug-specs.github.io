@@ -14,14 +14,14 @@
 |├[for iOS Browser](./javascript_ios)|Debugger for iOS Web|TODO|TODO|-|-|
 |├[for Firefox Browser](./javascript_firefox)|Debugger for firefox|TODO|TODO|TODO|TODO|
 |├[for Edge Browser](./javascript_edge)|Debugger for Edge|TODO|-|-|TODO|
-|├[for Electron Desktop App](./javascript_electron)|buildin,Debugger for chrome|nodejs,Chrome|✅|TODO|TODO|
+|├[for Electron Desktop App](./javascript_electron)|buildin,Debugger for chrome|nodejs,Chrome|✅|✅|✅|
 |├[for Cordova Mobile App](./javascript_cordova)|Cordova Tools|||||
-|└[for React (Browser)](./javascript_react)|buildin(),Debugger for chrome|nodejs,Chrome|✅|✅|✅|
-|[Ruby](./ruby)|Ruby|Ruby|✅|TODO|TODO|
-|└[Ruby on Rails](./ruby_rails)|Ruby|Ruby|✅|TODO|TODO|
+|└[for React (Browser)](./javascript_react)|Debugger for chrome|nodejs,Chrome|✅|✅|✅|
+|[Ruby](./ruby)|Ruby|ruby-debug-ide|✅|✅|✅|
+|└[Ruby on Rails](./ruby_rails)|Ruby|ruby-debug-ide|✅|✅|✅|
 |[C/C++](./cpp)|C/C++|lldb,gdb|✅|✅|✅|
-|[Java](./java)|Java debugger||✅|HELP|✅|
-|[Bash](./bash)|Bash Debug|bashdb|✅||✅|
+|[Java](./java)|Java debugger||✅|✅|✅|
+|[Bash](./bash)|Bash Debug|bashdb|✅|✅|✅|
 |[PHP](./php)|PHP Debug|Xdebug|✅|✅|✅|
 |TODO [C#(mono)](./csharp_mono)|mono debug|||||
 |TODO [Lua](./Lua)|Lua 5.3 Debugger|||||
