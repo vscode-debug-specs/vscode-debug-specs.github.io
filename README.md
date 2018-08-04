@@ -18,7 +18,7 @@
 |├[for Cordova Mobile App](./javascript_cordova)|Cordova Tools|||||
 |└[for React (Browser)](./javascript_react)|Debugger for chrome|nodejs,Chrome|✅|✅|✅|
 |[Ruby](./ruby)|Ruby|ruby-debug-ide|✅|✅|✅|
-|└[Ruby on Rails](./ruby_rails)|Ruby|ruby-debug-ide|✅|✅|✅|
+|└[Ruby on Rails](./ruby_ror)|Ruby|ruby-debug-ide|✅|✅|✅|
 |[C/C++](./cpp)|C/C++|lldb,gdb|✅|✅|✅|
 |[Java](./java)|Java debugger||✅|✅|✅|
 |[Bash](./bash)|Bash Debug|bashdb|✅|✅|✅|
