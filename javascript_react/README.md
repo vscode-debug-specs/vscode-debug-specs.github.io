@@ -13,7 +13,7 @@ A declarative, efficient, and flexible JavaScript library for building user inte
 
 You need to use babel for compiling react(jsx).
 
-### instraction
+### instruction
 
 * `npm install --save-dev babel-cli babel-plugin-transform-react-jsx`
 * setup .babelrc for jsx react

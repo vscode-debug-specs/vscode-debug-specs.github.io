@@ -1,0 +1,30 @@
+@startuml
+skinparam dpi 300
+skinparam defaultFontName Source Code Pro
+
+class SortFunction {
+	string input
+	number[] answer
+	render()
+	changeInput()
+}
+class Input {
+	void handleChange
+	string value
+	render()
+	handleChange()
+}
+class Answer {
+	number[] items
+	render()
+}
+class AnswerNumber {
+	number item
+	render()
+}
+
+SortFunction*-->Input
+SortFunction*-->Answer
+Answer*-->AnswerNumber
+
+@enduml
