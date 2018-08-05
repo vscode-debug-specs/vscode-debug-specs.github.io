@@ -20,7 +20,7 @@ see [Golang](../golang/)
 
 see [Golang](../golang/)
 
-## Instraction
+## Instruction
 
 * install google-app-platform sdk : https://cloud.google.com/sdk/install
 	* we installed to `~/google-cloud-sdk`

@@ -10,7 +10,7 @@ build_ts:
 	$(NODE_BIN)/webpack-cli
 clean:
 	rm html/js/*.{js,map}
-server:
+launch:
 	$(NODE_BIN)/http-server html -c-1
 
 uml: class.png

@@ -61,10 +61,6 @@ permalink: /javascript_chrome/
 
 ## launch Chrome browser
 
-```
-npm install --save-dev mocha assert
-```
-
 * module code: [html/js/normal_main.js](https://github.com/74th/vscode-debug-specs/blob/master/javascript_chrome/html/js/normal_main.js)
 * menu: "Chrome launch"
 

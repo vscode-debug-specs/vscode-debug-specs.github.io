@@ -38,6 +38,8 @@ You need to use babel for compiling react(jsx).
 
 ### codes
 
+<img src="class.png" width="400">
+
 * [html/index.html](https://github.com/74th/vscode-debug-specs/blob/master/javascript_react/html/index.html): script tag has `type="module"`
 
 ```html

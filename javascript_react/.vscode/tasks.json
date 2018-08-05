@@ -2,7 +2,26 @@
 	// See https://go.microsoft.com/fwlink/?LinkId=733558
 	// for the documentation about the tasks.json format
 	"version": "2.0.0",
-	"tasks": [{
+	"tasks": [
+		{
+			"label": "http-server",
+			"type": "process",
+			"problemMatcher": [],
+			"windows": {
+				"command": ".\\node_modules\\.bin\\http-server"
+			},
+			"osx": {
+				"command": "./node_modules/.bin/http-server"
+			},
+			"linux": {
+				"command": "./node_modules/.bin/http-server"
+			},
+			"args": [
+				"html",
+				"-c-1"
+			]
+		},
+		{
 			"label": "build js,jsx",
 			"type": "shell",
 			"problemMatcher": "$tsc",
