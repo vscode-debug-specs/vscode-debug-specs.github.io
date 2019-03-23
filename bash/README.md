@@ -81,7 +81,7 @@ see https://github.com/rogalmic/vscode-bash-debug/issues/67
 			"name": "Bash-Debug (hardcoded script name)",
 			"type": "bashdb",
 			"request": "launch",
-			"scriptPath": "${workspaceRoot}/bubbleSort.sh",
+			"program": "${workspaceRoot}/bubbleSort.sh",
 			"commandLineArguments": "4 3 2 1"
 		}
 	]
