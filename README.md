@@ -1,6 +1,3 @@
----
----
-
 # Visual Studio Code Debug specs list
 
 | Language or Platform name                          | Debugger Extension(ver)     | Debugger       | MacOS | Windows | Linux |
