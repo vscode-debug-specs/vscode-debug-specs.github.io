@@ -2,7 +2,7 @@
 
 | Language or Platform name                          | Debugger Extension(ver)     | Debugger       | MacOS | Windows | Linux |
 | -------------------------------------------------- | --------------------------- | -------------- | ----- | ------- | ----- |
-| [Golang](./go)                                     | Go                          | delve          | ✅    | ✅      | ✅    |
+| [Go](./go)                                         | Go                          | delve          | ✅    | ✅      | ✅    |
 | └[Goole App Engine](./go_appengine)                | Go                          | delve          | ✅    | ✅      | ✅    |
 | [Python](./python)                                 | Python                      | pdb            | ✅    | ✅      | ✅    |
 | [C#(dotnetcore)](./csharp)                         | C#                          | .NET Core      | ✅    | ✅      | ✅    |
@@ -28,7 +28,11 @@
 | TODO [OCaml](./ocaml)                              | OCaml                       |                |       |         |       |
 | TODO [Erlang](./erlang)                            | erlang                      |                |       |         |       |
 
-main site: [https://vscode-debug-specs.github.io/](https://vscode-debug-specs.github.io/)
+Main site: [https://vscode-debug-specs.github.io/](https://vscode-debug-specs.github.io/)
+
+Repositories: [https://github.com/vscode-debug-specs](https://github.com/vscode-debug-specs)
+
+List Repository: [https://github.com/vscode-debug-specs/vscode-debug-specs.github.io](https://github.com/vscode-debug-specs)
 
 If you use a part of the site, you can use as [Public Domain](https://en.wikipedia.org/wiki/Public_domain).
 
