@@ -34,6 +34,6 @@ Repositories: [https://github.com/vscode-debug-specs](https://github.com/vscode-
 
 List Repository: [https://github.com/vscode-debug-specs/vscode-debug-specs.github.io](https://github.com/vscode-debug-specs)
 
-If you use a part of the site, you can use as [Public Domain](https://en.wikipedia.org/wiki/Public_domain).
+If you use a part of the site, you can use as [CC0 1.0 Universal Public Domain](https://creativecommons.org/publicdomain/zero/1.0/).
 
-If you want to publish all pages, I'm grad to contact me site@j74th.com or twitter:@74th.
+If you want to publish all pages, I'm grad to contact me Atsushi Morimoto (site@74th.tech) or twitter:[Atsushi Morimoto @74th](https://twitter.com/74th).
