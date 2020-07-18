@@ -1,5 +1,0 @@
-{
-  "plugins": ["transform-react-jsx"],
-  "sourceMaps": true,
-  "sourceRoot": "src"
-}
