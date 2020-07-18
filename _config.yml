@@ -1,6 +1,5 @@
 theme: jekyll-theme-cayman
 destination: VS Code debug specs
-title: VS Code debug specs
 gems:
   - jekyll-readme-index
 readme_index:
